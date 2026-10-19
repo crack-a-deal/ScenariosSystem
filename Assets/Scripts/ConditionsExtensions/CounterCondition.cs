@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class CounterCondition : ConditionBase
+public class CounterCondition : ConditionBase, IScenarioObjectsProvider
 {
     [ListDrawerSettings(ShowFoldout = true)]
     [SerializeField]
@@ -11,6 +11,8 @@ public class CounterCondition : ConditionBase
 
     [SerializeField]
     private ScenarioObjectState _requiredState;
+
+    public IReadOnlyList<ScenarioStateProvider> Objects => _objects;
 
     [MinValue(0)]
     [SerializeField]

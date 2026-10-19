@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class InspectionController : MonoBehaviour
@@ -60,18 +61,25 @@ public class InspectionController : MonoBehaviour
     private void OnObjectChanged(GameObject target)
     {
         _currentInspection = null;
+        _currentProvider = null;
         _inspectionProgress = 0f;
         _indicator.Hide();
 
         if (target == null)
             return;
-
-        _currentInspection = target.GetComponentInParent<InspectionZone>();
-
-        if (_currentInspection == null)
+        var provider = target.GetComponent<ScenarioStateProvider>();
+        if (provider == null || !_allowedObjects.Contains(provider))
             return;
 
-        _indicator.Show(_displayText + '\n' + _currentInspection.InspectionText);
+        var inspection = target.GetComponent<InspectionZone>();
+
+        if (inspection == null)
+            return;
+
+        _currentProvider = provider;
+        _currentInspection = inspection;
+
+        _indicator.Show(_displayText + '\n' + inspection.InspectionText);
     }
 
     private void UpdateInspection()
@@ -96,5 +104,35 @@ public class InspectionController : MonoBehaviour
 
         _indicator.Hide();
         _currentInspection = null;
+    }
+
+    private readonly HashSet<ScenarioStateProvider> _allowedObjects = new();
+    private ScenarioStateProvider _currentProvider;
+
+    public void SetAllowedObjects(IEnumerable<ScenarioStateProvider> objects)
+    {
+        foreach (var provider in _allowedObjects)
+        {
+            if (provider != null)
+                provider.SetHighlighted(false);
+        }
+
+        _allowedObjects.Clear();
+        _currentProvider = null;
+        _currentInspection = null;
+        _inspectionProgress = 0f;
+        _indicator.Hide();
+
+        if (objects == null)
+            return;
+
+        foreach (var provider in objects)
+        {
+            if (provider == null)
+                continue;
+
+            _allowedObjects.Add(provider);
+            provider.SetHighlighted(true);
+        }
     }
 }

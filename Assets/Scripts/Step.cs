@@ -5,6 +5,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+public interface IScenarioObjectsProvider
+{
+    IReadOnlyList<ScenarioStateProvider> Objects { get; }
+}
+
 [Serializable]
 public class Step : MonoBehaviour
 {
@@ -43,11 +48,17 @@ public class Step : MonoBehaviour
     [BoxGroup("Hints")]
     [TextArea(2, 5)]
     [SerializeField] private string _hint;
+    public string Hint => _hint;
 
     [BoxGroup("Errors")]
     [ListDrawerSettings(ShowFoldout = true)]
     [SerializeField]
     private List<ErrorRule> _errors = new();
+
+
+    public IReadOnlyList<ScenarioStateProvider> ScenarioObjects =>
+    (_completionCondition as IScenarioObjectsProvider)?.Objects
+    ?? System.Array.Empty<ScenarioStateProvider>();
 
     public bool IsCompleted { get; private set; }
 

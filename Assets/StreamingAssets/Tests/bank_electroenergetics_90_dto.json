@@ -1,0 +1,2125 @@
+{
+  "Title": "Банк тестовых заданий — 90 вопросов",
+  "Questions": [
+    {
+      "Type": "SingleChoice",
+      "Text": "Каково основное назначение трансформатора ТМГ-630/10 в рассматриваемой подстанции?",
+      "Options": [
+        {
+          "Text": "Повышение напряжения с 0,4 до 10 кВ",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Понижение напряжения с 10 до 0,4 кВ",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Преобразование переменного тока в постоянный",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Компенсация реактивной мощности",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что обозначает число 630 в обозначении ТМГ-630/10?",
+      "Options": [
+        {
+          "Text": "Номинальное напряжение, кВ",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Массу масла, кг",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Номинальную мощность, кВА",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Число витков обмотки",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какое номинальное напряжение относится к стороне ВН трансформатора ТМГ-630/10?",
+      "Options": [
+        {
+          "Text": "0,23 кВ",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "0,4 кВ",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "6 кВ",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "10 кВ",
+          "Order": 4,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какое номинальное напряжение относится к стороне НН трансформатора?",
+      "Options": [
+        {
+          "Text": "0,4 кВ",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "1 кВ",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "6 кВ",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "10 кВ",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего предназначено РУ-10 кВ?",
+      "Options": [
+        {
+          "Text": "Для хранения инструмента",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Для коммутации, распределения и защиты цепей соответствующего напряжения",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Только для измерения температуры",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Только для заземления здания",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего предназначено РУ-0,4 кВ?",
+      "Options": [
+        {
+          "Text": "Для распределения электроэнергии на стороне низкого напряжения",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Для охлаждения трансформатора",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Для подъёма активной части",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Для слива масла",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какой элемент трансформатора обеспечивает электрический ввод проводника через стенку бака?",
+      "Options": [
+        {
+          "Text": "Радиатор",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Ввод",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Опора",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Маслоуказатель",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего используется трансформаторное масло?",
+      "Options": [
+        {
+          "Text": "Только для смазки",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Только для очистки бака",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Для изоляции и отвода тепла",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Для регулирования частоты",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какой узел является частью активной части трансформатора?",
+      "Options": [
+        {
+          "Text": "Магнитопровод",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Дверь подстанции",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Кабельный лоток",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Светильник",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что входит в состав активной части трансформатора?",
+      "Options": [
+        {
+          "Text": "Магнитопровод и обмотки",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Только бак",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Только крышка",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Только вводы",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какое действие необходимо выполнить перед началом ремонтных работ?",
+      "Options": [
+        {
+          "Text": "Увеличить нагрузку",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Обеспечить безопасное состояние электроустановки",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Открыть слив масла",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Снять крышку",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего проверяют положение выключателя ВН?",
+      "Options": [
+        {
+          "Text": "Чтобы определить уровень масла",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Чтобы убедиться в требуемом состоянии коммутационного аппарата",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Чтобы проверить состояние обмоток",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Чтобы определить массу трансформатора",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Зачем контролировать отсутствие обратной подачи со стороны НН?",
+      "Options": [
+        {
+          "Text": "Для определения температуры масла",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Для исключения появления опасного напряжения через низковольтную сторону",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Для регулировки коэффициента трансформации",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Для проверки состояния краски",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего устанавливается заземление перед выполнением предусмотренных работ?",
+      "Options": [
+        {
+          "Text": "Для охлаждения трансформатора",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Для защиты от появления опасного напряжения",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Для ускорения слива масла",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Для уменьшения массы оборудования",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что обозначает знак «Не включать — работают люди»?",
+      "Options": [
+        {
+          "Text": "Разрешение на включение",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Запрет включения оборудования в период работ",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Информацию о температуре",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Указание уровня масла",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Каково назначение крышки трансформатора?",
+      "Options": [
+        {
+          "Text": "Закрывает верхнюю часть бака и служит местом установки ряда элементов",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Служит только декоративным элементом",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Является частью фундамента",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Используется как рабочий стол",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего перед снятием крышки необходимо отсоединить связанные с ней элементы?",
+      "Options": [
+        {
+          "Text": "Чтобы изменить мощность трансформатора",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Чтобы исключить повреждение соединений при подъёме крышки",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Чтобы повысить уровень масла",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Чтобы изменить частоту сети",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какое средство используется для подъёма тяжёлых элементов трансформатора в сценарии?",
+      "Options": [
+        {
+          "Text": "Мультиметр",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Таль",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Индикатор напряжения",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Отвёртка",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего используются стропы?",
+      "Options": [
+        {
+          "Text": "Для измерения температуры",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Для закрепления груза при подъёме",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Для проверки сопротивления",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Для слива масла",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что нужно проверить перед подъёмом активной части?",
+      "Options": [
+        {
+          "Text": "Только цвет бака",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Правильность строповки и надёжность зацепления",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Только освещение помещения",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Только давление в РУ",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что следует сделать непосредственно перед снятием крышки при наличии соединений, мешающих подъёму?",
+      "Options": [
+        {
+          "Text": "Увеличить скорость подъёма",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Убедиться, что все предусмотренные соединения отсоединены",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Включить трансформатор",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Добавить масло",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего выполняют слив масла перед операциями внутри бака?",
+      "Options": [
+        {
+          "Text": "Чтобы сделать доступными внутренние элементы трансформатора",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Чтобы повысить напряжение",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Чтобы проверить фазировку",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Чтобы включить НН",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Куда должно поступать масло при организованном сливе?",
+      "Options": [
+        {
+          "Text": "На пол помещения",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "В подготовленную ёмкость",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "В РУ-10 кВ",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "В кабельный лоток",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какова основная задача дефектации?",
+      "Options": [
+        {
+          "Text": "Изменить номинальную мощность",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Выявить неисправности и определить состояние элементов",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Повысить напряжение",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Перекрасить оборудование",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какой элемент может быть заменён в рамках учебного сценария ремонта?",
+      "Options": [
+        {
+          "Text": "Межслойная изоляционная прокладка обмотки НН",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Стена помещения",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Дверь РУ-10 кВ",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Кабельный лоток здания",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие элементы относятся к основному оборудованию виртуальной подстанции?",
+      "Options": [
+        {
+          "Text": "РУ-10 кВ",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "ТМГ-630/10",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "РУ-0,4 кВ",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Бытовой холодильник",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие элементы могут быть представлены отдельными интерактивными объектами трансформатора?",
+      "Options": [
+        {
+          "Text": "Крышка",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Вводы ВН",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Вводы НН",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Дорожный знак за пределами подстанции",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Что необходимо проверить перед подъёмом активной части?",
+      "Options": [
+        {
+          "Text": "Исправность тали",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Правильность строповки",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Надёжность зацепления",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Цвет спецодежды",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие действия относятся к электрической подготовке?",
+      "Options": [
+        {
+          "Text": "Отключение аппарата ВН",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Проверка отсутствия обратной подачи",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Установка предусмотренного заземления",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Снятие активной части",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие элементы могут использоваться при сливе масла?",
+      "Options": [
+        {
+          "Text": "Сливное устройство",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Шланг",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Приёмная ёмкость",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Таль",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие признаки могут учитываться при визуальной дефектации трансформатора?",
+      "Options": [
+        {
+          "Text": "Повреждение изоляции",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Следы течи",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Механические повреждения",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Цвет пола помещения",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие операции относятся к сборке после ремонта?",
+      "Options": [
+        {
+          "Text": "Установка отремонтированного узла",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Установка крышки",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Восстановление соединений",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Удаление всех элементов трансформатора",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Что может фиксировать тренажёр при ошибке обучающегося?",
+      "Options": [
+        {
+          "Text": "Номер шага",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Выполненное действие",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Тип ошибки",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Результат случайного физического измерения, которого система не выполняла",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие состояния может иметь интерактивный коммутационный аппарат в тренажёре?",
+      "Options": [
+        {
+          "Text": "Включён",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Отключён",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Состояние заземления, если это предусмотрено конкретным аппаратом",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "«Заполнен маслом»",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие данные целесообразно выводить на итоговом экране тестирования?",
+      "Options": [
+        {
+          "Text": "Количество правильных ответов",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Количество ошибок",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Процент выполнения",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Результат предыдущего случайного пользователя",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "ТМГ-630/10 является силовым масляным трансформатором.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Сторона НН трансформатора ТМГ-630/10 рассчитана на 10 кВ.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "РУ-10 кВ относится к высоковольтной части рассматриваемой подстанции.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "После отключения аппарата можно сразу начинать ремонт без выполнения предусмотренных проверок безопасности.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Проверка отсутствия обратной подачи со стороны НН является частью обеспечения безопасного состояния.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Трансформаторное масло выполняет только функцию охлаждения.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Магнитопровод относится к активной части трансформатора.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Таль предназначена для выполнения электрических измерений.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Перед подъёмом груза необходимо проверить правильность его строповки.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Ошибочные действия обучающегося могут учитываться в итоговой оценке тренажёра.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Matching",
+      "Text": "Установите соответствие между оборудованием и его назначением.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "ТМГ-630/10",
+          "RightText": "Преобразование уровня напряжения"
+        },
+        {
+          "LeftText": "РУ-10 кВ",
+          "RightText": "Коммутация цепей 10 кВ"
+        },
+        {
+          "LeftText": "РУ-0,4 кВ",
+          "RightText": "Распределение электроэнергии на стороне НН"
+        },
+        {
+          "LeftText": "Таль",
+          "RightText": "Подъём тяжёлых элементов"
+        }
+      ]
+    },
+    {
+      "Type": "Matching",
+      "Text": "Соотнесите элемент и его функцию.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Ввод",
+          "RightText": "Обеспечивает ввод электрического проводника через стенку"
+        },
+        {
+          "LeftText": "Магнитопровод",
+          "RightText": "Формирует магнитную цепь"
+        },
+        {
+          "LeftText": "Обмотка",
+          "RightText": "Обеспечивает преобразование энергии посредством электромагнитной связи"
+        },
+        {
+          "LeftText": "Бак",
+          "RightText": "Размещает и защищает внутренние элементы"
+        }
+      ]
+    },
+    {
+      "Type": "Matching",
+      "Text": "Соотнесите действие и его назначение.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Отключение выключателя",
+          "RightText": "Разрыв электрической цепи"
+        },
+        {
+          "LeftText": "Проверка отсутствия обратной подачи",
+          "RightText": "Исключение возможности появления напряжения с обратной стороны"
+        },
+        {
+          "LeftText": "Установка заземления",
+          "RightText": "Исключение опасного потенциала при предусмотренных условиях"
+        },
+        {
+          "LeftText": "Установка предупредительного знака",
+          "RightText": "Предупреждение о запрете включения"
+        }
+      ]
+    },
+    {
+      "Type": "Matching",
+      "Text": "Соотнесите оборудование и контрольный параметр.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Трансформатор",
+          "RightText": "Электрические и тепловые параметры"
+        },
+        {
+          "LeftText": "РУ-10 кВ",
+          "RightText": "Состояние коммутационного аппарата"
+        },
+        {
+          "LeftText": "РУ-0,4 кВ",
+          "RightText": "Состояние низковольтной коммутации"
+        },
+        {
+          "LeftText": "Таль",
+          "RightText": "Состояние грузоподъёмного механизма"
+        }
+      ]
+    },
+    {
+      "Type": "Matching",
+      "Text": "Соотнесите этап и основной результат.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Первичный осмотр",
+          "RightText": "Определение исходного технического состояния"
+        },
+        {
+          "LeftText": "Слив масла",
+          "RightText": "Удаление рабочей жидкости из бака"
+        },
+        {
+          "LeftText": "Дефектация",
+          "RightText": "Выявление неисправного элемента"
+        },
+        {
+          "LeftText": "Замена элемента",
+          "RightText": "Восстановление исправного состояния узла"
+        }
+      ]
+    },
+    {
+      "Type": "Matching",
+      "Text": "Соотнесите инструмент и выполняемую операцию.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Гаечный ключ",
+          "RightText": "Выполнение крепёжных операций"
+        },
+        {
+          "LeftText": "Мультиметр",
+          "RightText": "Электрические измерения"
+        },
+        {
+          "LeftText": "Таль",
+          "RightText": "Подъём груза"
+        },
+        {
+          "LeftText": "Стропы",
+          "RightText": "Закрепление груза для подъёма"
+        }
+      ]
+    },
+    {
+      "Type": "Matching",
+      "Text": "Соотнесите объект и состояние тренажёра.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Выключатель ВН",
+          "RightText": "Включён/отключён"
+        },
+        {
+          "LeftText": "Заземляющий аппарат",
+          "RightText": "Заземлено/разземлено"
+        },
+        {
+          "LeftText": "Крышка трансформатора",
+          "RightText": "Установлено/снято"
+        },
+        {
+          "LeftText": "Сливной вентиль",
+          "RightText": "Открыт/закрыт"
+        }
+      ]
+    },
+    {
+      "Type": "Matching",
+      "Text": "Соотнесите тип ошибки и пример.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Ошибка безопасности",
+          "RightText": "Выполнено запрещённое действие"
+        },
+        {
+          "LeftText": "Ошибка последовательности",
+          "RightText": "Попытка выполнить следующий шаг до завершения предыдущего"
+        },
+        {
+          "LeftText": "Ошибка инструмента",
+          "RightText": "Выбран не тот инструмент"
+        },
+        {
+          "LeftText": "Ошибка объекта",
+          "RightText": "Выбрано неверное интерактивное устройство"
+        }
+      ]
+    },
+    {
+      "Type": "Matching",
+      "Text": "Соотнесите раздел сценария и характер действия.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Электрическая подготовка",
+          "RightText": "Обеспечение безопасного электрического состояния"
+        },
+        {
+          "LeftText": "Слив масла",
+          "RightText": "Удаление масла"
+        },
+        {
+          "LeftText": "Извлечение активной части",
+          "RightText": "Подъём и извлечение внутреннего узла"
+        },
+        {
+          "LeftText": "Дефектация",
+          "RightText": "Анализ технического состояния"
+        }
+      ]
+    },
+    {
+      "Type": "Matching",
+      "Text": "Соотнесите объект и его положение после корректного действия.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Выключатель ВН",
+          "RightText": "Отключён"
+        },
+        {
+          "LeftText": "Заземление",
+          "RightText": "Установлено"
+        },
+        {
+          "LeftText": "Крышка",
+          "RightText": "Снята"
+        },
+        {
+          "LeftText": "Активная часть",
+          "RightText": "Извлечена из бака"
+        }
+      ]
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Расставьте в правильной последовательности основные действия электрической подготовки.",
+      "Options": [
+        {
+          "Text": "Проверить отсутствие обратной подачи со стороны НН",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Отключить выключатель ВН",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Проверить состояние выключателя",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Установить предусмотренное заземление",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Правильная последовательность начала работы с ячейкой РУ-10 кВ:",
+      "Options": [
+        {
+          "Text": "Открыть дверь ячейки",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Проверить положение выключателя",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Отключить выключатель",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Проверить индикацию отключения",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Правильная последовательность подготовки к сливу масла:",
+      "Options": [
+        {
+          "Text": "Подготовить ёмкость",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Подготовить сливное устройство",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Открыть слив",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Контролировать поток масла",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Правильная последовательность подготовки к подъёму активной части:",
+      "Options": [
+        {
+          "Text": "Проверить грузоподъёмное оборудование",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Установить стропы",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Проверить зацепление",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Выполнить пробный подъём",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Правильная последовательность снятия крышки в сценарии:",
+      "Options": [
+        {
+          "Text": "Подготовить грузоподъёмное средство",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Отсоединить предусмотренные соединения",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Проверить, что крышка свободна",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Поднять и снять крышку",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Правильная последовательность дефектации:",
+      "Options": [
+        {
+          "Text": "Осмотреть элемент",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Выявить признаки повреждения",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Определить характер дефекта",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Принять решение о ремонте или замене",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Правильная последовательность замены дефектной прокладки:",
+      "Options": [
+        {
+          "Text": "Разобрать соединение",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Извлечь дефектную прокладку",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Установить новую прокладку",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Собрать соединение",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Правильная последовательность контрольной проверки после сборки:",
+      "Options": [
+        {
+          "Text": "Проверить правильность сборки",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Проверить соединения",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Выполнить предусмотренный контроль",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Зафиксировать результат",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Правильная последовательность работы с ошибкой в тренажёре:",
+      "Options": [
+        {
+          "Text": "Выполнить действие",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Система проверяет действие",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Система фиксирует ошибку",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Обучающийся исправляет действие",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Последовательность полного учебного сценария ремонта:",
+      "Options": [
+        {
+          "Text": "Слив масла",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Электрическая подготовка",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Дефектация",
+          "Order": 4,
+          "Correct": false
+        },
+        {
+          "Text": "Снятие крышки",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как обозначается трансформатор мощностью 630 кВА с высшим напряжением 10 кВ?",
+      "Options": [],
+      "CorrectAnswer": "ТМГ-630/10",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Какое напряжение является номинальным напряжением стороны НН?",
+      "Options": [],
+      "CorrectAnswer": "0,4 кВ",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как называется устройство, предназначенное для подъёма активной части трансформатора?",
+      "Options": [],
+      "CorrectAnswer": "Таль",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как называется внутренняя часть трансформатора, включающая магнитопровод и обмотки?",
+      "Options": [],
+      "CorrectAnswer": "Активная часть",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как называется жидкий диэлектрик, используемый в масляном трансформаторе?",
+      "Options": [],
+      "CorrectAnswer": "Трансформаторное масло",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как называется операция определения технического состояния элементов после разборки и осмотра?",
+      "Options": [],
+      "CorrectAnswer": "Дефектация",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как называется устройство, через которое осуществляется электрическое подключение обмотки к внешней цепи через бак?",
+      "Options": [],
+      "CorrectAnswer": "Ввод",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как называется операция удаления масла из бака перед ремонтом?",
+      "Options": [],
+      "CorrectAnswer": "Слив масла",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как называется операция возвращения снятых конструктивных элементов на место после ремонта?",
+      "Options": [],
+      "CorrectAnswer": "Сборка",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как называется операция, выполняемая после обнаружения неисправного элемента для восстановления работоспособности?",
+      "Options": [],
+      "CorrectAnswer": "Замена дефектного элемента",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какое действие должно предшествовать попытке открыть доступ к внутренним элементам трансформатора?",
+      "Options": [
+        {
+          "Text": "Обеспечение безопасного состояния электроустановки",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Включение трансформатора",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Увеличение нагрузки",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Отключение освещения",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что произойдёт в корректно работающем тренажёре при попытке выполнить действие до наступления необходимого условия?",
+      "Options": [
+        {
+          "Text": "Система должна проигнорировать состояние и автоматически продолжить сценарий",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Система должна зарегистрировать недопустимое действие и не разрешить переход при невыполненном условии",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Система должна завершить курс",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Система должна удалить результаты тестирования",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего в тренажёре каждому интерактивному объекту присваивается уникальный идентификатор?",
+      "Options": [
+        {
+          "Text": "Только для изменения цвета объекта",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Для однозначной идентификации и управления состоянием объекта",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Для повышения напряжения",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Для расчёта массы трансформатора",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какое состояние наиболее правильно соответствует крышке трансформатора после её успешного снятия?",
+      "Options": [
+        {
+          "Text": "Установлена",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Заблокирована",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Снята и перемещена в заданную безопасную зону",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Включена",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Как система должна реагировать на попытку обучающегося выбрать неподходящий инструмент?",
+      "Options": [
+        {
+          "Text": "Зафиксировать ошибку и сообщить о неверном выборе",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Автоматически заменить инструмент",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Завершить обучение",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Игнорировать действие во всех режимах",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что должно измениться в 3D-сцене после успешного открытия сливного устройства?",
+      "Options": [
+        {
+          "Text": "Должно появиться визуализированное течение масла при выполнении условий сценария",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Должен включиться выключатель ВН",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Должна исчезнуть РУ-0,4 кВ",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Должна измениться частота сети",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какое условие является необходимым перед подъёмом активной части?",
+      "Options": [
+        {
+          "Text": "Надёжная установка и проверка грузозахватного оборудования",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Включение трансформатора",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Повышение напряжения НН",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Заполнение бака маслом до рабочего уровня",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что является правильной целью визуальной дефектации?",
+      "Options": [
+        {
+          "Text": "Найти признаки повреждения и определить дальнейшие действия",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Ускорить загрузку сцены",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Изменить модель помещения",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Изменить номинальную мощность трансформатора",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что является признаком корректной замены дефектной межслойной изоляционной прокладки?",
+      "Options": [
+        {
+          "Text": "Старая прокладка остаётся на месте",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Новая прокладка установлена в предусмотренное место без нарушения порядка сборки",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Прокладка заменяется случайным предметом",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Прокладка удаляется без установки новой",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего в тренажёре предусматривается система подсказок?",
+      "Options": [
+        {
+          "Text": "Для автоматического выполнения всего задания за обучающегося",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Для помощи в понимании следующего требуемого действия",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Для изменения правильных ответов",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Для отключения регистрации ошибок",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Если обучающийся отключил выключатель ВН, это автоматически означает, что все предусмотренные меры безопасного допуска уже выполнены.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "При моделировании ремонта состояние 3D-объекта должно изменяться в ответ на корректное действие обучающегося.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "При снятии активной части можно не проверять строповку, поскольку таль полностью исключает риск ошибки.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "После замены дефектного элемента необходимо восстановить предусмотренное конструкцией состояние соединения.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Результат тестирования должен сохраняться отдельно для каждой попытки обучающегося.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    }
+  ]
+}

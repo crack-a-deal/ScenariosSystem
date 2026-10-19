@@ -1,0 +1,9 @@
+
+{
+  "tcp": {
+    "port": 5000
+  },
+  "udpDiscovery": {
+    "port": 37020
+  }
+}

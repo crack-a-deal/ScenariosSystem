@@ -1,0 +1,106 @@
+using System;
+using System.Threading.Tasks;
+using UnityEngine;
+
+public class GroupFormPresenter
+{
+    public event Action GroupCreated;
+    public event Action GroupUpdated;
+    public event Action Closed;
+
+    private readonly GroupFormView _view;
+    private readonly IUserGroupService _service;
+
+    private FormMode _mode = FormMode.None;
+
+    public GroupFormPresenter(GroupFormView view, IUserGroupService groupService)
+    {
+        _view = view;
+        _service = groupService;
+
+        view.SubmitClicked += OnSubmitClicked;
+        view.CancelClicked += OnCancelClicked;
+    }
+
+    public void Dispose()
+    {
+        _view.SubmitClicked -= OnSubmitClicked;
+        _view.CancelClicked -= OnCancelClicked;
+    }
+
+    public void OpenForCreate()
+    {
+        _mode = FormMode.Create;
+        _view.Clear();
+        _view.gameObject.SetActive(true);
+    }
+
+    public void OpenForUpdate(UserGroupDto group)
+    {
+        _mode = FormMode.Update;
+        _view.SetNumberName(group.Number.ToString());
+        _view.SetCourse(group.Name);
+        _view.gameObject.SetActive(true);
+    }
+
+
+    private async void OnSubmitClicked()
+    {
+        Debug.Log($"SubmitClicked: mode = {_mode}");
+
+        if (_mode == FormMode.Create)
+        {
+            await CreateGroup();
+        }
+        else if (_mode == FormMode.Update)
+        {
+            await UpdateGroup();
+        }
+
+        _view.gameObject.SetActive(false);
+    }
+
+    private async Task CreateGroup()
+    {
+        Debug.Log("CreateGroup вызван");
+
+        string number = _view.GetNumberName().Trim();
+        string course = _view.GetCourse().Trim();
+
+        if (string.IsNullOrEmpty(number))
+        {
+            //view.ShowError("Введите имя.");
+            return;
+        }
+
+        if (string.IsNullOrEmpty(course))
+        {
+            //view.ShowError("Введите имя.");
+            return;
+        }
+
+        try
+        {
+            var group = new CreateUpdateUserGroupDto(course, int.Parse(number));
+            await _service.CreateAsync(group);
+            GroupCreated?.Invoke();
+
+        }
+        catch (Exception ex)
+        {
+            Debug.LogException(ex);
+        }
+    }
+
+    private async Task UpdateGroup()
+    {
+        throw new NotImplementedException();
+        GroupUpdated?.Invoke();
+    }
+
+    private void OnCancelClicked()
+    {
+        Closed?.Invoke();
+        _view.gameObject.SetActive(false);
+    }
+}

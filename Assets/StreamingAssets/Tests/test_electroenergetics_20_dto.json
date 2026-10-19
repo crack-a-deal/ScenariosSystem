@@ -1,0 +1,481 @@
+{
+  "Title": "Электроэнергетика — учебный тест",
+  "Questions": [
+    {
+      "Type": "SingleChoice",
+      "Text": "Каково основное назначение трансформатора ТМГ-630/10 в рассматриваемой подстанции?",
+      "Options": [
+        {
+          "Text": "Повышение напряжения с 0,4 до 10 кВ",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Понижение напряжения с 10 до 0,4 кВ",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Преобразование переменного тока в постоянный",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Компенсация реактивной мощности",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что обозначает число 630 в обозначении ТМГ-630/10?",
+      "Options": [
+        {
+          "Text": "Номинальное напряжение, кВ",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Массу масла, кг",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Номинальную мощность, кВА",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Число витков обмотки",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какое номинальное напряжение относится к стороне ВН трансформатора ТМГ-630/10?",
+      "Options": [
+        {
+          "Text": "0,23 кВ",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "0,4 кВ",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "6 кВ",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "10 кВ",
+          "Order": 4,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какое номинальное напряжение относится к стороне НН трансформатора?",
+      "Options": [
+        {
+          "Text": "0,4 кВ",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "1 кВ",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "6 кВ",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "10 кВ",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего предназначено РУ-10 кВ?",
+      "Options": [
+        {
+          "Text": "Для хранения инструмента",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Для коммутации, распределения и защиты цепей соответствующего напряжения",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Только для измерения температуры",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Только для заземления здания",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего используется трансформаторное масло?",
+      "Options": [
+        {
+          "Text": "Только для смазки",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Только для очистки бака",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Для изоляции и отвода тепла",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Для регулирования частоты",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие элементы относятся к основному оборудованию виртуальной подстанции?",
+      "Options": [
+        {
+          "Text": "РУ-10 кВ",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "ТМГ-630/10",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "РУ-0,4 кВ",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Бытовой холодильник",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие элементы могут быть представлены отдельными интерактивными объектами трансформатора?",
+      "Options": [
+        {
+          "Text": "Крышка",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Вводы ВН",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Вводы НН",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Дорожный знак за пределами подстанции",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Что необходимо проверить перед подъёмом активной части?",
+      "Options": [
+        {
+          "Text": "Исправность тали",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Правильность строповки",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Надёжность зацепления",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Цвет спецодежды",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие действия относятся к электрической подготовке?",
+      "Options": [
+        {
+          "Text": "Отключение аппарата ВН",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Проверка отсутствия обратной подачи",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Установка предусмотренного заземления",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Снятие активной части",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Matching",
+      "Text": "Установите соответствие между оборудованием и его назначением.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "ТМГ-630/10",
+          "RightText": "Преобразование уровня напряжения"
+        },
+        {
+          "LeftText": "РУ-10 кВ",
+          "RightText": "Коммутация цепей 10 кВ"
+        },
+        {
+          "LeftText": "РУ-0,4 кВ",
+          "RightText": "Распределение электроэнергии на стороне НН"
+        },
+        {
+          "LeftText": "Таль",
+          "RightText": "Подъём тяжёлых элементов"
+        }
+      ]
+    },
+    {
+      "Type": "Matching",
+      "Text": "Соотнесите элемент и его функцию.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Ввод",
+          "RightText": "Обеспечивает ввод электрического проводника через стенку"
+        },
+        {
+          "LeftText": "Магнитопровод",
+          "RightText": "Формирует магнитную цепь"
+        },
+        {
+          "LeftText": "Обмотка",
+          "RightText": "Обеспечивает преобразование энергии посредством электромагнитной связи"
+        },
+        {
+          "LeftText": "Бак",
+          "RightText": "Размещает и защищает внутренние элементы"
+        }
+      ]
+    },
+    {
+      "Type": "Matching",
+      "Text": "Соотнесите действие и его назначение.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Отключение выключателя",
+          "RightText": "Разрыв электрической цепи"
+        },
+        {
+          "LeftText": "Проверка отсутствия обратной подачи",
+          "RightText": "Исключение возможности появления напряжения с обратной стороны"
+        },
+        {
+          "LeftText": "Установка заземления",
+          "RightText": "Исключение опасного потенциала при предусмотренных условиях"
+        },
+        {
+          "LeftText": "Установка предупредительного знака",
+          "RightText": "Предупреждение о запрете включения"
+        }
+      ]
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Расставьте в правильной последовательности основные действия электрической подготовки.",
+      "Options": [
+        {
+          "Text": "Проверить отсутствие обратной подачи со стороны НН",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Отключить выключатель ВН",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Проверить состояние выключателя",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Установить предусмотренное заземление",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Правильная последовательность подготовки к подъёму активной части:",
+      "Options": [
+        {
+          "Text": "Проверить грузоподъёмное оборудование",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Установить стропы",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Проверить зацепление",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Выполнить пробный подъём",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как обозначается трансформатор мощностью 630 кВА с высшим напряжением 10 кВ?",
+      "Options": [],
+      "CorrectAnswer": "ТМГ-630/10",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Какое напряжение является номинальным напряжением стороны НН?",
+      "Options": [],
+      "CorrectAnswer": "0,4 кВ",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "ТМГ-630/10 является силовым масляным трансформатором.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Сторона НН трансформатора ТМГ-630/10 рассчитана на 10 кВ.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "После отключения аппарата можно сразу начинать ремонт без выполнения предусмотренных проверок безопасности.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    }
+  ]
+}

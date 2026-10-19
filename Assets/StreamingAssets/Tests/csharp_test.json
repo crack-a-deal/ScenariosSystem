@@ -1,0 +1,112 @@
+{
+  "title": "Тест по C# из JSON v2",
+  "questions": [
+    {
+      "type": "SingleChoice",
+      "text": "Какой тип используется для целого числа?",
+      "options": [
+        {
+          "text": "int",
+          "order": 1,
+          "correct": true
+        },
+        {
+          "text": "string",
+          "order": 2,
+          "correct": false
+        },
+        {
+          "text": "bool",
+          "order": 3,
+          "correct": false
+        },
+        {
+        	"text": "float",
+        	"order": 4,
+        	"correct": false
+        }
+      ]
+    },
+    {
+      "type": "MultipleChoice",
+      "text": "Какие являются типами C#? ВЕРСИЯ 2",
+      "options": [
+        {
+          "text": "int",
+          "order": 1,
+          "correct": true
+        },
+        {
+          "text": "string",
+          "order": 2,
+          "correct": true
+        },
+        {
+          "text": "boolean",
+          "order": 3,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "TrueFalse",
+      "text": "C# является объектно-ориентированным языком.",
+      "options": [
+        {
+          "text": "Да",
+          "order": 1,
+          "correct": true
+        },
+        {
+          "text": "Нет",
+          "order": 2,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "OpenAnswer",
+      "text": "Какой язык мы изучаем?",
+      "correctAnswer": "C#"
+    },
+    {
+      "type": "Ordering",
+      "text": "Расставьте этапы создания программы.",
+      "options": [
+        {
+          "text": "Написать код",
+          "order": 1,
+          "correct": false
+        },
+        {
+          "text": "Скомпилировать программу",
+          "order": 2,
+          "correct": false
+        },
+        {
+          "text": "Запустить программу",
+          "order": 3,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "Matching",
+      "text": "Соотнесите язык программирования с компанией или автором.",
+      "pairs": [
+        {
+          "leftText": "C#",
+          "rightText": "Microsoft"
+        },
+        {
+          "leftText": "Python",
+          "rightText": "Guido van Rossum"
+        },
+        {
+          "leftText": "Java",
+          "rightText": "Oracle"
+        }
+      ]
+    }
+  ]
+}
