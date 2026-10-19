@@ -228,3 +228,4 @@
 /Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/стропы_Normal.png filter=lfs diff=lfs merge=lfs -text
 /Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Комната[[:space:]]с[[:space:]]генератором_готовое.fbx filter=lfs diff=lfs merge=lfs -text
 /Assets/Scenes/SampleScene/Lightmap-0_comp_light.exr filter=lfs diff=lfs merge=lfs -text
+/Assets/Packages/Microsoft.EntityFrameworkCore.5.0.17/lib/netstandard2.1/Microsoft.EntityFrameworkCore.xml filter=lfs diff=lfs merge=lfs -text
