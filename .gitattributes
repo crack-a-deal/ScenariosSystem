@@ -1,27 +1,20 @@
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
-###############################################################################
 * text=auto
 
-###############################################################################
 # Set default behavior for command prompt diff.
 #
 # This is need for earlier builds of msysgit that does not have it on by
 # default for csharp files.
 # Note: This is only used by command line
-###############################################################################
 #*.cs     diff=csharp
-
-###############################################################################
 # Set the merge driver for project and solution files
-#
 # Merging from the command prompt will add diff markers to the files if there
 # are conflicts (Merging from VS is not affected by the settings below, in VS
 # the diff markers are never inserted). Diff markers may cause the following 
 # file extensions to fail to load in VS. An alternative would be to treat
 # these files as binary and thus will always conflict and require user
 # intervention with every merge. To do so, just uncomment the entries below
-###############################################################################
 #*.sln       merge=binary
 #*.csproj    merge=binary
 #*.vbproj    merge=binary
@@ -34,23 +27,16 @@
 #*.modelproj merge=binary
 #*.sqlproj   merge=binary
 #*.wwaproj   merge=binary
-
-###############################################################################
 # behavior for image files
-#
 # image files are treated as binary by default.
-###############################################################################
 #*.jpg   binary
 #*.png   binary
 #*.gif   binary
-
-###############################################################################
 # diff behavior for common document formats
 # 
 # Convert binary document formats to text before diffing them. This feature
 # is only available from the command line. Turn it on by uncommenting the 
 # entries below.
-###############################################################################
 #*.doc   diff=astextplain
 #*.DOC   diff=astextplain
 #*.docx  diff=astextplain
@@ -61,3 +47,184 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+/Assets/Content/mesh/boylernaya.fbm/BLOK_U_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BLOK_U_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BLOK_U_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BOILER.KORPUS_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BOILER.KORPUS_Metallic.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BOILER.KORPUS_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BOILER.KORPUS_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BOILER.KRAN_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BOILER.KRAN_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BOILER.KRAN_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BOILER.TRUBKI_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BOILER.VNUTRYANKA_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BOILER.VNUTRYANKA_Metallic.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BOILER.VNUTRYANKA_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BOILER_KREPLENIE_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BOILER_KREPLENIE_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/BOILER_KRISKA_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/CYLINDER.001_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/CYLINDER.001_Metallic.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/CYLINDER.001_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/CYLINDER_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/KRAN__KRUGLIY_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/KRAN__KRUGLIY_Metallic.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/NASOS_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/NASOS_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/NASOS_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/RASPREDELITEL_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/RASPREDELITEL_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/RASPREDELITEL_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/TRUBI.SCEPKA.001_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/TRUBI.SCEPKA.001_Metallic.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/TRUBI.SCEPKA.001_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/TRUBI.SCEPKA.001_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/TRUBI.SCEPKA_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/TRUBI_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/TRUBI_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/dekor_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/dekor_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/dekor_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/komnata_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/komnata_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/komnata_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/monometr_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/strelka_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/strelka_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbm/strelka_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh/boylernaya.fbx filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh_rasdel/CYLINDER.fbx filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/mesh_rasdel/CYLINDER1.fbx filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/dekor_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/dekor_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/dekor_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/untitled2_dekor_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/untitled2_dekor_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/untitled2_dekor_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BLOK_U_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BLOK_U_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BLOK_U_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BOILER.KORPUS_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BOILER.KORPUS_Metallic.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BOILER.KORPUS_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BOILER.KORPUS_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BOILER.KRAN_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BOILER.KRAN_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BOILER.KRAN_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BOILER.TRUBKI_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BOILER.VNUTRYANKA_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BOILER.VNUTRYANKA_Metallic.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BOILER.VNUTRYANKA_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BOILER_KREPLENIE_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BOILER_KREPLENIE_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/BOILER_KRISKA_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/CYLINDER.001_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/CYLINDER.001_Metallic.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/CYLINDER.001_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/CYLINDER_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/KRAN__KRUGLIY_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/KRAN__KRUGLIY_Metallic.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/NASOS_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/NASOS_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/NASOS_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/RASPREDELITEL_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/RASPREDELITEL_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/RASPREDELITEL_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/TRUBI.SCEPKA.001_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/TRUBI.SCEPKA.001_Metallic.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/TRUBI.SCEPKA.001_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/TRUBI.SCEPKA.001_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/TRUBI.SCEPKA_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/TRUBI_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/TRUBI_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/knopki_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/knopki_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/komnata_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/komnata_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/komnata_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/monometr_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/prokladka.001_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/prokladka.001_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/prokladka.001_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/strelka_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/strelka_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/blender/Новая[[:space:]]папка/strelka_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled1_komnata_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled1_komnata_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled1_komnata_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BLOK_U_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BLOK_U_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BLOK_U_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BOILER.KORPUS_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BOILER.KORPUS_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BOILER.KORPUS_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BOILER.KRAN_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BOILER.KRAN_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BOILER.KRAN_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BOILER.TRUBKI_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BOILER.TRUBKI_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BOILER.VINT_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BOILER.VNUTRYANKA_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BOILER.VNUTRYANKA_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BOILER.VNUTRYANKA_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BOILER_KREPLENIE_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BOILER_KREPLENIE_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_BOILER_KRISKA_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_CYLINDER.001_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_CYLINDER.001_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_CYLINDER_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_KRAN__KRUGLIY_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_KRAN__KRUGLIY_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_NASOS_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_NASOS_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_NASOS_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_RASPREDELITEL_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_RASPREDELITEL_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_RASPREDELITEL_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_TRUBI.SCEPKA.001_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_TRUBI.SCEPKA.001_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_TRUBI.SCEPKA.001_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_TRUBI.SCEPKA_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_TRUBI_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_TRUBI_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_knopki_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_knopki_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_monometr_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_monometr_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_prokladka.001_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_prokladka.001_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_prokladka.001_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_strelka_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_strelka_MaskMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/texture/uniti/untitled_strelka_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/Electrical[[:space:]]cabinet_albedo.jpg filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/Electrical[[:space:]]cabinet_normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/Katushka_Dam_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/Katushka_Norm_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/Lifting[[:space:]]slings_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/Perenosnaya_telezhka_tool_cart_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/Remontnaya[[:space:]]opora_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/Remontnaya[[:space:]]opora_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/Rittal_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/Rittal_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/TR_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/VRU2_Roughness.jpg filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/provoda_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/provoda_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/pump_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/pump_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/pump_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/shlang_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/Сердечник[[:space:]]ТР_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/Сердечник[[:space:]]ТР_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/Стены_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/Стены_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/барабан_катушки_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/барабан_катушки_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/верстак_BaseMap.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/верстак_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/масляный[[:space:]]бак_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Textures/стропы_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Локация[[:space:]]с[[:space:]]генератором/Комната[[:space:]]с[[:space:]]генератором_готовое.fbx filter=lfs diff=lfs merge=lfs -text
+/Assets/Scenes/SampleScene/Lightmap-0_comp_light.exr filter=lfs diff=lfs merge=lfs -text

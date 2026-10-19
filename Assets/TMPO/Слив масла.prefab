@@ -1,0 +1,1487 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &138182629972748288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4836337432741404860}
+  - component: {fileID: 3650018452465267085}
+  m_Layer: 0
+  m_Name: "38. \u041E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u0438\u0435
+    \u0441\u043B\u0438\u0432\u043D\u043E\u0439 \u0442\u043E\u0447\u043A\u0438"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4836337432741404860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138182629972748288}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3400967614227501770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3650018452465267085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138182629972748288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccc7f92561b9e468c8485bc2e69010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Step
+  Id: 2
+  Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
+    \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
+  _completionCondition:
+    rid: 1332834693188419852
+  _onEnter: []
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0417\u043E\u043D\u0430 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+            \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044F"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetInspectState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onComplete: []
+  _onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _hint: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043D\u0438\u0436\u043D\u044E\u044E
+    \u0442\u043E\u0447\u043A\u0443, \u043F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u043D\u0443\u044E
+    \u0434\u043B\u044F \u0443\u0434\u0430\u043B\u0435\u043D\u0438\u044F \u043C\u0430\u0441\u043B\u0430
+    \u0438\u0437 \u0431\u0430\u043A\u0430"
+  _errors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1332834693188419852
+      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _objects:
+        - {fileID: 0}
+        _requiredState: 1
+        _requiredCount: 1
+--- !u!1 &998311352966718202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224619159260167498}
+  - component: {fileID: 3875131566052284944}
+  m_Layer: 0
+  m_Name: "42. \u041F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430 \u0441\u043B\u0438\u0432\u043D\u043E\u0433\u043E
+    \u0448\u043B\u0430\u043D\u0433\u0430"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &224619159260167498
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998311352966718202}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3400967614227501770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3875131566052284944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998311352966718202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccc7f92561b9e468c8485bc2e69010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Step
+  Id: 2
+  Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
+    \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
+  _completionCondition:
+    rid: 1332834693188419852
+  _onEnter: []
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0417\u043E\u043D\u0430 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+            \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044F"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetInspectState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onComplete: []
+  _onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _hint: "\u0412\u043E\u0437\u044C\u043C\u0438\u0442\u0435 \u0441\u043B\u0438\u0432\u043D\u043E\u0439
+    \u0448\u043B\u0430\u043D\u0433. \u041F\u0440\u043E\u0432\u0435\u0440\u044C\u0442\u0435
+    \u043E\u0431\u0430 \u043A\u043E\u043D\u0446\u0430 \u0438 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u044C\u0442\u0435
+    \u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u044F"
+  _errors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1332834693188419852
+      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _objects:
+        - {fileID: 0}
+        _requiredState: 1
+        _requiredCount: 1
+--- !u!1 &1227220612998535225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3728149132104304705}
+  - component: {fileID: 4530170571403636880}
+  m_Layer: 0
+  m_Name: "39. \u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043B\u0438\u0432\u043D\u043E\u0433\u043E
+    \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3728149132104304705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227220612998535225}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3400967614227501770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4530170571403636880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227220612998535225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccc7f92561b9e468c8485bc2e69010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Step
+  Id: 3
+  Title: "\u041E\u0441\u043C\u043E\u0442\u0440 \u0442\u043E\u043A\u043E\u043F\u043E\u0434\u0432\u043E\u0434\u043E\u0432"
+  _completionCondition:
+    rid: 1332834693188419852
+  _onEnter: []
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _onComplete: []
+  _onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _hint: "\u041E\u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435 \u0441\u043B\u0438\u0432\u043D\u043E\u0435
+    \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u043E \u0438 \u0443\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044C,
+    \u0447\u0442\u043E \u0437\u0430\u043F\u043E\u0440\u043D\u044B\u0439 \u044D\u043B\u0435\u043C\u0435\u043D\u0442
+    \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0432 \u0437\u0430\u043A\u0440\u044B\u0442\u043E\u043C
+    \u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0438"
+  _errors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1332834693188419852
+      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _objects:
+        - {fileID: 0}
+        - {fileID: 0}
+        _requiredState: 1
+        _requiredCount: 2
+--- !u!1 &1989017717179127941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3400967614227501770}
+  - component: {fileID: 7077798777064417038}
+  m_Layer: 0
+  m_Name: "\u0421\u043B\u0438\u0432 \u043C\u0430\u0441\u043B\u0430"
+  m_TagString: Untagged
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3400967614227501770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989017717179127941}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5327826399251109318}
+  - {fileID: 4836337432741404860}
+  - {fileID: 3728149132104304705}
+  - {fileID: 1615332536212686735}
+  - {fileID: 3539105080913684691}
+  - {fileID: 224619159260167498}
+  - {fileID: 4748308277913862286}
+  - {fileID: 5468413780993493345}
+  - {fileID: 1719324451764196}
+  - {fileID: 4638613865340043318}
+  - {fileID: 3722937323174700389}
+  - {fileID: 8530329659770250751}
+  - {fileID: 4590649896566640195}
+  - {fileID: 2309070963242709160}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7077798777064417038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989017717179127941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1163c4ae13eb8a8418f3253e6b22a15d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Scenario
+  _id: 2
+  _title: "\u0421\u043B\u0438\u0432 \u043C\u0430\u0441\u043B\u0430"
+  _steps:
+  - {fileID: 3781710338768883645}
+  - {fileID: 3650018452465267085}
+  - {fileID: 4530170571403636880}
+  - {fileID: 182526605775279823}
+  - {fileID: 4101486919235874472}
+  - {fileID: 3875131566052284944}
+  - {fileID: 2406954164917319183}
+  - {fileID: 1380265280341093105}
+  - {fileID: 3383772604612866973}
+  - {fileID: 3142947536878081691}
+  - {fileID: 3829884788049503161}
+  - {fileID: 640922950241907931}
+  - {fileID: 7375348882514388434}
+  - {fileID: 4823286803076961932}
+--- !u!1 &2057429556135741544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5468413780993493345}
+  - component: {fileID: 1380265280341093105}
+  m_Layer: 0
+  m_Name: "44. \u041F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435
+    \u0448\u043B\u0430\u043D\u0433\u0430 \u043A \u0441\u043B\u0438\u0432\u043D\u043E\u043C\u0443
+    \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0443"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5468413780993493345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057429556135741544}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3400967614227501770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1380265280341093105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057429556135741544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccc7f92561b9e468c8485bc2e69010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Step
+  Id: 2
+  Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
+    \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
+  _completionCondition:
+    rid: 1332834693188419852
+  _onEnter: []
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0417\u043E\u043D\u0430 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+            \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044F"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetInspectState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onComplete: []
+  _onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _hint: "\u041F\u043E\u0434\u0432\u0435\u0434\u0438\u0442\u0435 \u043F\u0435\u0440\u0432\u044B\u0439
+    \u043A\u043E\u043D\u0435\u0446 \u0448\u043B\u0430\u043D\u0433\u0430 \u043A \u0441\u043B\u0438\u0432\u043D\u043E\u043C\u0443
+    \u043F\u0430\u0442\u0440\u0443\u0431\u043A\u0443 \u0438 \u0437\u0430\u0444\u0438\u043A\u0441\u0438\u0440\u0443\u0439\u0442\u0435
+    \u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435"
+  _errors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1332834693188419852
+      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _objects:
+        - {fileID: 0}
+        _requiredState: 1
+        _requiredCount: 1
+--- !u!1 &3661034923855332919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4638613865340043318}
+  - component: {fileID: 3142947536878081691}
+  m_Layer: 0
+  m_Name: "46. \u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043B\u0438\u0432\u043D\u043E\u0439
+    \u0441\u0438\u0441\u0442\u0435\u043C\u044B"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4638613865340043318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3661034923855332919}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3400967614227501770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3142947536878081691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3661034923855332919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccc7f92561b9e468c8485bc2e69010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Step
+  Id: 2
+  Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
+    \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
+  _completionCondition:
+    rid: 1332834693188419852
+  _onEnter: []
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0417\u043E\u043D\u0430 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+            \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044F"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetInspectState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onComplete: []
+  _onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _hint: "\u041F\u0440\u043E\u0432\u0435\u0440\u044C\u0442\u0435 \u0432\u0435\u0441\u044C
+    \u0441\u043B\u0438\u0432\u043D\u043E\u0439 \u0442\u0440\u0430\u043A\u0442 \u043E\u0442
+    \u0431\u0430\u043A\u0430 \u0434\u043E \u0451\u043C\u043A\u043E\u0441\u0442\u0438.
+    \u0417\u0430\u043F\u043E\u0440\u043D\u044B\u0439 \u044D\u043B\u0435\u043C\u0435\u043D\u0442
+    \u0434\u043E\u043B\u0436\u0435\u043D \u043E\u0441\u0442\u0430\u0432\u0430\u0442\u044C\u0441\u044F
+    \u0437\u0430\u043A\u0440\u044B\u0442\u044B\u043C \u0434\u043E \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0438\u044F
+    \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0438"
+  _errors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1332834693188419852
+      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _objects:
+        - {fileID: 0}
+        - {fileID: 0}
+        _requiredState: 1
+        _requiredCount: 2
+--- !u!1 &3832513360073473365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8530329659770250751}
+  - component: {fileID: 640922950241907931}
+  m_Layer: 0
+  m_Name: "48. \u0421\u043B\u0438\u0432 \u043C\u0430\u0441\u043B\u0430"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8530329659770250751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3832513360073473365}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3400967614227501770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &640922950241907931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3832513360073473365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccc7f92561b9e468c8485bc2e69010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Step
+  Id: 2
+  Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
+    \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
+  _completionCondition:
+    rid: 1332834693188419852
+  _onEnter: []
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0417\u043E\u043D\u0430 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+            \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044F"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetMarkedState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onComplete: []
+  _onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _hint: "\u041A\u043E\u043D\u0442\u0440\u043E\u043B\u0438\u0440\u0443\u0439\u0442\u0435
+    \u0437\u0430\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u0435 \u043F\u0440\u0438\u0451\u043C\u043D\u043E\u0439
+    \u0451\u043C\u043A\u043E\u0441\u0442\u0438. \u041D\u0435 \u0434\u043E\u043F\u0443\u0441\u043A\u0430\u0439\u0442\u0435
+    \u043F\u0440\u0435\u0432\u044B\u0448\u0435\u043D\u0438\u044F \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u043E\u0433\u043E
+    \u0434\u043E\u043F\u0443\u0441\u0442\u0438\u043C\u043E\u0433\u043E \u0443\u0440\u043E\u0432\u043D\u044F"
+  _errors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1332834693188419852
+      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _objects:
+        - {fileID: 0}
+        _requiredState: 2
+        _requiredCount: 1
+--- !u!1 &3968069330581801229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4748308277913862286}
+  - component: {fileID: 2406954164917319183}
+  m_Layer: 0
+  m_Name: "43. \u041F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430 \u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0439"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4748308277913862286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3968069330581801229}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3400967614227501770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2406954164917319183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3968069330581801229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccc7f92561b9e468c8485bc2e69010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Step
+  Id: 2
+  Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
+    \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
+  _completionCondition:
+    rid: 1332834693188419852
+  _onEnter: []
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0417\u043E\u043D\u0430 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+            \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044F"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetInspectState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onComplete: []
+  _onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _hint: "\u041F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u044C\u0442\u0435 \u0441\u043E\u0435\u0434\u0438\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435
+    \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u044C\u0442\u0435
+    \u043D\u0430\u043B\u0438\u0447\u0438\u0435 \u0443\u043F\u043B\u043E\u0442\u043D\u0435\u043D\u0438\u044F
+    \u043F\u0435\u0440\u0435\u0434 \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435\u043C
+    \u0448\u043B\u0430\u043D\u0433\u0430"
+  _errors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1332834693188419852
+      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _objects:
+        - {fileID: 0}
+        _requiredState: 1
+        _requiredCount: 1
+--- !u!1 &5114384091713766370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3722937323174700389}
+  - component: {fileID: 3829884788049503161}
+  m_Layer: 0
+  m_Name: "47. \u041E\u0442\u043A\u0440\u044B\u0442\u0438\u0435 \u0437\u0430\u043F\u043E\u0440\u043D\u043E\u0433\u043E
+    \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3722937323174700389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5114384091713766370}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3400967614227501770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3829884788049503161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5114384091713766370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccc7f92561b9e468c8485bc2e69010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Step
+  Id: 2
+  Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
+    \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
+  _completionCondition:
+    rid: 1332834693188419852
+  _onEnter: []
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0417\u043E\u043D\u0430 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+            \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044F"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetInspectState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onComplete: []
+  _onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AnimationController, Assembly-CSharp
+        m_MethodName: PlayAnimation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: maslo_animation
+          m_BoolArgument: 0
+        m_CallState: 2
+  _hint: "\u041E\u0442\u043A\u0440\u043E\u0439\u0442\u0435 \u0437\u0430\u043F\u043E\u0440\u043D\u044B\u0439
+    \u044D\u043B\u0435\u043C\u0435\u043D\u0442 \u043F\u043E\u0441\u0442\u0435\u043F\u0435\u043D\u043D\u043E.
+    \u041F\u043E\u0441\u043B\u0435 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F
+    \u043F\u0440\u043E\u043A\u043E\u043D\u0442\u0440\u043E\u043B\u0438\u0440\u0443\u0439\u0442\u0435
+    \u043D\u0430\u0447\u0430\u043B\u043E \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F
+    \u043C\u0430\u0441\u043B\u0430"
+  _errors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1332834693188419852
+      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _objects:
+        - {fileID: 0}
+        _requiredState: 1
+        _requiredCount: 1
+--- !u!1 &5784454540615204609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5327826399251109318}
+  - component: {fileID: 3781710338768883645}
+  m_Layer: 0
+  m_Name: "37. \u041F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u044F"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5327826399251109318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5784454540615204609}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3400967614227501770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3781710338768883645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5784454540615204609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccc7f92561b9e468c8485bc2e69010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Step
+  Id: 1
+  Title: "\u041F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u044F"
+  _completionCondition:
+    rid: 1332834693188419851
+  _onEnter:
+  - rid: 1332834693188419846
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _onComplete:
+  - rid: 1332834693188419848
+  _onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _hint: "\u041F\u0435\u0440\u0435\u0434 \u043D\u0430\u0447\u0430\u043B\u043E\u043C
+    \u0441\u043B\u0438\u0432\u0430 \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E
+    \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C \u0432\u0435\u0441\u044C
+    \u0441\u043B\u0438\u0432\u043D\u043E\u0439 \u0442\u0440\u0430\u043A\u0442. \u041D\u0435
+    \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0439\u0442\u0435 \u0441\u043B\u0438\u0432\u043D\u043E\u0439
+    \u044D\u043B\u0435\u043C\u0435\u043D\u0442 \u0434\u043E \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F
+    \u0448\u043B\u0430\u043D\u0433\u0430 \u0438 \u0451\u043C\u043A\u043E\u0441\u0442\u0438+"
+  _errors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1332834693188419846
+      type: {class: ShowMessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        _message: "\u041F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C
+          \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u0441\u043B\u0438\u0432
+          \u043C\u0430\u0441\u043B\u0430 \u0438\u0437 \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430
+          \u0422\u041C\u0413-630/10 \u0432 \u043F\u0440\u0438\u0451\u043C\u043D\u0443\u044E
+          \u0451\u043C\u043A\u043E\u0441\u0442\u044C"
+        _messageBox: {fileID: 0}
+        _messageLabel: {fileID: 0}
+    - rid: 1332834693188419848
+      type: {class: HideMessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        _messageBox: {fileID: 0}
+        _messageLabel: {fileID: 0}
+    - rid: 1332834693188419851
+      type: {class: EventCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _eventType: 1
+        _source: {fileID: 0}
+--- !u!1 &6577728703680762447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1615332536212686735}
+  - component: {fileID: 182526605775279823}
+  m_Layer: 0
+  m_Name: "40. \u041F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430 \u043F\u0440\u0438\u0435\u043C\u043E\u0439
+    \u0435\u043C\u043A\u043E\u0441\u0442\u0438"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1615332536212686735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6577728703680762447}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3400967614227501770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182526605775279823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6577728703680762447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccc7f92561b9e468c8485bc2e69010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Step
+  Id: 2
+  Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
+    \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
+  _completionCondition:
+    rid: 1332834693188419852
+  _onEnter: []
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0417\u043E\u043D\u0430 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+            \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044F"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetInspectState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onComplete: []
+  _onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _hint: "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u043F\u0440\u0438\u0451\u043C\u043D\u0443\u044E
+    \u0451\u043C\u043A\u043E\u0441\u0442\u044C, \u043F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u043D\u0443\u044E
+    \u0434\u043B\u044F \u0441\u0431\u043E\u0440\u0430 \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u043D\u043E\u0433\u043E
+    \u043C\u0430\u0441\u043B\u0430"
+  _errors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1332834693188419852
+      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _objects:
+        - {fileID: 0}
+        _requiredState: 1
+        _requiredCount: 1
+--- !u!1 &6584891594940609048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3539105080913684691}
+  - component: {fileID: 4101486919235874472}
+  m_Layer: 0
+  m_Name: "41. \u0423\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u0435\u043C\u043A\u043E\u0441\u0442\u0438"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3539105080913684691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6584891594940609048}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3400967614227501770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4101486919235874472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6584891594940609048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccc7f92561b9e468c8485bc2e69010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Step
+  Id: 2
+  Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
+    \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
+  _completionCondition:
+    rid: 1332834693188419852
+  _onEnter: []
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0417\u043E\u043D\u0430 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+            \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044F"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetInspectState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onComplete: []
+  _onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AnimationController, Assembly-CSharp
+        m_MethodName: PlayAnimation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: emkost-perenos
+          m_BoolArgument: 0
+        m_CallState: 2
+  _hint: "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0435 \u0451\u043C\u043A\u043E\u0441\u0442\u044C
+    \u0432 \u043F\u0440\u0435\u0434\u0443\u0441\u043C\u043E\u0442\u0440\u0435\u043D\u043D\u0443\u044E
+    \u0437\u043E\u043D\u0443 \u0438 \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u044C\u0442\u0435
+    \u0443\u0434\u043E\u0431\u043D\u043E\u0435 \u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435
+    \u0434\u043B\u044F \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F
+    \u0441\u043B\u0438\u0432\u043D\u043E\u0433\u043E \u0448\u043B\u0430\u043D\u0433\u0430"
+  _errors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1332834693188419852
+      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _objects:
+        - {fileID: 0}
+        _requiredState: 1
+        _requiredCount: 1
+--- !u!1 &7594989647070392929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2309070963242709160}
+  - component: {fileID: 4823286803076961932}
+  m_Layer: 0
+  m_Name: "50. \u0418\u0442\u043E\u0433\u043E\u0432\u044B\u0439 \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044C
+    \u0441\u043B\u0438\u0432\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2309070963242709160
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7594989647070392929}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3400967614227501770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4823286803076961932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7594989647070392929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccc7f92561b9e468c8485bc2e69010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Step
+  Id: 2
+  Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
+    \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
+  _completionCondition:
+    rid: 1332834693188419852
+  _onEnter: []
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0417\u043E\u043D\u0430 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+            \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044F"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetInspectState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onComplete: []
+  _onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _hint: "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u0435 \u0438\u0442\u043E\u0433\u043E\u0432\u044B\u0439
+    \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044C \u0441\u043B\u0438\u0432\u043D\u043E\u0439
+    \u0441\u0438\u0441\u0442\u0435\u043C\u044B. \u0423\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044C,
+    \u0447\u0442\u043E \u0441\u043B\u0438\u0432 \u043F\u0440\u0435\u043A\u0440\u0430\u0449\u0451\u043D,
+    \u0437\u0430\u043F\u043E\u0440\u043D\u044B\u0439 \u044D\u043B\u0435\u043C\u0435\u043D\u0442
+    \u0437\u0430\u043A\u0440\u044B\u0442 \u0438 \u0432 \u0437\u043E\u043D\u0435 \u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0439
+    \u043E\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442 \u0443\u0442\u0435\u0447\u043A\u0430"
+  _errors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1332834693188419852
+      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _objects:
+        - {fileID: 0}
+        - {fileID: 0}
+        _requiredState: 1
+        _requiredCount: 2
+--- !u!1 &8179733815259871491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4590649896566640195}
+  - component: {fileID: 7375348882514388434}
+  m_Layer: 0
+  m_Name: "49. \u0417\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0438\u0435 \u0441\u043B\u0438\u0432\u0430"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4590649896566640195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8179733815259871491}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3400967614227501770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7375348882514388434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8179733815259871491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccc7f92561b9e468c8485bc2e69010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Step
+  Id: 2
+  Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
+    \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
+  _completionCondition:
+    rid: 1332834693188419852
+  _onEnter: []
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0417\u043E\u043D\u0430 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+            \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044F"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetMarkedState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onComplete: []
+  _onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _hint: "\u0417\u0430\u043A\u0440\u043E\u0439\u0442\u0435 \u0437\u0430\u043F\u043E\u0440\u043D\u044B\u0439
+    \u044D\u043B\u0435\u043C\u0435\u043D\u0442 \u0438 \u0443\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044C,
+    \u0447\u0442\u043E \u043F\u043E\u0442\u043E\u043A \u043C\u0430\u0441\u043B\u0430
+    \u043F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E \u043F\u0440\u0435\u043A\u0440\u0430\u0442\u0438\u043B\u0441\u044F"
+  _errors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1332834693188419852
+      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _objects:
+        - {fileID: 0}
+        _requiredState: 2
+        _requiredCount: 1
+--- !u!1 &8400940264938553755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1719324451764196}
+  - component: {fileID: 3383772604612866973}
+  m_Layer: 0
+  m_Name: "45. \u041F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435
+    \u0448\u043B\u0430\u043D\u0433\u0430 \u043A \u0451\u043C\u043A\u043E\u0441\u0442\u0438"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1719324451764196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400940264938553755}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3400967614227501770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3383772604612866973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400940264938553755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccc7f92561b9e468c8485bc2e69010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Step
+  Id: 2
+  Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
+    \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
+  _completionCondition:
+    rid: 1332834693188419852
+  _onEnter: []
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0417\u043E\u043D\u0430 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+            \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044F"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetInspectState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onComplete: []
+  _onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  _hint: "\u041F\u043E\u0434\u0432\u0435\u0434\u0438\u0442\u0435 \u043F\u0435\u0440\u0432\u044B\u0439
+    \u043A\u043E\u043D\u0435\u0446 \u0448\u043B\u0430\u043D\u0433\u0430 \u043A \u0441\u043B\u0438\u0432\u043D\u043E\u043C\u0443
+    \u043F\u0430\u0442\u0440\u0443\u0431\u043A\u0443 \u0438 \u0437\u0430\u0444\u0438\u043A\u0441\u0438\u0440\u0443\u0439\u0442\u0435
+    \u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435"
+  _errors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1332834693188419852
+      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _objects:
+        - {fileID: 0}
+        _requiredState: 1
+        _requiredCount: 1
