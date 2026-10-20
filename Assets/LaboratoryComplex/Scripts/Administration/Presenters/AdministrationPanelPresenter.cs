@@ -3,12 +3,11 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
-using Zenject;
 
 public class AdministrationPanelPresenter : IDisposable
 {
     private const int BROADCAST_INTERVAL = 2000;
-    
+
     public event Action BackClicked;
 
     private readonly AdministrationPanelView _view;
@@ -48,74 +47,95 @@ public class AdministrationPanelPresenter : IDisposable
     public async Task ShowAsync()
     {
         if (_serverCts != null)
-            throw new InvalidOperationException("Administration panel is already active.");
+            throw new InvalidOperationException(
+                "Administration panel is already active.");
 
         _view.gameObject.SetActive(true);
 
-        if (_serverProvider.Instance != null)
-            return;
+        TcpServer existingServer = _serverProvider.Instance;
 
+        if (existingServer != null)
+        {
+            if (existingServer.Started)
+                return;
+
+            await existingServer.StopAsync();
+            _serverProvider.Clear();
+        }
 
         _tcpServer = _networkingFactory.Create();
-        _serverProvider.Set(_tcpServer);
-
         _serverCts = new CancellationTokenSource();
-        _broadcastCts = new CancellationTokenSource();
 
-        _serverTask = StartServerAsync(_serverCts.Token);
-
-        ServerDiscoveryMessage discoveryMessage = new ServerDiscoveryMessage
+        try
         {
-            TcpPort = _tcpServer.Port
-        };
+            Debug.Log($"Starting TCP server on port {_tcpServer.Port}...");
 
-        string json = _messageSerializer.Serialize(discoveryMessage);
+            await _tcpServer.StartAsync(_serverCts.Token);
+            Debug.Log($"Server status {_tcpServer.Started} {_tcpServer.Port}");
 
-        _broadcastTask = BroadcastLoopAsync(json, _broadcastCts.Token);
+            _serverProvider.Set(_tcpServer);
 
-        await Task.CompletedTask;
+            ServerDiscoveryMessage discoveryMessage =
+                new ServerDiscoveryMessage
+                {
+                    TcpPort = _tcpServer.Port
+                };
+
+            string json = _messageSerializer.Serialize(discoveryMessage);
+
+            _broadcastCts = new CancellationTokenSource();
+
+            _broadcastTask = BroadcastLoopAsync(
+                json,
+                _broadcastCts.Token);
+        }
+        catch (Exception exception)
+        {
+            Debug.LogException(exception);
+
+            _serverCts.Cancel();
+
+            await _tcpServer.StopAsync();
+
+            _serverProvider.Clear();
+
+            _tcpServer = null;
+
+            _serverCts.Dispose();
+            _serverCts = null;
+
+            throw;
+        }
     }
 
     public async Task HideAsync()
     {
         _view.gameObject.SetActive(false);
 
-        if (_serverCts == null)
-            return;
+        TcpServer server = _tcpServer;
 
-        _broadcastCts.Cancel();
-        _serverCts.Cancel();
+        _broadcastCts?.Cancel();
+        _serverCts?.Cancel();
 
-        _tcpServer?.StopAsync();
-
-        await AwaitTaskAsync(_broadcastTask);
-        await AwaitTaskAsync(_serverTask);
-
-        _broadcastCts.Dispose();
-        _serverCts.Dispose();
-
-        _broadcastCts = null;
-        _serverCts = null;
-        _broadcastTask = null;
-        _serverTask = null;
-        _tcpServer = null;
-    }
-
-    private async Task StartServerAsync(CancellationToken cancellationToken)
-    {
         try
         {
-            Debug.Log($"Starting TCP server on port {_tcpServer.Port}...");
-            await _tcpServer.StartAsync(cancellationToken);
-            Debug.Log($"Server status {_tcpServer.Started}");
+            if (server != null)
+                await server.StopAsync();
+
+            await AwaitTaskAsync(_broadcastTask);
         }
-        catch (OperationCanceledException)
+        finally
         {
-            Debug.Log("TCP server stopped.");
-        }
-        catch (Exception exception)
-        {
-            Debug.LogException(exception);
+            if (server != null)
+                _serverProvider.Clear();
+
+            _broadcastCts?.Dispose();
+            _serverCts?.Dispose();
+
+            _broadcastCts = null;
+            _serverCts = null;
+            _broadcastTask = null;
+            _tcpServer = null;
         }
     }
 
@@ -127,7 +147,7 @@ public class AdministrationPanelPresenter : IDisposable
             {
                 cancellationToken.ThrowIfCancellationRequested();
 
-                //Debug.Log("BROADCAST");
+                Debug.Log("BROADCAST");
                 await _discoveryService.BroadcastServerAsync(json, cancellationToken);
                 await Task.Delay(BROADCAST_INTERVAL, cancellationToken);
             }

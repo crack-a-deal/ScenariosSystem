@@ -53,7 +53,7 @@ public class TeacherNetworkingFactory
             new SubmitTestRequestHandler(_answerSaveService, _testSession, _testResultService));
 
         TcpServer server = new TcpServer(
-            _config.tcp.port,
+            0,
             _serializer,
             dispatcher,
             _clientRegistry);

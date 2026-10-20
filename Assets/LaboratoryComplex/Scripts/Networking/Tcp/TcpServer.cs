@@ -62,14 +62,17 @@ namespace Networking
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            if (_started)
+            if (_runCts != null || _started)
                 throw new InvalidOperationException("Server is already running.");
+
+            cancellationToken.ThrowIfCancellationRequested();
 
             _runCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
 
             try
             {
                 _listener.Start();
+                _port = ((IPEndPoint)_listener.LocalEndpoint).Port;
                 _started = true;
                 _acceptTask = AcceptLoopAsync(_runCts.Token);
 

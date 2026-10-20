@@ -186,9 +186,13 @@ public class StudentFormPresenter
         try
         {
             var profileUpdate = new CreateUpdateUserProfileDto(_currentUser.UserAccountId, firstName, lastName, patronymic, groupId.Value);
-            var accountUpdate = new CreateUpdateUserAccountDto(login, password);
             await _profileService.UpdateAsync(_currentUser.Id, profileUpdate);
-            await _accountService.UpdateAsync(_currentUser.UserAccountId, accountUpdate);
+            
+            if (!string.IsNullOrEmpty(password))
+            {
+                var accountUpdate = new CreateUpdateUserAccountDto(login, password);
+                await _accountService.UpdateAsync(_currentUser.UserAccountId, accountUpdate);
+            }
 
             StudentUpdated?.Invoke();
         }
