@@ -14,11 +14,11 @@ public class ScenarioStateProvider : MonoBehaviour
     private ScenarioEventBus _eventBus;
 
     [SerializeField]
-    private Outline _highlightVisual;
+    private QuikOutline _highlightVisual;
 
     private void Awake()
     {
-        _highlightVisual = GetComponent<Outline>();
+        _highlightVisual = GetComponent<QuikOutline>();
         SetHighlighted(false);
     }
 

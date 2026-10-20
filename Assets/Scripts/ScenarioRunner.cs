@@ -27,7 +27,7 @@ public class ScenarioRunner : MonoBehaviour
         _eventBus.EventPublished += ProcessEvent;
     }
 
-    public void Start()
+    public void StartScenario()
     {
         Debug.Log($"Starting scenario: {_scenario.Title}");
         _currentStepIndex = 0;

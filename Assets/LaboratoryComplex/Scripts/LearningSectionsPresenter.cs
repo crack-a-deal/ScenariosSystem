@@ -82,6 +82,12 @@ public class TeacherLearningSectionsPresenter : LearningSectionsPresenter
         _view.TestingSectionClicked += OnTestingSectionClicked;
         _view.BackClicked += BackClicked;
         _testsTablePresenter.TestSelected += OnTestSelected;
+        _testsTablePresenter.BackClicked += _testsTablePresenter_BackClicked;
+    }
+
+    private void _testsTablePresenter_BackClicked()
+    {
+        _testsTablePresenter.Hide();
     }
 
     private void BackClicked()

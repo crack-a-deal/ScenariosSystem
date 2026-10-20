@@ -11,7 +11,7 @@ public interface IUserProfileRepository
 
     Task AddAsync(UserProfile profile);
 
-    void Update(UserProfile profile);
+    Task UpdateAsync(UserProfile profile);
 
-    void Delete(UserProfile profile);
+    Task DeleteAsync(UserProfile profile);
 }

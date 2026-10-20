@@ -187,14 +187,15 @@ public class StudentFormPresenter
         {
             var profileUpdate = new CreateUpdateUserProfileDto(_currentUser.Id, firstName, lastName, patronymic, groupId.Value);
             var accountUpdate = new CreateUpdateUserAccountDto(login, password);
-
             await _profileService.UpdateAsync(_currentUser.Id, profileUpdate);
-            await _accountService.UpdateAsync(_currentUser.Id, accountUpdate);
+            //await _accountService.UpdateAsync(_currentUser.Id, accountUpdate);
+            //Debug.Log("account update");
+
             StudentUpdated?.Invoke();
         }
         catch (Exception ex)
         {
-            Debug.LogError($"Error creating user: {ex.Message}");
+            Debug.LogError($"Error creating user: {ex}");
         }
     }
 

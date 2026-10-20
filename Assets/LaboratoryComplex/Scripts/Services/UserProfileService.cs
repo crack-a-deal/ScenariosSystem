@@ -106,15 +106,15 @@ public class UserProfileService : IUserProfileService
 
         if (profile == null)
             throw new KeyNotFoundException(
-                "User profile not found.");
+                "1 User profile not found.");
 
-        var account =
-            await _accountRepository.GetByIdAsync(
-                dto.UserAccountId);
+        //var account =
+        //    await _accountRepository.GetByIdAsync(
+        //        dto.UserAccountId);
 
-        if (account == null)
-            throw new KeyNotFoundException(
-                "User account not found.");
+        //if (account == null)
+        //    throw new KeyNotFoundException(
+        //        "2 User account not found.");
 
         var group =
             await _groupRepository.GetByIdAsync(
@@ -122,7 +122,7 @@ public class UserProfileService : IUserProfileService
 
         if (group == null)
             throw new KeyNotFoundException(
-                "User group not found.");
+                "3 User group not found.");
 
         profile.UserAccountId = dto.UserAccountId;
 
@@ -132,7 +132,7 @@ public class UserProfileService : IUserProfileService
 
         profile.UserGroupId = dto.UserGroupId;
 
-        _profileRepository.Update(profile);
+        await _profileRepository.UpdateAsync(profile);
 
     }
 
@@ -145,7 +145,7 @@ public class UserProfileService : IUserProfileService
             throw new KeyNotFoundException(
                 "User profile not found.");
 
-        _profileRepository.Delete(profile);
+        await _profileRepository.DeleteAsync(profile);
 
     }
 

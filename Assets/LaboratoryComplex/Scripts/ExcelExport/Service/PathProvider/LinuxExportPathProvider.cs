@@ -8,12 +8,11 @@ public class LinuxExportPathProvider : IExportPathProvider
         string homePath = Environment.GetFolderPath(
             Environment.SpecialFolder.Personal);
 
-        string desktopPath = Path.Combine(
-            homePath,
-            "Desktop");
+        string desktopPath = Path.Combine(homePath, "Desktop");
 
-        return Path.Combine(
-            desktopPath,
-            fileName);
+        if (!Directory.Exists(desktopPath))
+            Directory.CreateDirectory(desktopPath);
+
+        return Path.Combine(desktopPath, fileName);
     }
 }

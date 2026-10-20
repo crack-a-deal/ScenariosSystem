@@ -36,13 +36,17 @@ public class UserProfileRepository : IUserProfileRepository
         await _context.SaveChangesAsync();
     }
 
-    public void Update(UserProfile profile)
+    public async Task UpdateAsync(UserProfile profile)
     {
         _context.UserProfiles.Update(profile);
+        await _context.SaveChangesAsync();
+
     }
 
-    public void Delete(UserProfile profile)
+    public async Task DeleteAsync(UserProfile profile)
     {
         _context.UserProfiles.Remove(profile);
+        await _context.SaveChangesAsync();
+
     }
 }

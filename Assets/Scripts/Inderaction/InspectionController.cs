@@ -13,6 +13,7 @@ public class InspectionController : MonoBehaviour
     private string _displayText = "Зона визуального контроля";
     private ScenarioObjectState _objectState = ScenarioObjectState.Inspected;
 
+
     private void Awake()
     {
         _inputActions = new InputSystem_Actions();
@@ -82,6 +83,17 @@ public class InspectionController : MonoBehaviour
         _indicator.Show(_displayText + '\n' + inspection.InspectionText);
     }
 
+    public void SetHighlighting(bool enabled)
+    {
+        _useHighlighting = enabled;
+
+        foreach (var provider in _allowedObjects)
+        {
+            if (provider != null)
+                provider.SetHighlighted(enabled);
+        }
+    }
+
     private void UpdateInspection()
     {
         if (_currentInspection == null)
@@ -105,6 +117,8 @@ public class InspectionController : MonoBehaviour
         _indicator.Hide();
         _currentInspection = null;
     }
+
+    private bool _useHighlighting = true;
 
     private readonly HashSet<ScenarioStateProvider> _allowedObjects = new();
     private ScenarioStateProvider _currentProvider;
@@ -132,7 +146,9 @@ public class InspectionController : MonoBehaviour
                 continue;
 
             _allowedObjects.Add(provider);
-            provider.SetHighlighted(true);
+
+            if (_useHighlighting)
+                provider.SetHighlighted(true);
         }
     }
 }
