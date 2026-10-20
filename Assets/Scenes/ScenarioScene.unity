@@ -358,7 +358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7695316123243116674}
 --- !u!65 &26746401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1085,7 +1085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7986810378989660216}
 --- !u!64 &37937384
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1242,7 +1242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 5816916254998405303}
 --- !u!64 &74138199
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1405,7 +1405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 114869652}
 --- !u!135 &114869649
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1553,7 +1553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 116178601}
 --- !u!64 &116178604
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1604,7 +1604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8893717420833553864}
 --- !u!65 &119596217
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6495,7 +6495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 135503283}
 --- !u!65 &135503279
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6855,7 +6855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 144739474}
 --- !u!135 &144739471
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6980,7 +6980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8918718495543212725}
 --- !u!65 &145760276
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7211,7 +7211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 180686917}
 --- !u!135 &180686914
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7721,7 +7721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 278885344}
 --- !u!65 &278885341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7942,7 +7942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 6205402801920412351}
 --- !u!64 &282908278
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8130,7 +8130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8170680787834467044}
 --- !u!65 &293675283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8217,7 +8217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 302930723}
 --- !u!135 &302930720
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8457,7 +8457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 324272827}
 --- !u!114 &324272827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8547,7 +8547,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -8647,7 +8647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7327873195444801167}
 --- !u!64 &337757972
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8724,7 +8724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8963395751309816849}
 --- !u!65 &375373809
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8774,7 +8774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8731709017266950820}
 --- !u!64 &387093965
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8964,7 +8964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 406949108}
 --- !u!114 &406949103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9084,7 +9084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 412934782}
 --- !u!135 &412934779
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9214,7 +9214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 3326899710371316656}
 --- !u!65 &423274448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9264,7 +9264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 5491484393005551040}
 --- !u!65 &436577766
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9351,7 +9351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 465570829}
 --- !u!135 &465570826
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9477,7 +9477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 9219489282334724094}
 --- !u!64 &476936913
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9747,7 +9747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7552975279741727539}
 --- !u!114 &507476168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9776,7 +9776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8369497717916771908}
 --- !u!65 &507476170
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10074,7 +10074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 561393845}
 --- !u!65 &561393841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10179,7 +10179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 569398239}
 --- !u!135 &569398236
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10309,7 +10309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8856872915318444731}
 --- !u!65 &581817277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10360,7 +10360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8637045888392894608}
 --- !u!64 &600497319
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10411,7 +10411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8151907397299665967}
 --- !u!65 &602895039
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10462,7 +10462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8243086651355348545}
 --- !u!64 &603305536
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10558,7 +10558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 5970852871181344257}
 --- !u!64 &644435263
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10740,7 +10740,7 @@ Transform:
   m_GameObject: {fileID: 679220367}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00000058114523}
-  m_LocalPosition: {x: 0.6, y: 2.75, z: 3.434}
+  m_LocalPosition: {x: -19.81, y: 2.75, z: 11.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10857,7 +10857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 727936812}
 --- !u!64 &727936808
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10963,7 +10963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 744338091}
 --- !u!135 &744338088
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11375,7 +11375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 757568703}
 --- !u!65 &757568706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11593,7 +11593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8591817194945887194}
 --- !u!65 &817720807
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11720,7 +11720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 840270346}
 --- !u!65 &840270349
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12022,7 +12022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 3033782628081965322}
 --- !u!65 &887763821
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12072,7 +12072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 5829355201550264919}
 --- !u!65 &889624265
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12296,7 +12296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 920415913}
 --- !u!135 &920415910
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12422,7 +12422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8548299948420050046}
 --- !u!64 &945367967
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12474,7 +12474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 5706560258245313035}
 --- !u!64 &959864127
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12640,7 +12640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 978748790}
 --- !u!114 &978748790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12731,7 +12731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7162251624859707055}
 --- !u!64 &994360144
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13021,7 +13021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1022874126}
 --- !u!135 &1022874123
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13326,7 +13326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1057175378}
 --- !u!135 &1057175375
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13451,7 +13451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 9159859287889169661}
 --- !u!65 &1060286658
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13501,7 +13501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7040812838418972094}
 --- !u!65 &1069014667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13551,7 +13551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8122387584114913863}
 --- !u!65 &1072934479
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13696,7 +13696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7178697105629863993}
 --- !u!65 &1127058073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13747,7 +13747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7664060146794161820}
 --- !u!64 &1133380989
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13799,7 +13799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8036247774387606397}
 --- !u!65 &1135385225
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13849,7 +13849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7309863494170891832}
 --- !u!64 &1139069323
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13976,7 +13976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 9101195425681079505}
 --- !u!114 &1148976862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19173,7 +19173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1221027523}
 --- !u!65 &1221027520
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19539,7 +19539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1235802458}
 --- !u!135 &1235802455
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19896,7 +19896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8700553715382506684}
 --- !u!65 &1273497456
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20386,7 +20386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4988eda3f98443946a84378a83dd65f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioRunner
-  _scenario: {fileID: 137438237}
+  _scenario: {fileID: 485237834}
   _eventBus: {fileID: 625836454}
 --- !u!4 &1332404673
 Transform:
@@ -20437,7 +20437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1357037093}
 --- !u!64 &1357037089
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20543,7 +20543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1364927914}
 --- !u!65 &1364927911
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20673,7 +20673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1372264137}
 --- !u!65 &1372264133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20831,7 +20831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1383270352}
 --- !u!135 &1383270349
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21061,7 +21061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1399109050}
 --- !u!64 &1399109040
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21113,7 +21113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1399109051}
 --- !u!64 &1399109043
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21237,7 +21237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1403651132}
 --- !u!65 &1403651129
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21500,7 +21500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8390275684337143683}
 --- !u!64 &1408146091
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21588,7 +21588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1423334143}
 --- !u!65 &1423334140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21750,7 +21750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1450932135}
 --- !u!135 &1450932132
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21912,7 +21912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1465804802}
 --- !u!65 &1465804799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22102,7 +22102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1494594410}
 --- !u!135 &1494594407
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22431,7 +22431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1522097905}
 --- !u!65 &1522097902
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27468,7 +27468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 5408139829974585686}
 --- !u!64 &1679369028
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27556,7 +27556,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1689930229}
 --- !u!65 &1689930226
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27681,7 +27681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 9028697590972862680}
 --- !u!65 &1690199452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27768,7 +27768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1744286389}
 --- !u!64 &1744286386
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28007,7 +28007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7860933479517073978}
 --- !u!65 &1755118915
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28125,7 +28125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1759932281}
 --- !u!135 &1759932278
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28251,7 +28251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8109876449047995069}
 --- !u!64 &1772921402
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28349,7 +28349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 6660723201325954545}
 --- !u!64 &1783832039
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28437,7 +28437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1793404212}
 --- !u!135 &1793404209
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28724,7 +28724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 5038823364171872081}
 --- !u!65 &1811651284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28819,7 +28819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8507532371226526841}
 --- !u!65 &1833161761
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29021,7 +29021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 9060721178914417481}
 --- !u!65 &1839487866
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29110,7 +29110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1850954250}
 --- !u!65 &1850954247
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29236,7 +29236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7819871969462800474}
 --- !u!64 &1856229105
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29324,7 +29324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1865876120}
 --- !u!135 &1865876117
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -29504,7 +29504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8211709578172951306}
 --- !u!65 &1891841252
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29591,7 +29591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1894248414}
 --- !u!135 &1894248411
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -29753,7 +29753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1896362733}
 --- !u!135 &1896362730
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30214,7 +30214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1916818401}
 --- !u!65 &1916818398
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30325,7 +30325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 6299989817192907563}
 --- !u!114 &1919234956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30805,7 +30805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1931543274}
 --- !u!135 &1931543271
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31104,7 +31104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1955369025}
 --- !u!135 &1955369022
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31230,7 +31230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 6611848029279873818}
 --- !u!64 &1976489543
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31281,7 +31281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 9194294649274368045}
 --- !u!65 &1981123363
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31336,7 +31336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 1985561812}
 --- !u!65 &1985561808
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31858,7 +31858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 2009278755}
 --- !u!135 &2009278752
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32133,7 +32133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 2039378657}
 --- !u!135 &2039378654
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32258,7 +32258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8921601017476543345}
 --- !u!65 &2045287632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32308,7 +32308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8729389863384188353}
 --- !u!65 &2046483397
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32500,7 +32500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 2057601580}
 --- !u!64 &2057601576
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32606,7 +32606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 2063101202}
 --- !u!135 &2063101199
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32768,7 +32768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 2084805824}
 --- !u!135 &2084805821
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -33005,7 +33005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 2095778703}
 --- !u!135 &2095778700
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -33207,7 +33207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 6021226060971592141}
 --- !u!64 &2124055130
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42984,7 +42984,7 @@ MonoBehaviour:
         - {fileID: 1920901764}
         - {fileID: 0}
         _requiredState: 1
-        _requiredCount: 5
+        _requiredCount: 6
 --- !u!114 &1513388711387327479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43099,7 +43099,7 @@ MonoBehaviour:
         - {fileID: 1920901764}
         - {fileID: 1992468110}
         _requiredState: 1
-        _requiredCount: 5
+        _requiredCount: 6
 --- !u!114 &1513388712179428179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43214,7 +43214,7 @@ MonoBehaviour:
         - {fileID: 1920901764}
         - {fileID: 0}
         _requiredState: 1
-        _requiredCount: 5
+        _requiredCount: 6
 --- !u!33 &1516326725257735020
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -50743,7 +50743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 2625416131536064531}
 --- !u!64 &2625416131536064530
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -64302,7 +64302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 4434090733590524664}
 --- !u!64 &4434090733590524667
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -66672,7 +66672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 4784477650813920486}
 --- !u!114 &4784477650813920486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69045,7 +69045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 5107016138440129972}
 --- !u!64 &5107016138440129975
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -70937,7 +70937,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 5288763399264244423}
 --- !u!64 &5288763399264244426
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -72697,7 +72697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 5524561617155007522}
 --- !u!65 &5524561617155007521
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74154,7 +74154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 5714974901833320473}
 --- !u!114 &5714974901833320473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74322,7 +74322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 5727718562078999576}
 --- !u!64 &5727718562078999579
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -76935,7 +76935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 6053604782578207881}
 --- !u!64 &6053604782578207880
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -77566,7 +77566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 6132780072879238288}
 --- !u!64 &6132780072879238287
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -78875,7 +78875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 6401113698103831326}
 --- !u!65 &6401113698103831325
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79300,7 +79300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 6448309858349299217}
 --- !u!64 &6448309858349299216
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -79701,7 +79701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 6477132959947577500}
 --- !u!64 &6477132959947577499
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -79939,7 +79939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 6509016917281491814}
 --- !u!64 &6509016917281491813
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -84046,7 +84046,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7058966116740059066}
 --- !u!64 &7058966116740059069
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -84401,7 +84401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7112900555745041803}
 --- !u!64 &7112900555745041806
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -84746,7 +84746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7139521708141655462}
 --- !u!64 &7139521708141655461
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -84909,7 +84909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7155544601189693522}
 --- !u!64 &7155544601189693521
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -85647,7 +85647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7240815731843578836}
 --- !u!64 &7240815731843578835
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -85804,7 +85804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7263430674641750655}
 --- !u!65 &7263430674641750654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -86075,7 +86075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7295251010239382798}
 --- !u!64 &7295251010239382797
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -87174,7 +87174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7424301205823235441}
 --- !u!65 &7424301205823235440
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -87308,7 +87308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7437488046938027325}
 --- !u!64 &7437488046938027324
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -87660,7 +87660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7497517510462806537}
 --- !u!64 &7497517510462806536
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -88499,7 +88499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7617656958997635389}
 --- !u!64 &7617656958997635388
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -90045,7 +90045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7717360791172598546}
 --- !u!64 &7717360791172598545
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -91002,7 +91002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 7822625101919661486}
 --- !u!64 &7822625101919661485
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -92808,7 +92808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8046865446885421687}
 --- !u!114 &8046865446885421687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93876,7 +93876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8180777765532949205}
 --- !u!65 &8180777765532949204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -94915,7 +94915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8298582364453969319}
 --- !u!65 &8298582364453969318
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -95412,7 +95412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8359879340861494566}
 --- !u!64 &8359879340861494565
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -95822,7 +95822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8397277185704897905}
 --- !u!64 &8397277185704897904
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -96361,7 +96361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8453692913201254416}
 --- !u!64 &8453692913201254419
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -96693,7 +96693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8478227281226488810}
 --- !u!64 &8478227281226488809
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -96993,7 +96993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8548417969585033673}
 --- !u!64 &8548417969585033676
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -98027,7 +98027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8681566400607501828}
 --- !u!64 &8681566400607501827
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -98145,7 +98145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8683988120544034737}
 --- !u!64 &8683988120544034736
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -99524,7 +99524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8879019720817589395}
 --- !u!65 &8879019720817589394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -99885,7 +99885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8910930840605401435}
 --- !u!64 &8910930840605401434
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -100539,7 +100539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 8974576142387599025}
 --- !u!64 &8974576142387599028
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -101514,7 +101514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 9078519277828174518}
 --- !u!64 &9078519277828174517
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -101700,7 +101700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 9109056779903798857}
 --- !u!64 &9109056779903798856
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -102280,7 +102280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 9179881888694424802}
 --- !u!64 &9179881888694424801
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -102429,7 +102429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioStateProvider
   _state: 0
   _eventBus: {fileID: 625836454}
-  _highlightVisual: {fileID: 0}
+  _highlightVisual: {fileID: 9186990845487804562}
 --- !u!65 &9186990845487804561
 BoxCollider:
   m_ObjectHideFlags: 0

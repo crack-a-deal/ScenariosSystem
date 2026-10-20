@@ -1,3 +1,4 @@
+using NUnit.Framework.Internal;
 using System;
 using UnityEngine;
 using Zenject;
@@ -70,19 +71,35 @@ public class TeacherLearningSectionsPresenter : LearningSectionsPresenter
     private readonly AdminTestModulesTablePresenter _testsTablePresenter;
     private readonly TestSessionService _sessionService;
     private readonly IExcelExportService _exportService;
+    private readonly IThreeDModelService _threeDModelService;
     private readonly AdminTestSessionPresenter _sessionPresenter;
     private UserProfileDto _currentUser;
 
-    public TeacherLearningSectionsPresenter([Inject(Id = "Admin")] LearningSectionsView view, AdminTestModulesTablePresenter testsTablePresenter,TestSessionService sessionService ,IExcelExportService exportService) : base(view)
+    public TeacherLearningSectionsPresenter([Inject(Id = "Admin")] LearningSectionsView view, AdminTestModulesTablePresenter testsTablePresenter,TestSessionService sessionService ,IExcelExportService exportService,IThreeDModelService threeDModel) : base(view)
     {
         _testsTablePresenter = testsTablePresenter;
         _sessionService = sessionService;
         _exportService = exportService;
-
+        _threeDModelService = threeDModel;
         _view.TestingSectionClicked += OnTestingSectionClicked;
+        _view.InspectionSectionClicked += InspectionSectionClicked;
         _view.BackClicked += BackClicked;
         _testsTablePresenter.TestSelected += OnTestSelected;
         _testsTablePresenter.BackClicked += _testsTablePresenter_BackClicked;
+    }
+
+    private async void InspectionSectionClicked()
+    {
+        Debug.Log("хочу результаты");
+        var views = await _threeDModelService.GetAllViewsAsync();
+
+        var exportData = new ViewedModelsExportDTO
+        {
+            Views = views
+        };
+
+        await _exportService.ExportMultiSheetAsync(exportData);
+        Debug.Log($"Результаты моделей экспортированы.");
     }
 
     private void _testsTablePresenter_BackClicked()

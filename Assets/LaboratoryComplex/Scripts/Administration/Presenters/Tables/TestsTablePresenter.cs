@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,21 +10,23 @@ public class TestsTablePresenter
 {
     private readonly TestsTableView _view;
     private readonly ITestService _service;
-    private readonly JsonTestImportService _testImportService;
-    private readonly RandomTestGenerator _testGenerator;
     private readonly TestSessionService _sessionService;
     private readonly TestEditorPanelPresenter _testEditor;
 
     private readonly Dictionary<TestRowView, TestDTO> _rows = new();
 
-    public TestsTablePresenter(TestsTableView view, ITestService service, JsonTestImportService testImportService,RandomTestGenerator testGenerator,TestSessionService sessionService, TestEditorPanelPresenter testEditor)
+    public TestsTablePresenter(TestsTableView view, ITestService service,TestSessionService sessionService, TestEditorPanelPresenter testEditor)
     {
         _view = view;
         _service = service;
-        _testImportService = testImportService;
-        _testGenerator = testGenerator;
         _sessionService = sessionService;
         _testEditor = testEditor;
+        _testEditor.Saved += _testEditor_Saved;
+    }
+
+    private async void _testEditor_Saved()
+    {
+        await Show();
     }
 
     public async Task Show()
@@ -31,35 +34,16 @@ public class TestsTablePresenter
         _view.Clear();
         _rows.Clear();
 
-        TestsConfig config = TestsConfigLoader.Load();
-
-        string path = Path.Combine(
-            Application.streamingAssetsPath,
-            config.testBankFile);
-
-        if (!File.Exists(path))
-            throw new FileNotFoundException($"Test bank not found: {path}");
-
         try
         {
-            bool imported = await _testImportService.ImportAsync(path);
-        }
-        catch (Exception ex)
-        {
-            Debug.LogException(ex);
-        }
-
-        try
-        {
-            //Test test1 = await _testGenerator.CreateAsync("new random2");
-
             var tests = await _service.GetAllTestsAsync();
 
             Debug.Log($"{tests.Count} tests");
 
-            foreach (var test in tests)
+            for (int i = 0; i < tests.Count; i++)
             {
-                AddRow(test);
+                TestDTO test = tests[i];
+                AddRow(test,i);
             }
         }
         catch (Exception ex)
@@ -68,12 +52,13 @@ public class TestsTablePresenter
         }
     }
 
-    private void AddRow(TestDTO test)
+    private void AddRow(TestDTO test, int index)
     {
         var row = _view.CreateRow();
 
         _rows[row] = test;
 
+        row.SetIndex((index + 1).ToString("D2"));
         row.SetTitle(test.Title);
         row.SetQuestioCount($"{test.Questions.Count} вопросов");
 

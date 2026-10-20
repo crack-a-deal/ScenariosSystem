@@ -108,13 +108,13 @@ public class UserProfileService : IUserProfileService
             throw new KeyNotFoundException(
                 "1 User profile not found.");
 
-        //var account =
-        //    await _accountRepository.GetByIdAsync(
-        //        dto.UserAccountId);
+        var account =
+            await _accountRepository.GetByIdAsync(
+                dto.UserAccountId);
 
-        //if (account == null)
-        //    throw new KeyNotFoundException(
-        //        "2 User account not found.");
+        if (account == null)
+            throw new KeyNotFoundException(
+                "2 User account not found.");
 
         var group =
             await _groupRepository.GetByIdAsync(

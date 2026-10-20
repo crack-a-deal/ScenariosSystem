@@ -94,6 +94,14 @@ public class InspectionController : MonoBehaviour
         }
     }
 
+    public void DisableHighlighting(ScenarioStateProvider provider)
+    {
+        if (provider == null)
+            return;
+
+        provider.SetHighlighted(false);
+    }
+
     private void UpdateInspection()
     {
         if (_currentInspection == null)
@@ -113,9 +121,14 @@ public class InspectionController : MonoBehaviour
             return;
 
         _currentInspection.CompleteInspection(_objectState);
+            DisableHighlighting(_currentProvider);
+
+        //if (_objectState == ScenarioObjectState.Inspected || _objectState == ScenarioObjectState.Loosened || _objectState == ScenarioObjectState.Removed || _objectState == ScenarioObjectState.Marked)
 
         _indicator.Hide();
+
         _currentInspection = null;
+        _currentProvider = null;
     }
 
     private bool _useHighlighting = true;

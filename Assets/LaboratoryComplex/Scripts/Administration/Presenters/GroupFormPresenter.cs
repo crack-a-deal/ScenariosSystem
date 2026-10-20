@@ -12,6 +12,7 @@ public class GroupFormPresenter
     private readonly IUserGroupService _service;
 
     private FormMode _mode = FormMode.None;
+    private Guid _currentGroupId;
 
     public GroupFormPresenter(GroupFormView view, IUserGroupService groupService)
     {
@@ -38,6 +39,8 @@ public class GroupFormPresenter
     public void OpenForUpdate(UserGroupDto group)
     {
         _mode = FormMode.Update;
+        _currentGroupId = group.Id;
+
         _view.SetNumberName(group.Number.ToString());
         _view.SetCourse(group.Name);
         _view.gameObject.SetActive(true);
@@ -94,8 +97,41 @@ public class GroupFormPresenter
 
     private async Task UpdateGroup()
     {
-        throw new NotImplementedException();
-        GroupUpdated?.Invoke();
+        Debug.Log("UpdateGroup вызван");
+
+        string number = _view.GetNumberName().Trim();
+        string course = _view.GetCourse().Trim();
+
+        if (string.IsNullOrEmpty(number))
+        {
+            Debug.LogWarning("Введите номер группы.");
+            return;
+        }
+
+        if (string.IsNullOrEmpty(course))
+        {
+            Debug.LogWarning("Введите название группы.");
+            return;
+        }
+
+        if (!int.TryParse(number, out int groupNumber))
+        {
+            Debug.LogWarning("Номер группы должен быть числом.");
+            return;
+        }
+
+        try
+        {
+            var group = new CreateUpdateUserGroupDto(course, groupNumber);
+
+            await _service.UpdateAsync(_currentGroupId, group);
+
+            GroupUpdated?.Invoke();
+        }
+        catch (Exception ex)
+        {
+            Debug.LogException(ex);
+        }
     }
 
     private void OnCancelClicked()

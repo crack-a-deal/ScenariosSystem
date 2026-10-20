@@ -22,6 +22,15 @@ public class ScenarioStateProvider : MonoBehaviour
         SetHighlighted(false);
     }
 
+    private void OnValidate()
+    {
+        if (_highlightVisual == null)
+        {
+            Debug.Log("setup QuikOutline");
+            _highlightVisual = GetComponent<QuikOutline>();
+        }
+    }
+
     public void SetHighlighted(bool highlighted)
     {
         if (_highlightVisual != null)

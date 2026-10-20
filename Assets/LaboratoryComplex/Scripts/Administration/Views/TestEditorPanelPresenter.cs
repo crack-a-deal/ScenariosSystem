@@ -38,6 +38,7 @@ public class TestEditorPanelPresenter : IDisposable
         _currentTest = test;
         _currentTest.Questions ??= new System.Collections.Generic.List<BaseQuestionDTO>();
 
+        _view.SetTestName(_currentTest.Title);
         _questionTable.SetQuestions(_currentTest.Questions);
     }
 
@@ -64,6 +65,8 @@ public class TestEditorPanelPresenter : IDisposable
     {
         if (_isSaving || _currentTest == null)
             return;
+
+        _currentTest.Title = _view.GetTestName();
 
         if (string.IsNullOrWhiteSpace(_currentTest.Title))
         {

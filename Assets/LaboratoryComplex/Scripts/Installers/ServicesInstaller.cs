@@ -40,6 +40,18 @@ public class ServicesInstaller : MonoInstaller
             .AsSingle();
 
 
+
+
+        Container.Bind<IThreeDModelRepository>()
+            .To<ThreeDModelRepository>()
+            .AsSingle();
+
+        Container.Bind<IThreeDModelService>()
+            .To<ThreeDModelService>()
+            .AsSingle();
+
+
+
         // Tests
         Container.Bind<TestRepository>()
             .AsSingle();
@@ -73,7 +85,7 @@ public class ServicesInstaller : MonoInstaller
             .AsSingle();
 
         Container.Bind<IExportPathProvider>()
-            .To<LinuxExportPathProvider>()
+            .To<WindowsExportPathProvider>()
             .AsSingle();
 
         Container.Bind<ExcelExportRegistry>()
@@ -110,6 +122,8 @@ public class ServicesInstaller : MonoInstaller
         registry.Register(
             new TestSessionExcelDefinition(
                 new TestSessionResultExcelMapper()));
+
+        registry.Register(new ViewedModelsExcelDefinition(new ViewedModelExcelMapper()));
 
         return registry;
     }

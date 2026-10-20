@@ -149,7 +149,7 @@ public class StudentFormPresenter
 
     private async void UpdateUser()
     {
-        Debug.Log("CreateUser вызван");
+        Debug.Log("UpdateUser вызван");
 
         string login = _view.GetLogin().Trim();
         string password = _view.GetPassword().Trim();
@@ -185,11 +185,10 @@ public class StudentFormPresenter
 
         try
         {
-            var profileUpdate = new CreateUpdateUserProfileDto(_currentUser.Id, firstName, lastName, patronymic, groupId.Value);
+            var profileUpdate = new CreateUpdateUserProfileDto(_currentUser.UserAccountId, firstName, lastName, patronymic, groupId.Value);
             var accountUpdate = new CreateUpdateUserAccountDto(login, password);
             await _profileService.UpdateAsync(_currentUser.Id, profileUpdate);
-            //await _accountService.UpdateAsync(_currentUser.Id, accountUpdate);
-            //Debug.Log("account update");
+            await _accountService.UpdateAsync(_currentUser.UserAccountId, accountUpdate);
 
             StudentUpdated?.Invoke();
         }

@@ -72,10 +72,23 @@ public class GroupsTablePresenter
 
     private async Task DeleteAsync(UserGroupDto group)
     {
-        Debug.Log(
-            $"Delete group: {group.Id}, {group.Name}");
+        Debug.Log($"Delete group: {group.Id}, {group.Name}");
 
-        await _service.DeleteGroupAsync(group.Id);
+        if (group.UserCount > 0)
+        {
+            return;
+        }
+
+        bool deleted = await _service.DeleteGroupAsync(group.Id);
+
+        if (!deleted)
+        {
+            Debug.LogWarning(
+                $"Не удалось удалить группу {group.Name}. " +
+                "Возможно, в группе есть учащиеся.");
+
+            return;
+        }
 
         await ShowAsync();
     }

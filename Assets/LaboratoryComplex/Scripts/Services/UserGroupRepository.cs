@@ -34,9 +34,10 @@ public class UserGroupRepository : IUserGroupRepository
         await _context.SaveChangesAsync();
     }
 
-    public void Update(UserGroup group)
+    public async Task Update(UserGroup group)
     {
         _context.UserGroups.Update(group);
+        await _context.SaveChangesAsync();
     }
 
     public async Task<bool> DeleteAsync(Guid id)

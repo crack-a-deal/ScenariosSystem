@@ -35,6 +35,9 @@ public class AppDbContext : DbContext
     public DbSet<UserMatchingPairAnswer> UserMatchingPairAnswers
     => Set<UserMatchingPairAnswer>();
 
+    public DbSet<ThreeDModel> ThreeDModels { get; set; }
+    public DbSet<UserModelView> UserModelViews { get; set; }
+
     private readonly string _databasePath;
 
     public AppDbContext(string databasePath)
@@ -75,6 +78,18 @@ public class AppDbContext : DbContext
             .WithMany(g => g.Users)
             .HasForeignKey(p => p.UserGroupId)
             .OnDelete(DeleteBehavior.Restrict);
+
+        modelBuilder.Entity<UserModelView>()
+            .HasOne(view => view.UserProfile)
+            .WithMany()
+            .HasForeignKey(view => view.UserProfileId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+        modelBuilder.Entity<UserModelView>()
+            .HasOne(view => view.ThreeDModel)
+            .WithMany(model => model.Views)
+            .HasForeignKey(view => view.ThreeDModelId)
+            .OnDelete(DeleteBehavior.Cascade);
 
 
         modelBuilder.Entity<UserGroup>().HasData(
@@ -140,16 +155,16 @@ public class AppDbContext : DbContext
             .OnDelete(DeleteBehavior.Restrict);
 
         modelBuilder.Entity<TestSession>()
-        .HasOne(session => session.UserProfile)
-        .WithMany()
-        .HasForeignKey(session => session.UserProfileId)
-        .OnDelete(DeleteBehavior.Restrict);
+            .HasOne(session => session.UserProfile)
+            .WithMany()
+            .HasForeignKey(session => session.UserProfileId)
+            .OnDelete(DeleteBehavior.Restrict);
 
         modelBuilder.Entity<Question>()
-    .HasMany(q => q.Options)
-    .WithOne(o => o.Question)
-    .HasForeignKey(o => o.QuestionId)
-    .OnDelete(DeleteBehavior.Cascade);
+            .HasMany(q => q.Options)
+            .WithOne(o => o.Question)
+            .HasForeignKey(o => o.QuestionId)
+            .OnDelete(DeleteBehavior.Cascade);
 
         modelBuilder.Entity<Question>()
             .HasMany(q => q.CorrectAnswers)

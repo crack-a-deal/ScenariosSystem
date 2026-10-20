@@ -1179,6 +1179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f90210af367f4d14bb1dbef9d569401a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TestEditorPanelView
+  testName: {fileID: 1806727170}
   _backButton: {fileID: 923321500}
   _saveButton: {fileID: 1666372420}
 --- !u!1 &90563950
@@ -2453,8 +2454,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041F\u0430\u043D\u0435\u043B\u044C \u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\u0430"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
-  m_sharedMaterial: {fileID: -27519711894204912, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5010,8 +5011,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
-  m_sharedMaterial: {fileID: -27519711894204912, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8706,7 +8707,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 62c69167d24af41429169b45475384be, type: 2}
   m_TargetDisplay: 0
@@ -9989,7 +9990,7 @@ PrefabInstance:
     - target: {fileID: 8772285585644995035, guid: c1651b3311b245840812c3efd438eec3, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 8772285585644995035, guid: c1651b3311b245840812c3efd438eec3, type: 3}
       propertyPath: m_fontColor.g
       value: 0.49803922
@@ -10001,7 +10002,7 @@ PrefabInstance:
     - target: {fileID: 8772285585644995035, guid: c1651b3311b245840812c3efd438eec3, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -27519711894204912, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 8772285585644995035, guid: c1651b3311b245840812c3efd438eec3, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294934294
@@ -12437,7 +12438,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -15373,8 +15374,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0423\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0443\u0447\u0430\u0449\u0438\u043C\u0438\u0441\u044F"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
-  m_sharedMaterial: {fileID: -27519711894204912, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17786,11 +17787,11 @@ PrefabInstance:
     - target: {fileID: 8772285585644995035, guid: c1651b3311b245840812c3efd438eec3, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 8772285585644995035, guid: c1651b3311b245840812c3efd438eec3, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -27519711894204912, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 8786789759267648570, guid: c1651b3311b245840812c3efd438eec3, type: 3}
       propertyPath: m_Name
       value: Save Button
@@ -20901,11 +20902,11 @@ PrefabInstance:
     - target: {fileID: 8772285585644995035, guid: c1651b3311b245840812c3efd438eec3, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 8772285585644995035, guid: c1651b3311b245840812c3efd438eec3, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -27519711894204912, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 8786789759267648570, guid: c1651b3311b245840812c3efd438eec3, type: 3}
       propertyPath: m_Name
       value: Add Button
@@ -22002,8 +22003,8 @@ MonoBehaviour:
   m_text: "\u041E\u0434\u0438\u043D \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439
     \u043E\u0442\u0432\u0435\u0442"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
-  m_sharedMaterial: {fileID: -27519711894204912, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -22539,8 +22540,8 @@ MonoBehaviour:
   m_text: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435
     \u0442\u0435\u0441\u0442\u0430...."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
-  m_sharedMaterial: {fileID: -27519711894204912, guid: 0c6e544b29a8a2543b62d62c8656ca24, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -22944,7 +22945,7 @@ GameObject:
   - component: {fileID: 8875556663852108500}
   - component: {fileID: 6280951792446565971}
   - component: {fileID: 4390428003504516611}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Obmotka_VN.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23100,7 +23101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3341050002341356002}
   - component: {fileID: 3341050002341356003}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "\u041A\u0430\u0442\u0443\u0448\u043A\u0430"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23523,7 +23524,7 @@ GameObject:
   - component: {fileID: 1062304676301252643}
   - component: {fileID: 6855014495253243952}
   - component: {fileID: 6855014495253243953}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "\u0412\u0432\u043E\u0434\u044B \u0412\u041D"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23541,7 +23542,7 @@ GameObject:
   - component: {fileID: 8933887817868106787}
   - component: {fileID: 6138488699499642605}
   - component: {fileID: 1633943044897238814}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Baraban1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24741,7 +24742,7 @@ GameObject:
   - component: {fileID: 313672209944846992}
   - component: {fileID: 5822687088271321088}
   - component: {fileID: 6825055575870251296}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Clump1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25170,7 +25171,7 @@ GameObject:
   - component: {fileID: 8122614717507903201}
   - component: {fileID: 1277665763130529324}
   - component: {fileID: 1329119834125055720}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shlang1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25613,7 +25614,7 @@ GameObject:
   - component: {fileID: 5126214454445692943}
   - component: {fileID: 8023613273210661455}
   - component: {fileID: 7669966372876490259}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25876,7 +25877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8200505303565322528}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shlang
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26115,7 +26116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5687497257500765067}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Clump.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26181,7 +26182,7 @@ GameObject:
   - component: {fileID: 2596864029273446629}
   - component: {fileID: 8314977625684113190}
   - component: {fileID: 787513925129470624}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shlang2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26277,7 +26278,7 @@ GameObject:
   - component: {fileID: 678294934084684735}
   - component: {fileID: 8823149828079549343}
   - component: {fileID: 1692172891696016381}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Maslyanui_bak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27852,7 +27853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 860379244725912481}
   - component: {fileID: 7227844314049859321}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "\u041C\u0430\u0441\u043B\u044F\u043D\u043D\u044B\u0439 \u043D\u0430\u0441\u043E\u0441"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27919,7 +27920,7 @@ GameObject:
   - component: {fileID: 2692033645522582969}
   - component: {fileID: 1219576865930243586}
   - component: {fileID: 4332612873444357972}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Obmotka_NN.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29055,7 +29056,7 @@ GameObject:
   - component: {fileID: 1996781523344265197}
   - component: {fileID: 5835082322433688096}
   - component: {fileID: 7418968346152568620}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Isolation.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29220,7 +29221,7 @@ GameObject:
   - component: {fileID: 199279164475051345}
   - component: {fileID: 3531263949636851771}
   - component: {fileID: 8302789794201361299}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "\u0412\u0432\u043E\u0434\u044B \u041D\u041D"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29319,7 +29320,7 @@ GameObject:
   - component: {fileID: 5733541045651606754}
   - component: {fileID: 1133203247866685675}
   - component: {fileID: 4614772768966114453}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Clump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29766,7 +29767,7 @@ GameObject:
   - component: {fileID: 1203984404314798543}
   - component: {fileID: 5007781103316684249}
   - component: {fileID: 6676793774014268310}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Baraban2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

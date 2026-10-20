@@ -4,11 +4,13 @@ public class InspectionModelState : BaseApplicationState
 {
     private readonly ModulesTablePresenter _tablePresenter;
     private readonly InspectionPresenter _inspectionPresenter;
+    private readonly IThreeDModelService _dModelService;
 
-    public InspectionModelState(IApplication application, ModulesTablePresenter tablePresenter, InspectionPresenter inspectionPresenter) : base(application)
+    public InspectionModelState(IApplication application, ModulesTablePresenter tablePresenter, InspectionPresenter inspectionPresenter, IThreeDModelService dModelService) : base(application)
     {
         _tablePresenter = tablePresenter;
         _inspectionPresenter = inspectionPresenter;
+        _dModelService = dModelService;
     }
 
     public override Task EnterAsync()
@@ -33,9 +35,11 @@ public class InspectionModelState : BaseApplicationState
         return Task.CompletedTask;
     }
 
-    private void OnModuleSelected(string model)
+    private async void OnModuleSelected(string model)
     {
-        _inspectionPresenter.SelectModel(model);
+        await _inspectionPresenter.OpenModelAsync(model);
+
+        //_inspectionPresenter.SelectModel(model);
         _tablePresenter.Hide();
         _inspectionPresenter.Show();
     }

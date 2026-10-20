@@ -11,7 +11,7 @@ public interface IUserGroupRepository
 
     Task AddAsync(UserGroup group);
 
-    void Update(UserGroup group);
+    Task Update(UserGroup group);
 
     Task<bool> DeleteAsync(Guid id);
 }
