@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
+using UserProfileModel;
 
 public class UserGroupService : IUserGroupService
 {
@@ -28,9 +29,10 @@ public class UserGroupService : IUserGroupService
 
         if (group == null)
             return null;
-
         return ToDto(group);
     }
+
+
 
     public async Task<UserGroupDto> CreateAsync(
         CreateUpdateUserGroupDto dto)
@@ -96,5 +98,9 @@ public class UserGroupService : IUserGroupService
             group.Name,
             group.Number,
             group.Users.Count);
+    }
+    public async Task<List<UserProfile>> GetStudentsByGroupIdAsync(Guid groupId)
+    {
+        return await _repository.GetStudentsByGroupIdAsync(groupId);
     }
 }

@@ -313,4 +313,16 @@ public class TestRepository
             throw;
         }
     }
+
+    public async Task<List<Question>> GetAllQuestionsAsync()
+    {
+        return await _context.Questions
+            .Include(q => q.Options)
+            .Include(q => q.CorrectAnswers)
+                .ThenInclude(ca => ca.AnswerOption)
+            .Include(q => q.MatchingPairs)
+            .AsNoTracking()
+            .OrderBy(q => q.Id)
+            .ToListAsync();
+    }
 }

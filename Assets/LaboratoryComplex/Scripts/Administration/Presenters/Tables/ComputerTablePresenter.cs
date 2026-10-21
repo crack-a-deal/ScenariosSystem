@@ -1,11 +1,14 @@
 using Networking;
+using Networking.Request;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
+using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 using static ComputerRowView;
 
-public class ComputersTablePresenter
+public class ComputersTablePresenter : IDisposable
 {
     private readonly ComputersTableView _view;
     private readonly Dictionary<ComputerRowView, (ComputerDto Computer, Guid RequestId)> _rows = new();
@@ -16,26 +19,86 @@ public class ComputersTablePresenter
     {
         _view = view;
         _serverProvider = serverProvider;
-
     }
 
     public void Show()
     {
+        Debug.Log("SHOW");
+
+        Debug.Log($"server:{_server}");
+        if (_server == null)
+        {
+            _server = _serverProvider.Instance ?? throw new InvalidOperationException("TCP server has not been created yet.");
+
+            Subscribe(_server);
+        }
+        
+
+        UpdateList();
+    }
+
+    private void UpdateList()
+    {
+        Debug.Log("Draw");
+        Debug.Log($"server:{_server}");
+
         _view.Clear();
         _rows.Clear();
-
-        _server = _serverProvider.Instance ?? throw new InvalidOperationException("TCP server has not been created yet.");
-
-        var requests = _server.GetPendingRequests<AccessRequest>();
-
-        foreach (var request in requests)
+        try
         {
-            ComputerDto computerDto = new ComputerDto(request.RequestId, request.IpAddress, request.HostName, true);
-            AddRow(computerDto, request.RequestId);
+        var requests = _server.GetPendingRequests<AccessRequest>();
+        Debug.Log($"request {requests.Count}");
+
+        }
+        catch(Exception ex)
+        {
+            Debug.Log(ex);
+        }
+        var pendingRequests = _server
+                    .GetPendingRequests<AccessRequest>()
+                    .ToDictionary(request => request.ClientId);
+        Debug.Log("clients: "+_server.ClientRegistry.Clients.Count);
+        foreach (var client in _server.ClientRegistry.Clients)
+        {
+            bool hasPendingRequest = pendingRequests.TryGetValue(
+                client.Id,
+                out var request);
+
+            if (!client.IsAuthorized && !hasPendingRequest)
+                continue;
+
+            Guid requestId = hasPendingRequest
+                ? request.RequestId
+                : Guid.Empty;
+
+            var computer = new ComputerDto(
+                requestId == Guid.Empty ? client.Id : requestId,
+                client.IpAddress,
+                client.HostName,
+                true);
+
+            AddRow(computer, requestId, client.IsAuthorized);
         }
     }
 
-    private void AddRow(ComputerDto computer, Guid requestId)
+    private void Subscribe(TcpServer server)
+    {
+        Debug.Log("Subscribe");
+        _server.AdminActionRequestReceived += OnRequestReceived;
+        _server.ClientDisconnected += OnClientDisconnected;
+    }
+
+    private void Unsubscribe()
+    {
+        if (_server == null)
+            return;
+        Debug.Log("Unsubscribe");
+        _server.AdminActionRequestReceived -= OnRequestReceived;
+        _server.ClientDisconnected -= OnClientDisconnected;
+        _server = null;
+    }
+
+    private void AddRow(ComputerDto computer, Guid requestId, bool isAuthorized)
     {
         var row = _view.CreateRow();
 
@@ -43,6 +106,8 @@ public class ComputersTablePresenter
 
         row.SetIpAddress(computer.IpAddress);
         row.SetHostName(computer.HostName);
+
+        row.ButtonActive(!isAuthorized);
 
         row.ButtonClicked += button => HandleButton(row, button);
     }
@@ -84,11 +149,32 @@ public class ComputersTablePresenter
 
     private void Disconnect(ComputerDto computer, Guid requestId)
     {
-        Debug.Log(
-            $"Disconnect: {computer.IpAddress}");
+        //Debug.Log(
+        //    $"Disconnect: {computer.IpAddress}");
 
-        //_service.Disconnect(computer.IpAddress);
+        ////_service.Disconnect(computer.IpAddress);
 
-        Show();
+        //Show();
+    }
+
+    private void OnRequestReceived(PendingRequest request)
+    {
+        if (request.Contract != nameof(AccessRequest))
+            return;
+
+        Debug.Log("OnRequestReceived");
+        UpdateList();
+    }
+
+    private void OnClientDisconnected(Guid clientId)
+    {
+        Debug.Log("DISCONNNECTEED");
+        UpdateList();
+    }
+
+    public void Dispose()
+    {
+
+        Unsubscribe();
     }
 }

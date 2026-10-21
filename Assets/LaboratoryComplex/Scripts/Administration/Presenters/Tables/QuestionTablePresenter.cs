@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using static QuestionRowView;
 
@@ -9,17 +10,20 @@ public class QuestionTablePresenter
 
     private readonly QuestionTableView _view;
     private readonly TestEditorPresenter _editorPresenter;
+    private readonly ITestService _testService;
     private List<BaseQuestionDTO> _questionsList = new List<BaseQuestionDTO>();
     public IReadOnlyList<BaseQuestionDTO> Questions => _questionsList;
 
+    private List<BaseQuestionDTO> _availableQuestions =
+    new List<BaseQuestionDTO>();
 
     private readonly Dictionary<QuestionRowView, BaseQuestionDTO> _rows = new();
 
-    public QuestionTablePresenter(QuestionTableView view, TestEditorPresenter editorPresenter)
+    public QuestionTablePresenter(QuestionTableView view, TestEditorPresenter editorPresenter,ITestService testService)
     {
         _view = view;
         _editorPresenter = editorPresenter;
-
+        _testService = testService;
         _view.AddQuestionClicked += OnAddQuestionClicked;
         _editorPresenter.QuestionSaved += OnQuestionSaved;
         _editorPresenter.Canceled += OnCanceled;
@@ -48,11 +52,33 @@ public class QuestionTablePresenter
         {
             AddRow(question);
         }
+
+        _ = LoadAvailableQuestionsAsync();
     }
 
     public void Hide()
     {
         _view.gameObject.SetActive(false);
+    }
+
+    private async Task LoadAvailableQuestionsAsync()
+    {
+        _view.ClearAvailableQuestions();
+
+        try
+        {
+            _availableQuestions =
+                await _testService.GetAvailableQuestionsAsync();
+
+            _view.SetAvailableQuestions(_availableQuestions);
+            _view.EnableQuestionsDropdown();
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"Ошибка загрузки вопросов: {ex.Message}");
+            _view.SetAvailableQuestions(new List<BaseQuestionDTO>());
+            _view.EnableQuestionsDropdown();
+        }
     }
 
     private void AddRow(BaseQuestionDTO question)
@@ -139,11 +165,37 @@ public class QuestionTablePresenter
 
     private void OnAddQuestionClicked(QuestionType type)
     {
-        BaseQuestionDTO question = QuestionDtoFactory.Create(type, _questionsList.Count + 1);
+        int selectedIndex = _view.SelectedAvailableQuestionIndex;
+
+        if (selectedIndex >= 0 &&
+            selectedIndex < _availableQuestions.Count)
+        {
+            BaseQuestionDTO question = _availableQuestions[selectedIndex];
+
+            if (_questionsList.Exists(q => q.Id == question.Id))
+            {
+                Debug.Log("Этот вопрос уже добавлен в тест.");
+                _view.ResetAvailableQuestionsSelection();
+                return;
+            }
+
+            question.Order = _questionsList.Count + 1;
+            _questionsList.Add(question);
+
+            _view.ResetAvailableQuestionsSelection();
+
+            QuestionsChanged?.Invoke();
+            Show();
+
+            return;
+        }
+
+        BaseQuestionDTO newQuestion =
+            QuestionDtoFactory.Create(type, _questionsList.Count + 1);
 
         Hide();
         _editorPresenter.Show();
-        _editorPresenter.ShowCurrentQuestion(question);
+        _editorPresenter.ShowCurrentQuestion(newQuestion);
     }
 
     private void OnQuestionSaved(BaseQuestionDTO question)

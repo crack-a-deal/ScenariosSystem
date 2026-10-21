@@ -78,4 +78,13 @@ public class TestService : ITestService
 
         await _testRepository.SaveAsync(test);
     }
+
+    public async Task<List<BaseQuestionDTO>> GetAvailableQuestionsAsync()
+    {
+        var questions = await _testRepository.GetAllQuestionsAsync();
+
+        return questions
+            .Select(q => TestMapper.ToQuestionDto(q,0))
+            .ToList();
+    }
 }

@@ -14,4 +14,5 @@ public interface ITestService
     Task DeleteTestAsync(Guid testId);
     Task<List<TestListItemDTO>> GetAvailableTestsAsync();
     Task SaveAsync(TestDTO test);
+    Task<List<BaseQuestionDTO>> GetAvailableQuestionsAsync();
 }

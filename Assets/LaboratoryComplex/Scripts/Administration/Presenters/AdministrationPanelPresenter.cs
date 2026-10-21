@@ -147,7 +147,7 @@ public class AdministrationPanelPresenter : IDisposable
             {
                 cancellationToken.ThrowIfCancellationRequested();
 
-                Debug.Log("BROADCAST");
+                //Debug.Log("BROADCAST");
                 await _discoveryService.BroadcastServerAsync(json, cancellationToken);
                 await Task.Delay(BROADCAST_INTERVAL, cancellationToken);
             }

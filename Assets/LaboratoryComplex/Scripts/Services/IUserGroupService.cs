@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using UserProfileModel;
 
 public interface IUserGroupService
 {
@@ -16,4 +17,5 @@ public interface IUserGroupService
         CreateUpdateUserGroupDto dto);
 
     Task<bool> DeleteGroupAsync(Guid id);
+    Task<List<UserProfile>> GetStudentsByGroupIdAsync(Guid groupId);
 }

@@ -79,9 +79,9 @@ public class JsonTestImportService
 
         if (existingTexts.Count > 0)
         {
-            Debug.LogError(
-                "Некоторые вопросы уже есть в банке. " +
-                "Импорт отменён, чтобы не создавать дубликаты.");
+            //Debug.LogError(
+            //    "Некоторые вопросы уже есть в банке. " +
+            //    "Импорт отменён, чтобы не создавать дубликаты.");
             return false;
         }
 

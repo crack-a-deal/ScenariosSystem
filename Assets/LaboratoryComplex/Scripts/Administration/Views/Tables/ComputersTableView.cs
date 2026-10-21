@@ -10,6 +10,13 @@ public class ComputersTableView : MonoBehaviour
         return Instantiate(_rowPrefab, _content);
     }
 
+    public ComputerRowView CreateRow(bool isActive)
+    {
+        ComputerRowView computerRowView = Instantiate(_rowPrefab, _content);
+        computerRowView.ButtonActive(isActive);
+        return computerRowView;
+    }
+
     public void Clear()
     {
         for (var i = _content.childCount - 1; i >= 0; i--)

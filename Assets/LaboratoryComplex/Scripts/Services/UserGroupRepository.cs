@@ -2,7 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using UserProfileModel;
 
 public class UserGroupRepository : IUserGroupRepository
 {
@@ -53,5 +55,13 @@ public class UserGroupRepository : IUserGroupRepository
         await _context.SaveChangesAsync();
 
         return true;
+    }
+
+    public async Task<List<UserProfile>> GetStudentsByGroupIdAsync(Guid groupId)
+    {
+        return await _context.UserProfiles
+            .Where(user => user.UserGroupId == groupId)
+            .AsNoTracking()
+            .ToListAsync();
     }
 }

@@ -19,7 +19,7 @@ public static class TestMapper
         };
     }
 
-    private static BaseQuestionDTO ToQuestionDto(Question question, int order)
+    public static BaseQuestionDTO ToQuestionDto(Question question, int order)
     {
         switch (question.Type)
         {

@@ -15,6 +15,7 @@ namespace Networking
     {
         public event Action<PendingRequest> AdminActionRequestReceived;
         public event Action<Exception> ErrorOccurred;
+        public event Action<Guid> ClientDisconnected;
 
         private readonly TcpListener _listener;
         private readonly IMessageSerializer _serializer;
@@ -207,6 +208,7 @@ namespace Networking
 
                 _clientRegistry.Remove(client.Id);
                 RemovePendingRequests(client.Id);
+                ClientDisconnected?.Invoke(client.Id);
             }
         }
 
@@ -302,7 +304,15 @@ namespace Networking
                     Payload = _serializer.Serialize(response)
                 };
 
-                await client.Connection.SendAsync(responseMessage, cancellationToken).ConfigureAwait(false);
+                await client.Connection.SendAsync(
+                    responseMessage,
+                    cancellationToken);
+
+                if (response is AccessResponse accessResponse &&
+                    accessResponse.Granted)
+                {
+                    client.Authorize();
+                }
 
                 _pendingRequests.TryRemove(requestId, out _);
             }

@@ -24,27 +24,27 @@ public class RandomTestGenerator
         }
 
         // TEST ONLY
-        //Dictionary<QuestionType, int> requiredCounts =
-        //    new Dictionary<QuestionType, int>
-        //    {
-        //                { QuestionType.OpenAnswer, 1 },
-        //                { QuestionType.SingleChoice, 1 },
-        //                { QuestionType.MultipleChoice, 1 },
-        //                { QuestionType.Matching, 1 },
-        //                { QuestionType.Ordering, 1 },
-        //                { QuestionType.TrueFalse, 1 }
-        //    };
-
         Dictionary<QuestionType, int> requiredCounts =
             new Dictionary<QuestionType, int>
             {
-                { QuestionType.OpenAnswer, 2 },
-                { QuestionType.SingleChoice, 6 },
-                { QuestionType.MultipleChoice, 4 },
-                { QuestionType.Matching, 3 },
-                { QuestionType.Ordering, 2 },
-                { QuestionType.TrueFalse, 3 }
+                        { QuestionType.OpenAnswer, 1 },
+                        { QuestionType.SingleChoice, 1 },
+                        { QuestionType.MultipleChoice, 1 },
+                        { QuestionType.Matching, 1 },
+                        { QuestionType.Ordering, 1 },
+                        { QuestionType.TrueFalse, 1 }
             };
+
+        //Dictionary<QuestionType, int> requiredCounts =
+        //    new Dictionary<QuestionType, int>
+        //    {
+        //        { QuestionType.OpenAnswer, 2 },
+        //        { QuestionType.SingleChoice, 6 },
+        //        { QuestionType.MultipleChoice, 4 },
+        //        { QuestionType.Matching, 3 },
+        //        { QuestionType.Ordering, 2 },
+        //        { QuestionType.TrueFalse, 3 }
+        //    };
 
         List<Question> questions = await _context.Questions
             .AsNoTracking()

@@ -10,19 +10,23 @@ public class BootstrapState : BaseApplicationState
     private readonly JsonTestImportService _testImportService;
     private readonly IThreeDModelService _modelService;
     private readonly ModulesList _modulesList;
+    private readonly GuardantLicenseService _licenseService;
 
     public BootstrapState(
         IApplication application,
-        JsonTestImportService testImportService, IThreeDModelService modelService, ModulesList modulesList)
+        JsonTestImportService testImportService, IThreeDModelService modelService, ModulesList modulesList, GuardantLicenseService licenseService)
         : base(application)
     {
         _testImportService = testImportService;
         _modelService = modelService;
         _modulesList = modulesList;
+        _licenseService = licenseService;
     }
 
     public override async Task EnterAsync()
     {
+        //await WaitForLicenseAsync();
+
         await LoadTestFromConfig();
         await InitModels();
 
@@ -32,6 +36,44 @@ public class BootstrapState : BaseApplicationState
     public override Task ExitAsync()
     {
         return Task.CompletedTask;
+    }
+
+    private async Task WaitForLicenseAsync()
+    {
+        if (_licenseService.State == GuardantLicenseState.Licensed)
+            return;
+
+        var completionSource = new TaskCompletionSource<bool>(
+            TaskCreationOptions.RunContinuationsAsynchronously);
+
+        void OnStateChanged(GuardantLicenseState state)
+        {
+            if (state == GuardantLicenseState.Licensed)
+                completionSource.TrySetResult(true);
+        }
+
+        _licenseService.StateChanged += OnStateChanged;
+
+        try
+        {
+            if (_licenseService.State == GuardantLicenseState.Licensed)
+                return;
+
+            Debug.Log("Ожидание разрешения Guardant...");
+
+            _licenseService.CheckNow();
+
+            if (_licenseService.State == GuardantLicenseState.Licensed)
+                return;
+
+            await completionSource.Task;
+
+            Debug.Log("Разрешение Guardant получено.");
+        }
+        finally
+        {
+            _licenseService.StateChanged -= OnStateChanged;
+        }
     }
 
     private async Task LoadTestFromConfig()

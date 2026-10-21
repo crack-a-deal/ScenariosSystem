@@ -1,6 +1,10 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using UnityEditor.PackageManager.Requests;
 using UnityEngine;
+using UserProfileModel;
 
 public class GroupFormPresenter
 {
@@ -33,16 +37,38 @@ public class GroupFormPresenter
     {
         _mode = FormMode.Create;
         _view.Clear();
+        _view.ClearList();
+        _view.ListTextActivate(true);
+        _view.SetListText("Список студентов пуст");
         _view.gameObject.SetActive(true);
     }
 
-    public void OpenForUpdate(UserGroupDto group)
+    public async void OpenForUpdate(UserGroupDto group)
     {
         _mode = FormMode.Update;
         _currentGroupId = group.Id;
 
         _view.SetNumberName(group.Number.ToString());
         _view.SetCourse(group.Name);
+
+        if (group.UserCount == 0)
+        {
+            _view.ClearList();
+            _view.ListTextActivate(true);
+            _view.SetListText("Список студентов пуст");
+        }
+        else
+        {
+            _view.ClearList();
+            _view.ListTextActivate(false);
+            List<UserProfile> userProfiles = await _service.GetStudentsByGroupIdAsync(group.Id);
+            foreach (var item in userProfiles)
+            {
+                var row = _view.CreateRow();
+                row.SetFullName($"{item.LastName} {item.FirstName} {item.Patronymic}");
+            }
+        }
+
         _view.gameObject.SetActive(true);
     }
 

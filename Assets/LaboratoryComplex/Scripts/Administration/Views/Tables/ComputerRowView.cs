@@ -44,4 +44,9 @@ public class ComputerRowView : MonoBehaviour
     {
         connectionIcon.sprite = sprite;
     }
+
+    public void ButtonActive(bool isActive)
+    {
+        connectButton.gameObject.SetActive(isActive);
+    }
 }
