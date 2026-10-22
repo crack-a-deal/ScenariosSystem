@@ -52,6 +52,15 @@ public class TestSessionService
         return await _repository.GetByIdAsync(sessionId);
     }
 
+    public async Task<TestSession> AssignToStudentAsync(
+        Guid testId,
+        Guid studentProfileId)
+    {
+        return await _repository.AssignToStudentAsync(
+            testId,
+            studentProfileId);
+    }
+
     public async Task<List<TestSession>> AssignToAllStudentsAsync(Guid testId)
     {
         return await _repository.AssignToAllStudentsAsync(testId);

@@ -7,7 +7,8 @@ public class TestRowView : MonoBehaviour
 {
     public enum TestRowButton
     {
-        Assign,
+        AssignStudent,
+        AssignAll,
         Edit,
         Delete
     }
@@ -15,9 +16,10 @@ public class TestRowView : MonoBehaviour
     [SerializeField] private TMP_Text indexLabel;
     [SerializeField] private TMP_Text titleLabel;
     [SerializeField] private TMP_Text questionCountLabel;
-    [SerializeField] private TMP_Text timeLabel;
 
-    [SerializeField] private Button assingButton;
+    [SerializeField] private Button assingStudentButton;
+
+    [SerializeField] private Button assingAllButton;
     [SerializeField] private Button editButton;
     [SerializeField] private Button deleteButton;
 
@@ -25,42 +27,38 @@ public class TestRowView : MonoBehaviour
 
     private void Awake()
     {
-        assingButton.onClick.AddListener(
-            () =>
-            {
-                ButtonClicked?.Invoke(TestRowButton.Assign);
-            });
-        editButton.onClick.AddListener(
-            () =>
-            {
-                ButtonClicked?.Invoke(TestRowButton.Edit);
-            });
-
-        deleteButton.onClick.AddListener(
-            () =>
-            {
-                ButtonClicked?.Invoke(TestRowButton.Delete);
-            });
+        assingStudentButton.onClick.AddListener(OnAssignStudentClicked);
+        assingAllButton.onClick.AddListener(OnAssignAllClicked);
+        editButton.onClick.AddListener(OnEditClicked);
+        deleteButton.onClick.AddListener(OnDeleteClicked);
     }
 
     private void OnDestroy()
     {
-        assingButton.onClick.RemoveListener(
-            () =>
-            {
-                ButtonClicked?.Invoke(TestRowButton.Assign);
-            });
-        editButton.onClick.RemoveListener(
-            () =>
-            {
-                ButtonClicked?.Invoke(TestRowButton.Edit);
-            });
+        assingStudentButton.onClick.RemoveListener(OnAssignStudentClicked);
+        assingAllButton.onClick.RemoveListener(OnAssignAllClicked);
+        editButton.onClick.RemoveListener(OnEditClicked);
+        deleteButton.onClick.RemoveListener(OnDeleteClicked);
+    }
 
-        deleteButton.onClick.RemoveListener(
-            () =>
-            {
-                ButtonClicked?.Invoke(TestRowButton.Delete);
-            });
+    private void OnAssignStudentClicked()
+    {
+        ButtonClicked?.Invoke(TestRowButton.AssignStudent);
+    }
+
+    private void OnAssignAllClicked()
+    {
+        ButtonClicked?.Invoke(TestRowButton.AssignAll);
+    }
+
+    private void OnEditClicked()
+    {
+        ButtonClicked?.Invoke(TestRowButton.Edit);
+    }
+
+    private void OnDeleteClicked()
+    {
+        ButtonClicked?.Invoke(TestRowButton.Delete);
     }
 
     public void SetIndex(string value)
@@ -76,10 +74,5 @@ public class TestRowView : MonoBehaviour
     public void SetQuestioCount(string value)
     {
         questionCountLabel.text = value;
-    }
-
-    public void SetTime(string value)
-    {
-        timeLabel.text = value;
     }
 }

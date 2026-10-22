@@ -29,6 +29,45 @@ public class TestSessionRepository
         return session;
     }
 
+    public async Task<TestSession> AssignToStudentAsync(
+    Guid testId,
+    Guid studentProfileId)
+    {
+        bool testExists = await _context.Tests
+            .AnyAsync(x => x.Id == testId);
+
+        if (!testExists)
+            throw new InvalidOperationException(
+                $"Test {testId} was not found.");
+
+        bool studentExists = await _context.UserProfiles
+            .AnyAsync(x => x.Id == studentProfileId);
+
+        if (!studentExists)
+            throw new InvalidOperationException(
+                $"Student {studentProfileId} was not found.");
+
+        bool alreadyAssigned = await _context.TestSessions
+            .AnyAsync(x =>
+                x.TestId == testId &&
+                x.UserProfileId == studentProfileId);
+
+        if (alreadyAssigned)
+            throw new InvalidOperationException(
+                "Этот тест уже назначен данному студенту.");
+
+        var session = new TestSession
+        {
+            TestId = testId,
+            UserProfileId = studentProfileId
+        };
+
+        _context.TestSessions.Add(session);
+        await _context.SaveChangesAsync();
+
+        return session;
+    }
+
     public async Task<List<TestSession>> AssignToAllStudentsAsync(Guid testId)
     {
         bool testExists = await _context.Tests

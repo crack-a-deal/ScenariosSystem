@@ -25,7 +25,14 @@ public class BootstrapState : BaseApplicationState
 
     public override async Task EnterAsync()
     {
-        //await WaitForLicenseAsync();
+        _licenseService.CheckNow();
+
+        if (_licenseService.State != GuardantLicenseState.Licensed)
+        {
+            await _application.ChangeStateAsync<StudentWaitingState>();
+            return;
+        }
+
 
         await LoadTestFromConfig();
         await InitModels();
@@ -36,44 +43,6 @@ public class BootstrapState : BaseApplicationState
     public override Task ExitAsync()
     {
         return Task.CompletedTask;
-    }
-
-    private async Task WaitForLicenseAsync()
-    {
-        if (_licenseService.State == GuardantLicenseState.Licensed)
-            return;
-
-        var completionSource = new TaskCompletionSource<bool>(
-            TaskCreationOptions.RunContinuationsAsynchronously);
-
-        void OnStateChanged(GuardantLicenseState state)
-        {
-            if (state == GuardantLicenseState.Licensed)
-                completionSource.TrySetResult(true);
-        }
-
-        _licenseService.StateChanged += OnStateChanged;
-
-        try
-        {
-            if (_licenseService.State == GuardantLicenseState.Licensed)
-                return;
-
-            Debug.Log("Ожидание разрешения Guardant...");
-
-            _licenseService.CheckNow();
-
-            if (_licenseService.State == GuardantLicenseState.Licensed)
-                return;
-
-            await completionSource.Task;
-
-            Debug.Log("Разрешение Guardant получено.");
-        }
-        finally
-        {
-            _licenseService.StateChanged -= OnStateChanged;
-        }
     }
 
     private async Task LoadTestFromConfig()

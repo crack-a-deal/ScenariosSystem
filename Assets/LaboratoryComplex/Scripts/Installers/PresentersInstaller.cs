@@ -8,6 +8,8 @@ public class PresentersInstaller : MonoInstaller
 
         Container.Bind<MainPresenter>().AsSingle().NonLazy();
         Container.Bind<ExitPresenter>().AsSingle();
+        Container.Bind<StudentAssignmentPresenter>().AsSingle();
+
 
         // Authentication
 

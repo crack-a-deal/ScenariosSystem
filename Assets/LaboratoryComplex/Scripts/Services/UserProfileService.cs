@@ -28,7 +28,11 @@ public class UserProfileService : IUserProfileService
     {
         var profiles = await _profileRepository.GetAllAsync();
 
-        return profiles.Select(ToDto).ToList();
+        return profiles
+            .Where(p => p.UserGroupId !=
+                AppDbContext.AdminGroupId)
+            .Select(ToDto)
+            .ToList();
     }
 
     public async Task<UserProfileDto?> GetByIdAsync(Guid id)

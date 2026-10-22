@@ -12,15 +12,18 @@ public class TestsTablePresenter
     private readonly ITestService _service;
     private readonly TestSessionService _sessionService;
     private readonly TestEditorPanelPresenter _testEditor;
+    private readonly StudentAssignmentPresenter _studentAssignment;
 
     private readonly Dictionary<TestRowView, TestDTO> _rows = new();
 
-    public TestsTablePresenter(TestsTableView view, ITestService service,TestSessionService sessionService, TestEditorPanelPresenter testEditor)
+    public TestsTablePresenter(TestsTableView view, ITestService service, TestSessionService sessionService, TestEditorPanelPresenter testEditor, StudentAssignmentPresenter studentAssignment)
     {
         _view = view;
         _service = service;
         _sessionService = sessionService;
         _testEditor = testEditor;
+        _studentAssignment = studentAssignment;
+
         _testEditor.Saved += _testEditor_Saved;
     }
 
@@ -75,7 +78,10 @@ public class TestsTablePresenter
 
         switch (button)
         {
-            case TestRowButton.Assign:
+            case TestRowButton.AssignStudent:
+                _studentAssignment.Show(test);
+                break;
+            case TestRowButton.AssignAll:
                 Assing(test);
                 break;
             case TestRowButton.Edit:

@@ -7,6 +7,8 @@ public class ViewsInstaller : MonoInstaller
     [Header("Application")]
     [SerializeField] private MainView mainView;
     [SerializeField] private ExitView exitView;
+    [SerializeField] private StudentAssignmentPanelView studentAssignmentPanelView;
+
 
 
     [Header("Authentication")]
@@ -63,6 +65,10 @@ public class ViewsInstaller : MonoInstaller
 
         Container.Bind<ExitView>()
             .FromInstance(exitView)
+            .AsSingle();
+
+        Container.Bind<StudentAssignmentPanelView>()
+            .FromInstance(studentAssignmentPanelView)
             .AsSingle();
 
         // Authentication

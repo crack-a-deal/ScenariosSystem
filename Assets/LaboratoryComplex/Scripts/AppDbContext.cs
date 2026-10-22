@@ -53,7 +53,7 @@ public class AppDbContext : DbContext
 
     }
 
-    private static readonly Guid AdminGroupId =
+    public static readonly Guid AdminGroupId =
     new("11111111-1111-1111-1111-111111111111");
 
     private static readonly Guid AdminAccountId =
