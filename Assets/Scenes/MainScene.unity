@@ -6441,7 +6441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2804212307023569935, guid: 66dd45bd3d22d6a41aa2d831e845622c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 155
+      value: 95
       objectReference: {fileID: 0}
     - target: {fileID: 2804212307023569935, guid: 66dd45bd3d22d6a41aa2d831e845622c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7988,7 +7988,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 119
 --- !u!114 &630868650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11977,7 +11977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2804212307023569935, guid: 66dd45bd3d22d6a41aa2d831e845622c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -191
+      value: -74
       objectReference: {fileID: 0}
     - target: {fileID: 2804212307023569935, guid: 66dd45bd3d22d6a41aa2d831e845622c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12365,7 +12365,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 119
 --- !u!114 &1038457270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23010,6 +23010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5049059519330108125, guid: 66dd45bd3d22d6a41aa2d831e845622c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5241675101383598466, guid: 66dd45bd3d22d6a41aa2d831e845622c, type: 3}
       propertyPath: m_text
       value: "\u0412\u0438\u0440\u0442\u0443\u0430\u043B\u044C\u043D\u044B\u0439
@@ -26256,7 +26260,7 @@ MonoBehaviour:
   adminTestTable: {fileID: 1112311548}
   modulesTable: {fileID: 454848460}
   studentTestTable: {fileID: 1494449920}
-  modulesList: {fileID: 11400000, guid: 8c79b828ba0128941aca902424991fd4, type: 2}
+  modulesList: {fileID: 11400000, guid: 0cec5a2040b964a469026d98989867ef, type: 2}
   testSessionView: {fileID: 5741044775358386363}
   testResults: {fileID: 630868653}
   viewContainer: {fileID: 6110833491449147693}

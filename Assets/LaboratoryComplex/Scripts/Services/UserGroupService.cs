@@ -20,7 +20,10 @@ public class UserGroupService : IUserGroupService
     {
         var groups = await _repository.GetAllAsync();
 
-        return groups.Select(ToDto).ToList();
+        return groups
+            .Where(g => g.Id != AppDbContext.AdminGroupId)
+            .Select(ToDto)
+            .ToList();
     }
 
     public async Task<UserGroupDto?> GetByIdAsync(Guid id)

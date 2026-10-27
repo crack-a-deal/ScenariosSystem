@@ -231,3 +231,13 @@
 /Assets/Packages/Microsoft.EntityFrameworkCore.5.0.17/lib/netstandard2.1/Microsoft.EntityFrameworkCore.xml filter=lfs diff=lfs merge=lfs -text
 /Assets/Scenes/ScenarioScene/Lightmap-0_comp_light.exr filter=lfs diff=lfs merge=lfs -text
 /Assets/Scenes/ScenarioScene/Lightmap-1_comp_light.exr filter=lfs diff=lfs merge=lfs -text
+/Assets/Content/Комната[[:space:]]с[[:space:]]генератором_готовое.fbx filter=lfs diff=lfs merge=lfs -text
+/Assets/Scenes/ScenarioScene[[:space:]]1/Lightmap-0_comp_light.exr filter=lfs diff=lfs merge=lfs -text
+/Assets/Scenes/ScenarioScene[[:space:]]1/Lightmap-1_comp_light.exr filter=lfs diff=lfs merge=lfs -text
+/Assets/TMP/Емкость/Емкость[[:space:]]для[[:space:]]воды.fbx filter=lfs diff=lfs merge=lfs -text
+/Assets/TMP/Перчатки/gloves-BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/TMP/Перчатки/gloves-Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/TMP/Перчатки/Рабочие[[:space:]]перчатки.fbx filter=lfs diff=lfs merge=lfs -text
+/Assets/TMP/Рация/textures/Low_Textures_BaseColor.png filter=lfs diff=lfs merge=lfs -text
+/Assets/TMP/Рация/textures/Low_Textures_Normal.png filter=lfs diff=lfs merge=lfs -text
+/Assets/TMP/Рация/textures/Low_Textures_Roughness.png filter=lfs diff=lfs merge=lfs -text

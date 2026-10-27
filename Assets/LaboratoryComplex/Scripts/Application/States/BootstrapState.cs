@@ -37,7 +37,7 @@ public class BootstrapState : BaseApplicationState
         await LoadTestFromConfig();
         await InitModels();
 
-        await _application.ChangeStateAsync<RoleSelectionState>();
+        await _application.ChangeStateAsync<TeacherAuthorizationState>();
     }
 
     public override Task ExitAsync()

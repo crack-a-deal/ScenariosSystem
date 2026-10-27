@@ -7,7 +7,6 @@ public class ApplicationEntryPoint : IInitializable, IDisposable
 {
     private readonly MyApplication _application;
     private readonly BootstrapState _bootstrapState;
-    private readonly LicenseState _licenseState;
     private readonly RoleSelectionState _roleSelectionState;
     private readonly TeacherAuthorizationState _teacherAuthorizationState;
     private readonly StudentAuthorizationState _studentAuthorizationState;
@@ -21,7 +20,6 @@ public class ApplicationEntryPoint : IInitializable, IDisposable
     public ApplicationEntryPoint(
         MyApplication application,
         BootstrapState bootstrapState,
-        LicenseState licenseState,
         RoleSelectionState roleSelectionState,
         TeacherAuthorizationState teacherAuthorizationState,
         StudentAuthorizationState studentAuthorizationState,
@@ -34,7 +32,6 @@ public class ApplicationEntryPoint : IInitializable, IDisposable
     {
         _application = application;
         _bootstrapState = bootstrapState;
-        _licenseState = licenseState;
         _roleSelectionState = roleSelectionState;
         _teacherAuthorizationState = teacherAuthorizationState;
         _studentAuthorizationState = studentAuthorizationState;
@@ -51,7 +48,6 @@ public class ApplicationEntryPoint : IInitializable, IDisposable
         _application.RegisterStates(new IApplicationState[]
         {
             _bootstrapState,
-            _licenseState,
             _roleSelectionState,
             _teacherAuthorizationState,
             _studentAuthorizationState,

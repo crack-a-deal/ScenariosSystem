@@ -27,6 +27,7 @@ public class ScenarioSceneRoot : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
+            Debug.Log("RequestExit");
             RequestExit();
         }
     }

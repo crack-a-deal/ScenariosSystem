@@ -7,5 +7,6 @@ public enum ScenarioEventType
     ItemRemoved,
     ItemRotated,
     StateChanged,
-    InspectionCompleted
+    InspectionCompleted,
+    KeyPressed,
 }

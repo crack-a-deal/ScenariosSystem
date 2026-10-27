@@ -22,9 +22,14 @@ public class ScenarioRunner : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log($"Awake scenario runner for scenario: {_scenario.Title}");
+        //Debug.Log($"Awake scenario runner for scenario: {_scenario.Title}");
         _context = new ScenarioContext();
         _eventBus.EventPublished += ProcessEvent;
+    }
+    
+    public void SelectScenario(Scenario scenario)
+    {
+        _scenario = scenario;
     }
 
     public void StartScenario()

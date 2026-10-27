@@ -5,4 +5,5 @@ public enum ScenarioObjectState
     Marked,
     Loosened,
     Removed,
+    KeyPressed,
 }

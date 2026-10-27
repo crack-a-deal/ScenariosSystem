@@ -76,29 +76,29 @@ public class GuardantLicenseService :
 
     public void Tick()
     {
-        if (_disposed)
-            return;
+        //if (_disposed)
+        //    return;
 
-        float deltaTime = Time.unscaledDeltaTime;
+        //float deltaTime = Time.unscaledDeltaTime;
 
-        if (State == GuardantLicenseState.GracePeriod)
-        {
-            _graceRemainingSeconds -= deltaTime;
+        //if (State == GuardantLicenseState.GracePeriod)
+        //{
+        //    _graceRemainingSeconds -= deltaTime;
 
-            if (_graceRemainingSeconds <= 0f)
-            {
-                _graceRemainingSeconds = 0f;
-                SetState(GuardantLicenseState.Blocked);
-            }
-        }
+        //    if (_graceRemainingSeconds <= 0f)
+        //    {
+        //        _graceRemainingSeconds = 0f;
+        //        SetState(GuardantLicenseState.Blocked);
+        //    }
+        //}
 
-        _checkTimer += deltaTime;
+        //_checkTimer += deltaTime;
 
-        if (_checkTimer >= _checkIntervalSeconds)
-        {
-            _checkTimer = 0f;
-            CheckNow();
-        }
+        //if (_checkTimer >= _checkIntervalSeconds)
+        //{
+        //    _checkTimer = 0f;
+        //    CheckNow();
+        //}
     }
 
     public void CheckNow()

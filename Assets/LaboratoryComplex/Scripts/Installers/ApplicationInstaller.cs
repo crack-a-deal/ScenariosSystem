@@ -11,7 +11,6 @@ public class ApplicationInstaller : MonoInstaller
             .AsSingle();
 
         Container.Bind<BootstrapState>().AsSingle();
-        Container.Bind<LicenseState>().AsSingle();
         Container.Bind<RoleSelectionState>().AsSingle();
         Container.Bind<TeacherAuthorizationState>().AsSingle();
         Container.Bind<StudentAuthorizationState>().AsSingle();

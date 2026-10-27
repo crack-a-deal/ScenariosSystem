@@ -13,6 +13,12 @@ public class InspectionController : MonoBehaviour
     private string _displayText = "Зона визуального контроля";
     private ScenarioObjectState _objectState = ScenarioObjectState.Inspected;
 
+    public bool IsRadioMode = false;
+
+    public void SetRadioMode(bool value)
+    {
+        IsRadioMode = value;
+    }
 
     private void Awake()
     {
@@ -68,6 +74,7 @@ public class InspectionController : MonoBehaviour
 
         if (target == null)
             return;
+
         var provider = target.GetComponent<ScenarioStateProvider>();
         if (provider == null || !_allowedObjects.Contains(provider))
             return;
@@ -80,7 +87,14 @@ public class InspectionController : MonoBehaviour
         _currentProvider = provider;
         _currentInspection = inspection;
 
-        _indicator.Show(_displayText + '\n' + inspection.InspectionText);
+        if (IsRadioMode)
+        {
+            _indicator.Show(_displayText + '\n' + inspection.InspectionText, "Нажмите R");
+        }
+        else
+        {
+            _indicator.Show(_displayText + '\n' + inspection.InspectionText);
+        }
     }
 
     public void SetHighlighting(bool enabled)
@@ -107,6 +121,16 @@ public class InspectionController : MonoBehaviour
         if (_currentInspection == null)
             return;
 
+        if (IsRadioMode)
+        {
+            if (_inputActions.Player.Crouch.IsPressed())
+            {
+                _currentInspection.CompleteInspection(ScenarioObjectState.KeyPressed);
+            }
+
+            return;
+        }
+
         if (!_inputActions.Player.Interact.IsPressed())
         {
             _inspectionProgress = 0f;
@@ -121,7 +145,7 @@ public class InspectionController : MonoBehaviour
             return;
 
         _currentInspection.CompleteInspection(_objectState);
-            DisableHighlighting(_currentProvider);
+        DisableHighlighting(_currentProvider);
 
         //if (_objectState == ScenarioObjectState.Inspected || _objectState == ScenarioObjectState.Loosened || _objectState == ScenarioObjectState.Removed || _objectState == ScenarioObjectState.Marked)
 
