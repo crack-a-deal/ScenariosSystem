@@ -241,3 +241,4 @@
 /Assets/TMP/Рация/textures/Low_Textures_BaseColor.png filter=lfs diff=lfs merge=lfs -text
 /Assets/TMP/Рация/textures/Low_Textures_Normal.png filter=lfs diff=lfs merge=lfs -text
 /Assets/TMP/Рация/textures/Low_Textures_Roughness.png filter=lfs diff=lfs merge=lfs -text
+/Assets/Scenes/ScenarioScene_2/Lightmap-0_comp_light.exr filter=lfs diff=lfs merge=lfs -text

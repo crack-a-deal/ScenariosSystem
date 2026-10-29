@@ -29,7 +29,7 @@ public class ComputersTablePresenter : IDisposable
         {
             _server = _serverProvider.Instance ?? throw new InvalidOperationException("TCP server has not been created yet.");
 
-            Subscribe(_server);
+            //Subscribe(_server);
         }
         
 
@@ -80,22 +80,22 @@ public class ComputersTablePresenter : IDisposable
         }
     }
 
-    private void Subscribe(TcpServer server)
-    {
-        Debug.Log("Subscribe");
-        _server.AdminActionRequestReceived += OnRequestReceived;
-        _server.ClientDisconnected += OnClientDisconnected;
-    }
+    //private void Subscribe(TcpServer server)
+    //{
+    //    Debug.Log("Subscribe");
+    //    _server.AdminActionRequestReceived += OnRequestReceived;
+    //    _server.ClientDisconnected += OnClientDisconnected;
+    //}
 
-    private void Unsubscribe()
-    {
-        if (_server == null)
-            return;
-        Debug.Log("Unsubscribe");
-        _server.AdminActionRequestReceived -= OnRequestReceived;
-        _server.ClientDisconnected -= OnClientDisconnected;
-        _server = null;
-    }
+    //private void Unsubscribe()
+    //{
+    //    if (_server == null)
+    //        return;
+    //    Debug.Log("Unsubscribe");
+    //    _server.AdminActionRequestReceived -= OnRequestReceived;
+    //    _server.ClientDisconnected -= OnClientDisconnected;
+    //    _server = null;
+    //}
 
     private void AddRow(ComputerDto computer, Guid requestId, bool isAuthorized)
     {
@@ -174,6 +174,6 @@ public class ComputersTablePresenter : IDisposable
     public void Dispose()
     {
 
-        Unsubscribe();
+        //Unsubscribe();
     }
 }

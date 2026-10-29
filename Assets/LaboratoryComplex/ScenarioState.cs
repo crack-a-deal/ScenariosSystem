@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ScenarioState : BaseApplicationState
 {
-    private const string ScenarioSceneName = "ScenarioScene";
+    private const string ScenarioSceneName = "ScenarioScene 1";
 
     private readonly CameraSwitcher _cameraSwitcher;
     private readonly Canvas _mainCanvas;
@@ -64,6 +64,7 @@ public class ScenarioState : BaseApplicationState
 
     private async void OnExitRequested()
     {
+        Debug.Log("OnExitRequested");
         if (_isExiting)
             return;
 

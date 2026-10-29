@@ -1,0 +1,2249 @@
+{
+  "Title": "Ремонт и диагностика теплотехнического оборудования — 90 вопросов",
+  "Questions": [
+    {
+      "Type": "SingleChoice",
+      "Text": "Какое оборудование используется для нагрева теплоносителя?",
+      "Options": [
+        {
+          "Text": "Кожухотрубчатый теплообменник Т-101",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Водогрейный котёл КВр-0,8 МВт",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Расширительный бак Reflex N100",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Шкаф управления Rittal VX25",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как обозначается водогрейный котёл, предусмотренный в составе учебной установки?",
+      "Options": [],
+      "CorrectAnswer": "КВр-0,8 МВт",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какое оборудование обозначено Т-101?",
+      "Options": [
+        {
+          "Text": "Гидравлическая стрелка",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Циркуляционный насос",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Кожухотрубчатый теплообменник",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Расширительный бак",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Каково основное назначение кожухотрубчатого теплообменника?",
+      "Options": [
+        {
+          "Text": "Хранение теплоносителя",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Передача тепла между теплоносителями",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Измерение давления",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Управление насосом",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как называется устройство, предназначенное для гидравлического разделения контуров системы?",
+      "Options": [],
+      "CorrectAnswer": "гидравлическая стрелка",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какое назначение имеет гидравлическая стрелка?",
+      "Options": [
+        {
+          "Text": "Электрическое управление котлом",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Гидравлическое разделение контуров",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Измерение температуры",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Очистка теплоносителя",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какое оборудование предназначено для компенсации изменения объёма теплоносителя?",
+      "Options": [
+        {
+          "Text": "Reflex N100",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Rittal VX25",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Т-101",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Манометр",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как обозначается расширительный бак, используемый в учебной установке?",
+      "Options": [],
+      "CorrectAnswer": "Reflex N100",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие элементы относятся к основному оборудованию теплотехнической установки?",
+      "Options": [
+        {
+          "Text": "КВр-0,8 МВт",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Т-101",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Гидравлическая стрелка",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Reflex N100",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "Rittal VX25",
+          "Order": 5,
+          "Correct": true
+        },
+        {
+          "Text": "Ветошь",
+          "Order": 6,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Matching",
+      "Text": "Установите соответствие.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "КВр-0,8 МВт",
+          "RightText": "Водогрейный котёл"
+        },
+        {
+          "LeftText": "Т-101",
+          "RightText": "Теплообменник"
+        },
+        {
+          "LeftText": "Reflex N100",
+          "RightText": "Расширительный бак"
+        },
+        {
+          "LeftText": "Rittal VX25",
+          "RightText": "Шкаф управления"
+        }
+      ]
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Кожухотрубчатый теплообменник Т-101 предназначен для передачи тепла между теплоносителями.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Rittal VX25 используется для хранения запаса теплоносителя.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего предназначена трубопроводная обвязка?",
+      "Options": [
+        {
+          "Text": "Для транспортирования теплоносителя между элементами системы",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Только для крепления оборудования",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Только для прокладки электрических кабелей",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Для хранения инструмента",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Какие основные трубопроводы необходимо различать при осмотре тепловой системы?",
+      "Options": [],
+      "CorrectAnswer": "подающий и обратный трубопроводы",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Что необходимо осматривать на трубопроводе?",
+      "Options": [
+        {
+          "Text": "Состояние поверхности трубы",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Фланцевые соединения",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Сварные соединения",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Арматуру",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "Опоры",
+          "Order": 5,
+          "Correct": true
+        },
+        {
+          "Text": "Теплоизоляцию",
+          "Order": 6,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какой элемент предназначен для изменения направления трубопровода?",
+      "Options": [
+        {
+          "Text": "Отвод",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Манометр",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Клапан",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Фильтр",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какой элемент позволяет соединить несколько направлений трубопровода?",
+      "Options": [
+        {
+          "Text": "Термометр",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Тройник",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Манометр",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Прокладка",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие элементы могут использоваться для монтажа трубопроводной трассы?",
+      "Options": [
+        {
+          "Text": "Отводы",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Тройники",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Переходы",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Заглушки",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "Опоры",
+          "Order": 5,
+          "Correct": true
+        },
+        {
+          "Text": "Радиостанция",
+          "Order": 6,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "При визуальном осмотре необходимо проверять состояние теплоизоляции трубопроводов.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что может свидетельствовать о повреждении теплоизоляции?",
+      "Options": [
+        {
+          "Text": "Отсутствие каких-либо изменений",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Разрушение или намокание изоляционного слоя",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Наличие штатной маркировки",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Ровная поверхность трубы",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего устанавливаются опоры трубопроводов?",
+      "Options": [
+        {
+          "Text": "Для поддержания трубопроводов и передачи нагрузки на строительные конструкции",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Для измерения давления",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Для управления котлом",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Для удаления воздуха",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "При осмотре трубопровода достаточно проверить только его прямолинейные участки.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Расположите действия при осмотре трубопроводной обвязки.",
+      "Options": [
+        {
+          "Text": "Проверить состояние соединений",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Определить направление трассы",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Осмотреть состояние труб",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Проверить арматуру и опоры",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Назовите два основных признака возможной протечки трубопровода.",
+      "Options": [],
+      "CorrectAnswer": "влажные следы и капли/стекание теплоносителя",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего предназначена запорная арматура?",
+      "Options": [
+        {
+          "Text": "Для открытия и перекрытия потока теплоносителя",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Для измерения температуры",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Для хранения теплоносителя",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Для преобразования электрической энергии",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какой элемент относится к запорной арматуре?",
+      "Options": [
+        {
+          "Text": "Шаровой кран",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Манометр",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Термометр",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Расширительный бак",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего используется обратный клапан?",
+      "Options": [
+        {
+          "Text": "Для измерения температуры",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Для предотвращения обратного движения потока",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Для хранения воды",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Для измерения давления",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что используется для изменения степени открытия регулирующего клапана?",
+      "Options": [
+        {
+          "Text": "Электропривод",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Манометр",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Прокладка",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Опора",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Что необходимо проверить при визуальном осмотре арматуры?",
+      "Options": [
+        {
+          "Text": "Корпус",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Фланцевые соединения",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Шток",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Рукоятку",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "Следы протечки",
+          "Order": 5,
+          "Correct": true
+        },
+        {
+          "Text": "Цвет пола",
+          "Order": 6,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Следы теплоносителя около корпуса или соединения арматуры могут свидетельствовать о неисправности.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Назовите один внешний признак неисправности запорной арматуры.",
+      "Options": [],
+      "CorrectAnswer": "протечка, повреждение корпуса, нарушение герметичности соединения или другой явно выраженный внешний дефект",
+      "Pairs": []
+    },
+    {
+      "Type": "Matching",
+      "Text": "Установите соответствие.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Шаровой кран",
+          "RightText": "Перекрытие потока"
+        },
+        {
+          "LeftText": "Обратный клапан",
+          "RightText": "Предотвращение обратного движения среды"
+        },
+        {
+          "LeftText": "Регулирующий клапан",
+          "RightText": "Регулирование потока"
+        },
+        {
+          "LeftText": "Предохранительный клапан",
+          "RightText": "Защита системы от недопустимого повышения давления"
+        }
+      ]
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что необходимо сделать при обнаружении протечки около арматуры?",
+      "Options": [
+        {
+          "Text": "Не обращать внимания",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Зафиксировать дефект и действовать согласно сценарию диагностики",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Немедленно удалить арматуру",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Закрасить место протечки",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Запорную арматуру можно рассматривать как часть трубопроводной обвязки.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Установите последовательность первичного осмотра запорного крана.",
+      "Options": [
+        {
+          "Text": "Проверить соединения",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Осмотреть корпус",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Проверить наличие внешних признаков протечки",
+          "Order": 4,
+          "Correct": false
+        },
+        {
+          "Text": "Оценить состояние органа управления",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие элементы арматуры могут быть объектами интерактивного осмотра?",
+      "Options": [
+        {
+          "Text": "Корпус",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Рукоятка",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Шток",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Фланцы",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "Привод",
+          "Order": 5,
+          "Correct": true
+        },
+        {
+          "Text": "Манометр шкафа",
+          "Order": 6,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какой прибор используется для контроля давления?",
+      "Options": [
+        {
+          "Text": "Термометр",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Манометр",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Радиостанция",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Кран",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какой прибор используется для контроля температуры?",
+      "Options": [
+        {
+          "Text": "Манометр",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Термометр",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Клапан",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Насос",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как называется прибор для измерения давления теплоносителя?",
+      "Options": [],
+      "CorrectAnswer": "манометр",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как называется прибор для измерения температуры теплоносителя?",
+      "Options": [],
+      "CorrectAnswer": "термометр",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Что необходимо проверить при визуальном осмотре манометра?",
+      "Options": [
+        {
+          "Text": "Целостность корпуса",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Целостность стекла",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Наличие стрелки",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Состояние присоединения",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "Показание прибора",
+          "Order": 5,
+          "Correct": true
+        },
+        {
+          "Text": "Состояние теплоизоляции соседнего трубопровода",
+          "Order": 6,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Манометр предназначен для визуального контроля давления.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Термометр используется для определения давления в трубопроводе.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Matching",
+      "Text": "Установите соответствие.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Манометр",
+          "RightText": "Контроль давления"
+        },
+        {
+          "LeftText": "Термометр",
+          "RightText": "Контроль температуры"
+        },
+        {
+          "LeftText": "Датчик температуры",
+          "RightText": "Измерение температуры для передачи сигнала системе управления"
+        },
+        {
+          "LeftText": "Датчик давления",
+          "RightText": "Измерение давления для передачи сигнала системе управления"
+        }
+      ]
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие признаки могут указывать на повреждение измерительного прибора?",
+      "Options": [
+        {
+          "Text": "Разбитое стекло",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Повреждение корпуса",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Повреждение присоединения",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Отсутствие стрелки",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "Нормальный внешний вид",
+          "Order": 5,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Установите последовательность визуального контроля манометра.",
+      "Options": [
+        {
+          "Text": "Проверить присоединение",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Осмотреть корпус",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Проверить циферблат и стрелку",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Оценить показание",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего предназначен шкаф управления Rittal VX25?",
+      "Options": [
+        {
+          "Text": "Для размещения электрического оборудования управления и защиты",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Для хранения теплоносителя",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Для измерения температуры",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Для удаления воздуха",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие компоненты могут размещаться внутри шкафа управления?",
+      "Options": [
+        {
+          "Text": "Автоматические выключатели",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Контакторы",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Реле",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Контроллер",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "Клеммные соединения",
+          "Order": 5,
+          "Correct": true
+        },
+        {
+          "Text": "Расширительный бак",
+          "Order": 6,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какой элемент предназначен для подключения внешних проводников?",
+      "Options": [
+        {
+          "Text": "Клеммная колодка",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Манометр",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Прокладка",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Фланец",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Для чего предназначен автоматический выключатель?",
+      "Options": [
+        {
+          "Text": "Для электрической защиты цепи",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Для измерения температуры",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Для хранения воды",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Для уплотнения фланца",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "При визуальном осмотре шкафа управления необходимо обращать внимание на состояние кабельных вводов.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Что можно проверить при внешнем осмотре шкафа управления?",
+      "Options": [
+        {
+          "Text": "Состояние корпуса",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Дверь и замок",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Кабельные вводы",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Индикацию",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "Маркировку",
+          "Order": 5,
+          "Correct": true
+        },
+        {
+          "Text": "Состояние фланцевой прокладки Т-101",
+          "Order": 6,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что следует сделать при обнаружении явно выраженного повреждения электрического оборудования?",
+      "Options": [
+        {
+          "Text": "Самостоятельно устранить повреждение без разрешения",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Зафиксировать дефект и сообщить о нём в установленном порядке",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Продолжить работу без фиксации",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Удалить шкаф",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Matching",
+      "Text": "Установите соответствие.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Автоматический выключатель",
+          "RightText": "Защита электрической цепи"
+        },
+        {
+          "LeftText": "Контактор",
+          "RightText": "Коммутация электрической цепи"
+        },
+        {
+          "LeftText": "Контроллер",
+          "RightText": "Обработка сигналов и выполнение алгоритма управления"
+        },
+        {
+          "LeftText": "Клеммная колодка",
+          "RightText": "Подключение проводников"
+        }
+      ]
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Установите правильную последовательность визуального осмотра шкафа.",
+      "Options": [
+        {
+          "Text": "Осмотреть внутренние элементы при наличии предусмотренного доступа",
+          "Order": 4,
+          "Correct": false
+        },
+        {
+          "Text": "Осмотреть корпус",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Проверить дверь и органы управления",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Осмотреть кабельные вводы и внешние соединения",
+          "Order": 3,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Rittal VX25 относится к тепловому оборудованию, предназначенному непосредственно для нагрева теплоносителя.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какой основной метод используется на первом этапе диагностики в рассматриваемом учебном сценарии?",
+      "Options": [
+        {
+          "Text": "Визуальный осмотр",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Демонтаж всего оборудования",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Замена всех труб",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Полная разборка шкафа",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие признаки могут свидетельствовать о протечке?",
+      "Options": [
+        {
+          "Text": "Капли жидкости",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Влажные следы",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Стекание жидкости",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Следы теплоносителя",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "Сухая поверхность без признаков дефекта",
+          "Order": 5,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Где в первую очередь следует искать причину протечки, если в районе фланца обнаружены влажные следы?",
+      "Options": [
+        {
+          "Text": "В зоне данного соединения",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "В шкафу управления",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "На радиостанции",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "На противоположной стене помещения",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Что необходимо определить после обнаружения визуального признака неисправности?",
+      "Options": [],
+      "CorrectAnswer": "место и характер дефекта",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Обнаружение влажных следов около фланца является основанием для более детального осмотра этого соединения.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что следует сделать после обнаружения конкретного дефекта в рамках сценария?",
+      "Options": [
+        {
+          "Text": "Зафиксировать его и сообщить по радиостанции",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Сразу покинуть помещение",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Игнорировать дефект",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Покрасить оборудование",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Что следует оценивать при визуальном осмотре оборудования?",
+      "Options": [
+        {
+          "Text": "Герметичность соединений",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Состояние поверхностей",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Состояние арматуры",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Состояние теплоизоляции",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "Наличие внешних повреждений",
+          "Order": 5,
+          "Correct": true
+        },
+        {
+          "Text": "Только цвет оборудования",
+          "Order": 6,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Matching",
+      "Text": "Установите соответствие между признаком и возможной областью неисправности.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Капли около фланца",
+          "RightText": "Фланцевое соединение"
+        },
+        {
+          "LeftText": "Повреждение теплоизоляции",
+          "RightText": "Трубопровод/тепловая изоляция"
+        },
+        {
+          "LeftText": "Повреждение корпуса шкафа",
+          "RightText": "Шкаф управления"
+        },
+        {
+          "LeftText": "Повреждение стекла манометра",
+          "RightText": "Средство измерения"
+        }
+      ]
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Установите правильную последовательность диагностики обнаруженной протечки.",
+      "Options": [
+        {
+          "Text": "Локализовать место протечки",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Провести визуальный осмотр",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Зафиксировать характер дефекта",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Сообщить о дефекте",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какой признак может указывать на выход пара?",
+      "Options": [
+        {
+          "Text": "Облако пара около соединения",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Сухая поверхность",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Отсутствие изменений",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Наличие маркировки",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "При диагностике фланцевого соединения необходимо обращать внимание на:",
+      "Options": [
+        {
+          "Text": "состояние фланцев;",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "состояние крепежа;",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "наличие уплотнения;",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "следы теплоносителя;",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "состояние соседнего оборудования.",
+          "Order": 5,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Для определения места протечки достаточно посмотреть только на ближайший манометр.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": true
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что является целью локализации дефекта?",
+      "Options": [
+        {
+          "Text": "Определение конкретного неисправного участка",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Определение цвета трубопровода",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Выбор рабочего костюма",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Измерение площади помещения",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Какие два результата должен получить обучаемый на этапе диагностики перед началом ремонта?",
+      "Options": [],
+      "CorrectAnswer": "определить место дефекта и установить его характер",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какое средство связи используется для передачи сообщения о выявленном дефекте?",
+      "Options": [
+        {
+          "Text": "Радиостанция",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Манометр",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Термометр",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Клапан",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Что необходимо указать в сообщении о неисправности?",
+      "Options": [
+        {
+          "Text": "Местоположение дефекта",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Наименование оборудования",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Характер неисправности",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Необходимость дальнейших действий",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "Цвет спецодежды",
+          "Order": 5,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Какие основные сведения необходимо передать при докладе о протечке?",
+      "Options": [],
+      "CorrectAnswer": "место протечки, оборудование/узел и характер неисправности",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Установите последовательность действий при передаче сообщения.",
+      "Options": [
+        {
+          "Text": "Нажать кнопку передачи",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Определить место дефекта",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Сформировать сообщение",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Передать сообщение",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Сообщение о дефекте должно содержать сведения, позволяющие определить место неисправности.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какое сообщение является наиболее информативным?",
+      "Options": [
+        {
+          "Text": "«Здесь что-то течёт».",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "«Обнаружена неисправность».",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "«На фланцевом соединении трубопровода возле Т-101 обнаружена протечка теплоносителя».",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "«Нужен ремонт».",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что является основной задачей замены повреждённого уплотнения?",
+      "Options": [
+        {
+          "Text": "Восстановление герметичности соединения",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Изменение цвета трубы",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Увеличение длины трубопровода",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Изменение показаний манометра",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие элементы входят в состав разборного фланцевого соединения?",
+      "Options": [
+        {
+          "Text": "Фланцы",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Болты",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Гайки",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Шайбы",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "Уплотнение",
+          "Order": 5,
+          "Correct": true
+        },
+        {
+          "Text": "Радиостанция",
+          "Order": 6,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "OpenAnswer",
+      "Text": "Как называется элемент, который устанавливается между фланцами для обеспечения герметичности?",
+      "Options": [],
+      "CorrectAnswer": "уплотнительная прокладка",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Установите правильную последовательность замены уплотнения.",
+      "Options": [
+        {
+          "Text": "Удалить старое уплотнение",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Разобрать соединение",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Очистить поверхности",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Установить новое уплотнение",
+          "Order": 4,
+          "Correct": false
+        },
+        {
+          "Text": "Собрать соединение",
+          "Order": 5,
+          "Correct": false
+        },
+        {
+          "Text": "Проверить результат",
+          "Order": 6,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что необходимо сделать со старыми остатками уплотнения перед установкой новой прокладки?",
+      "Options": [
+        {
+          "Text": "Оставить их на фланце",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Удалить и очистить поверхности",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Покрасить их",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Намочить водой",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Что необходимо проверить перед установкой нового уплотнения?",
+      "Options": [
+        {
+          "Text": "Типоразмер",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Состояние поверхности фланцев",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Чистоту поверхностей",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Отсутствие перекоса при установке",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "Состояние радиостанции",
+          "Order": 5,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "Новое уплотнение необходимо устанавливать между подготовленными и очищенными поверхностями фланцев.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что может произойти при неправильной установке уплотнения?",
+      "Options": [
+        {
+          "Text": "Сохранится или возникнет негерметичность соединения",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Увеличится точность манометра",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Изменится напряжение сети",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Увеличится объём расширительного бака",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Какой инструмент используется для контролируемой затяжки крепежа?",
+      "Options": [
+        {
+          "Text": "Динамометрический ключ",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Щётка",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Ветошь",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Шпатель",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Matching",
+      "Text": "Установите соответствие между операцией и инструментом.",
+      "Options": [],
+      "CorrectAnswer": "",
+      "Pairs": [
+        {
+          "LeftText": "Демонтаж гайки",
+          "RightText": "Гаечный ключ"
+        },
+        {
+          "LeftText": "Контролируемая затяжка",
+          "RightText": "Динамометрический ключ"
+        },
+        {
+          "LeftText": "Очистка поверхности",
+          "RightText": "Щётка"
+        },
+        {
+          "LeftText": "Удаление загрязнений",
+          "RightText": "Ветошь"
+        }
+      ]
+    },
+    {
+      "Type": "SingleChoice",
+      "Text": "Что необходимо сделать после завершения ремонта фланцевого соединения?",
+      "Options": [
+        {
+          "Text": "Провести контрольный осмотр",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Немедленно демонтировать соседний узел",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Удалить новую прокладку",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Закрыть шкаф управления",
+          "Order": 4,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "MultipleChoice",
+      "Text": "Какие признаки свидетельствуют об успешном устранении протечки?",
+      "Options": [
+        {
+          "Text": "Отсутствие новых капель",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Отсутствие влажных следов",
+          "Order": 2,
+          "Correct": true
+        },
+        {
+          "Text": "Отсутствие парения в месте дефекта",
+          "Order": 3,
+          "Correct": true
+        },
+        {
+          "Text": "Исправное состояние соединения",
+          "Order": 4,
+          "Correct": true
+        },
+        {
+          "Text": "Увеличение протечки",
+          "Order": 5,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "TrueFalse",
+      "Text": "После ремонта необходимо убедиться, что исходный дефект устранён.",
+      "Options": [
+        {
+          "Text": "Верно",
+          "Order": 1,
+          "Correct": true
+        },
+        {
+          "Text": "Неверно",
+          "Order": 2,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    },
+    {
+      "Type": "Ordering",
+      "Text": "Установите полный порядок действий в комплексном учебном сценарии.",
+      "Options": [
+        {
+          "Text": "Выполнить ремонт",
+          "Order": 5,
+          "Correct": false
+        },
+        {
+          "Text": "Провести визуальный осмотр",
+          "Order": 1,
+          "Correct": false
+        },
+        {
+          "Text": "Обнаружить дефект",
+          "Order": 2,
+          "Correct": false
+        },
+        {
+          "Text": "Сообщить о дефекте",
+          "Order": 3,
+          "Correct": false
+        },
+        {
+          "Text": "Подготовиться к ремонту",
+          "Order": 4,
+          "Correct": false
+        },
+        {
+          "Text": "Провести контроль после ремонта",
+          "Order": 6,
+          "Correct": false
+        }
+      ],
+      "CorrectAnswer": "",
+      "Pairs": []
+    }
+  ]
+}
