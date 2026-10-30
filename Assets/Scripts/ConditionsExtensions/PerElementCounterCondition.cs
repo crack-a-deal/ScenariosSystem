@@ -95,7 +95,7 @@ public class CounterElement
     [SerializeField]
     private bool _disableSelfOnComplete = true;
 
-    [FoldoutGroup("Доп. действия")]
+    [FoldoutGroup("Доп действия")]
     [SerializeReference, SubclassSelector]
     private List<ScenarioAction> _onComplete = new();
 
