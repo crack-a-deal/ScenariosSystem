@@ -1,4 +1,5 @@
-﻿using Networking.Request;
+﻿using Networking.Diagnostics;
+using Networking.Request;
 using System;
 using System.Collections.Concurrent;
 using System.IO;
@@ -19,6 +20,7 @@ namespace Networking
         private readonly NetworkStream _stream;
         private readonly MessageFramer _messageFramer;
         private readonly IMessageSerializer _serializer;
+        private readonly string _remoteKey;
 
         private readonly ConcurrentDictionary<Guid, TaskCompletionSource<MessageEnvelope>> _pendingRequests = new();
         private readonly SemaphoreSlim _sendLock = new SemaphoreSlim(1, 1);
@@ -33,6 +35,9 @@ namespace Networking
             _serializer = serializer ?? throw new ArgumentNullException(nameof(serializer));
             _stream = _client.GetStream();
             _messageFramer = new MessageFramer();
+
+            try { _remoteKey = _client.Client.RemoteEndPoint?.ToString() ?? "unknown"; }
+            catch { _remoteKey = "unknown"; }
         }
 
         public async Task StartAsync(CancellationToken cancellationToken)
@@ -50,7 +55,7 @@ namespace Networking
 
         private async Task ReadLoopAsync(CancellationToken cancellationToken)
         {
-
+            NetworkTelemetry.OnConnected(_remoteKey);
             while (!cancellationToken.IsCancellationRequested && Volatile.Read(ref _disposed) == 0)
             {
                 byte[] data;
@@ -89,6 +94,7 @@ namespace Networking
                         Debug.LogWarning("[CONNECTION] Received an empty message.");
                         continue;
                     }
+                    NetworkTelemetry.OnReceived(_remoteKey, message, data.Length);
                 }
                 catch (Exception exception)
                 {
@@ -113,6 +119,8 @@ namespace Networking
                     Debug.LogError($"[CONNECTION] MessageReceived handler failed: {exception}");
                 }
             }
+
+            NetworkTelemetry.OnDisconnected(_remoteKey);
         }
 
         private void HandleResponse(MessageEnvelope message)
@@ -142,6 +150,8 @@ namespace Networking
                 string json = _serializer.Serialize(message);
                 byte[] data = Encoding.UTF8.GetBytes(json);
 
+                NetworkTelemetry.OnSent(_remoteKey, message, data.Length);
+
                 await _messageFramer.SendAsync(_stream, data, cancellationToken).ConfigureAwait(false);
             }
             finally
@@ -168,6 +178,7 @@ namespace Networking
 
             using var registration = cancellationToken.Register(() => completion.TrySetCanceled());
 
+            long started = NetworkTelemetry.BeginRequest(request.Contract);
             try
             {
                 Debug.Log($"[CONNECTION] Sending request: Contract={request.Contract}, ID={request.RequestId}");
@@ -182,6 +193,7 @@ namespace Networking
                         $"Unexpected response contract. Expected {typeof(TResponse).Name}, received {response.Contract}.");
                 }
 
+                NetworkTelemetry.EndRequest(request.Contract, started, true);
                 return _serializer.Deserialize<TResponse>(response.Payload);
             }
             finally
