@@ -31048,6 +31048,99 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5079052899888943703, guid: dd10c1ebe8d90f141a491f43b7b5667c, type: 3}
+--- !u!1 &1800726859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1800726860}
+  - component: {fileID: 1800726861}
+  m_Layer: 0
+  m_Name: "47. \u0412\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043D\u0430\u0441\u043E\u0441\u0430"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1800726860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800726859}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4737804481653744393}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1800726861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800726859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccc7f92561b9e468c8485bc2e69010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Step
+  Id: 2
+  Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
+    \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
+  _completionCondition:
+    rid: 1332834693188419852
+  _onEnter: []
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 647360945}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 647360945}
+        m_TargetAssemblyTypeName: InspectionController, Assembly-CSharp
+        m_MethodName: SetInspectState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onComplete: []
+  _onCompleteEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _hint: "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u0435 \u043D\u0430\u0441\u043E\u0441"
+  _errors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1332834693188419852
+      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+      data:
+        _objects:
+        - {fileID: 1139069322}
+        _requiredState: 1
+        _requiredCount: 1
 --- !u!1 &1803957760
 GameObject:
   m_ObjectHideFlags: 0
@@ -90074,6 +90167,7 @@ Transform:
   - {fileID: 7995192960908625447}
   - {fileID: 3363362843730735605}
   - {fileID: 6726194013185365158}
+  - {fileID: 1800726860}
   - {fileID: 1770877503906206780}
   - {fileID: 5856924539674640256}
   m_Father: {fileID: 137438236}
@@ -114014,19 +114108,7 @@ MonoBehaviour:
   _onComplete: []
   _onCompleteEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1811693276}
-        m_TargetAssemblyTypeName: AnimationController, Assembly-CSharp
-        m_MethodName: PlayAnimation
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: maslo_animation
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _hint: "\u041E\u0442\u043A\u0440\u043E\u0439\u0442\u0435 \u0437\u0430\u043F\u043E\u0440\u043D\u044B\u0439
     \u044D\u043B\u0435\u043C\u0435\u043D\u0442 \u043F\u043E\u0441\u0442\u0435\u043F\u0435\u043D\u043D\u043E.
     \u041F\u043E\u0441\u043B\u0435 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F
@@ -116558,7 +116640,7 @@ Transform:
   m_GameObject: {fileID: 4920242510032430805}
   serializedVersion: 2
   m_LocalRotation: {x: -3.5527137e-15, y: 9.574099e-30, z: -1.2681277e-22, w: 1}
-  m_LocalPosition: {x: 3.3239746, y: 0.00000002259927, z: 0}
+  m_LocalPosition: {x: 3.3, y: 0, z: -7.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -138254,8 +138336,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4715637342509016892}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000026692522, y: 0.7071071, z: 0.000000026692552, w: 0.7071065}
-  m_LocalPosition: {x: -2.78, y: 1.17, z: -3.44}
+  m_LocalRotation: {x: 0.000000037748958, y: 1, z: 7.2830624e-14, w: 0.0000009983777}
+  m_LocalPosition: {x: -4.737, y: 1.17, z: 2.553}
   m_LocalScale: {x: 0.126194, y: 0.126194, z: 0.126194}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -138263,7 +138345,7 @@ Transform:
   - {fileID: 3051115262529224138}
   - {fileID: 9092278478281556284}
   m_Father: {fileID: 543450651651892155}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &8399547136933114754
 Transform:
   m_ObjectHideFlags: 0

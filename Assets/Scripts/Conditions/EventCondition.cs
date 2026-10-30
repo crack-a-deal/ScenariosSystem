@@ -13,8 +13,6 @@ public class EventCondition : ConditionBase
 
     public override bool Evaluate(ScenarioContext context, ScenarioEvent scenarioEvent)
     {
-        Debug.Log($"{scenarioEvent.Type} != {_eventType}");
-
         if (scenarioEvent.Type != _eventType)
         {
             return false;
@@ -24,8 +22,6 @@ public class EventCondition : ConditionBase
         {
             return true;
         }
-
-        Debug.Log($"{scenarioEvent.Source} == {_source} {scenarioEvent.Source == _source}");
 
         return scenarioEvent.Source == _source;
     }
