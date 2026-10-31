@@ -8,4 +8,6 @@ public interface IExcelExportService
 
     Task ExportMultiSheetAsync<TDto>(
         TDto data);
+
+    string GetExportPath();
 }

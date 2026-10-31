@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,8 @@ public class LearningSectionsView : MonoBehaviour
     [SerializeField] private Button virtualSection;
     [SerializeField] private Button testingSection;
     [SerializeField] private Button backButton;
+    [SerializeField] private GameObject popup;
+    [SerializeField] private TMP_Text popupText;
 
     private void Awake()
     {
@@ -49,5 +52,11 @@ public class LearningSectionsView : MonoBehaviour
     private void OnBackClicked()
     {
         BackClicked?.Invoke();
+    }
+
+    public void ShowPopup(string message)
+    {
+        popup.gameObject.SetActive(true);
+        popupText.SetText(message);
     }
 }

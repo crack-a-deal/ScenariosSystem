@@ -33,6 +33,7 @@ public class StudentMainState : BaseApplicationState
         _presenter.VirtuaSectionClicked -= OnVirtualModuleClicked;
         _presenter.InspectionSectionClicked -= OnInteractionModuleClicked;
         _presenter.TestingSectionClicked -= OnTestingModuleClicked;
+        _presenter.BackClicked -= _presenter_BackClicked;
 
         return Task.CompletedTask;
     }

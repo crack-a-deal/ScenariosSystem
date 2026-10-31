@@ -22,11 +22,16 @@ public class ScenarioRunner : MonoBehaviour
 
     private void Awake()
     {
-        //Debug.Log($"Awake scenario runner for scenario: {_scenario.Title}");
+        Debug.Log($"Awake scenario runner for scenario: {_scenario.Title}");
         _context = new ScenarioContext();
         _eventBus.EventPublished += ProcessEvent;
     }
-    
+
+    private void OnDestroy()
+    {
+        _eventBus.EventPublished -= ProcessEvent;
+    }
+
     public void SelectScenario(Scenario scenario)
     {
         _scenario = scenario;
@@ -98,10 +103,5 @@ public class ScenarioRunner : MonoBehaviour
     private void HandleError(ScenarioError error)
     {
         ErrorOccurred?.Invoke(error);
-    }
-
-    public void Dispose()
-    {
-        _eventBus.EventPublished -= ProcessEvent;
     }
 }

@@ -42,8 +42,6 @@ public class AdminLoginPresenter : IDisposable
 
     private async void OnLoginClicked()
     {
-        AuthorizationSuccess?.Invoke();
-        return;
         _view.ClearError();
 
         if (string.IsNullOrWhiteSpace(_view.Password))

@@ -12,6 +12,7 @@ public class ExcelExportService : IExcelExportService
     private readonly ExcelExportRegistry _registry;
     private readonly MultiSheetExcelExportRegistry _multiSheetRegistry;
 
+    private string _currentPath;
 
     public ExcelExportService(
         ExcelExportRegistry registry,
@@ -22,6 +23,8 @@ public class ExcelExportService : IExcelExportService
         _multiSheetRegistry = multiSheetRegistry;
         _exportPathProvider = exportPathProvider;
     }
+
+
 
     public Task ExportAsync<TDto>(
         IEnumerable<TDto> data)
@@ -44,7 +47,7 @@ public class ExcelExportService : IExcelExportService
             definition.FileName);
 
         filePath = GetUniqueFilePath(filePath);
-
+        _currentPath = filePath;
         MiniExcel.SaveAs(
             filePath,
             excelData);
@@ -76,6 +79,9 @@ public class ExcelExportService : IExcelExportService
                 definition.FileName);
 
         filePath = GetUniqueFilePath(filePath);
+        _currentPath = filePath;
+
+        Debug.Log($"set {filePath} to {_currentPath}");
 
         MiniExcel.SaveAs(
             filePath,
@@ -85,6 +91,11 @@ public class ExcelExportService : IExcelExportService
             $"Multi-sheet Excel exported: {filePath}");
 
         return Task.CompletedTask;
+    }
+
+    public string GetExportPath()
+    {
+        return _currentPath;
     }
 
     private string GetUniqueFilePath(string filePath)

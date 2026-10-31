@@ -90,7 +90,6 @@ public class TeacherLearningSectionsPresenter : LearningSectionsPresenter
 
     private async void InspectionSectionClicked()
     {
-        Debug.Log("хочу результаты");
         var views = await _threeDModelService.GetAllViewsAsync();
 
         var exportData = new ViewedModelsExportDTO
@@ -99,6 +98,8 @@ public class TeacherLearningSectionsPresenter : LearningSectionsPresenter
         };
 
         await _exportService.ExportMultiSheetAsync(exportData);
+        Debug.Log($"path {_exportService.GetExportPath()}");
+        _view.ShowPopup($"Результаты сохранены в\n {_exportService.GetExportPath()}");
         Debug.Log($"Результаты моделей экспортированы.");
     }
 

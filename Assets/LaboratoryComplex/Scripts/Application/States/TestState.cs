@@ -61,6 +61,7 @@ public class TestState : BaseApplicationState
         _tablePresenter.TestSelected -= OnTestSelected;
 
         _testSessionPresenter.TestCompleted -= OnTestCompleted;
+        _testSessionPresenter.ExitRequested -= OnTestExitRequested;
         _resultsView.ContinueClicked -= OnResultsContinueClicked;
 
         return Task.CompletedTask;
