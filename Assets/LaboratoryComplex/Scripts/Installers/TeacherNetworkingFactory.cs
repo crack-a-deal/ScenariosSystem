@@ -11,7 +11,8 @@ public class TeacherNetworkingFactory
     private readonly TestSessionService _testSession;
     private readonly UserAnswerSaveService _answerSaveService;
     private readonly TestResultService _testResultService;
-    private readonly IThreeDModelService threeDModel;
+    private readonly IThreeDModelService _threeDModel;
+    private readonly IScenarioService _scenarioService;
 
     public TeacherNetworkingFactory(
         NetworkingConfig config,
@@ -22,7 +23,7 @@ public class TeacherNetworkingFactory
         ITestService testService,
         TestSessionService testSession,
         UserAnswerSaveService answerSaveService,
-        TestResultService testResultService,IThreeDModelService threeDModel)
+        TestResultService testResultService,IThreeDModelService threeDModel,IScenarioService scenarioService)
     {
         _config = config;
         _serializer = serializer;
@@ -33,7 +34,8 @@ public class TeacherNetworkingFactory
         _testSession = testSession;
         _answerSaveService = answerSaveService;
         _testResultService = testResultService;
-        this.threeDModel = threeDModel;
+        _threeDModel = threeDModel;
+        _scenarioService = scenarioService;
     }
 
     public TcpServer Create()
@@ -46,8 +48,8 @@ public class TeacherNetworkingFactory
         dispatcher.RegisterHandler(new GetAvailableTestsHandler(_testSession));
         dispatcher.RegisterHandler(new GetTestHandler(_testService));
         dispatcher.RegisterHandler(new StartTestRequestHandler(_testSession));
-        dispatcher.RegisterHandler(new Register3DModelViewHandler(threeDModel));
-
+        dispatcher.RegisterHandler(new Register3DModelViewHandler(_threeDModel));
+        dispatcher.RegisterHandler(new RegisterScenarioCompletionHandler(_scenarioService));
 
         dispatcher.RegisterHandler(
             new SubmitTestRequestHandler(_answerSaveService, _testSession, _testResultService));

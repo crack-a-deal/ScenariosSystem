@@ -8,7 +8,7 @@ public class ViewsInstaller : MonoInstaller
     [SerializeField] private MainView mainView;
     [SerializeField] private ExitView exitView;
     [SerializeField] private StudentAssignmentPanelView studentAssignmentPanelView;
-
+    [SerializeField] private ScenarioList scenarioList;
 
 
     [Header("Authentication")]
@@ -69,6 +69,10 @@ public class ViewsInstaller : MonoInstaller
 
         Container.Bind<StudentAssignmentPanelView>()
             .FromInstance(studentAssignmentPanelView)
+            .AsSingle();
+
+        Container.Bind<ScenarioList>()
+            .FromInstance(scenarioList)
             .AsSingle();
 
         // Authentication

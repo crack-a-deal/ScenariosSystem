@@ -14,6 +14,7 @@ public class ScenarioRunner : MonoBehaviour
     public event Action<ScenarioError> ErrorOccurred;
     public event Action ScenarioCompleted;
 
+    public string ScenarioTitle => _scenario != null ? _scenario.Title : null;
 
     public Step CurrentStep =>
         _currentStepIndex >= 0 && _currentStepIndex < _scenario.Steps.Count

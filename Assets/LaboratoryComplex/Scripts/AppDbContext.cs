@@ -35,8 +35,12 @@ public class AppDbContext : DbContext
     public DbSet<UserMatchingPairAnswer> UserMatchingPairAnswers
     => Set<UserMatchingPairAnswer>();
 
+
     public DbSet<ThreeDModel> ThreeDModels { get; set; }
     public DbSet<UserModelView> UserModelViews { get; set; }
+
+    public DbSet<ScenarioRecord> Scenarios { get; set; }
+    public DbSet<UserScenarioCompletion> UserScenarioCompletions { get; set; }
 
     private readonly string _databasePath;
 
@@ -91,6 +95,21 @@ public class AppDbContext : DbContext
             .HasForeignKey(view => view.ThreeDModelId)
             .OnDelete(DeleteBehavior.Cascade);
 
+        modelBuilder.Entity<ScenarioRecord>()
+            .HasIndex(scenario => scenario.Name)
+            .IsUnique();
+
+        modelBuilder.Entity<UserScenarioCompletion>()
+            .HasOne(completion => completion.UserProfile)
+            .WithMany()
+            .HasForeignKey(completion => completion.UserProfileId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+        modelBuilder.Entity<UserScenarioCompletion>()
+            .HasOne(completion => completion.Scenario)
+            .WithMany(scenario => scenario.Completions)
+            .HasForeignKey(completion => completion.ScenarioRecordId)
+            .OnDelete(DeleteBehavior.Cascade);
 
         modelBuilder.Entity<UserGroup>().HasData(
             new UserGroup

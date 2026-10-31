@@ -50,6 +50,14 @@ public class ServicesInstaller : MonoInstaller
             .To<ThreeDModelService>()
             .AsSingle();
 
+        Container.Bind<IScenarioRepository>()
+            .To<ScenarioRepository>()
+            .AsSingle();
+
+        Container.Bind<IScenarioService>()
+            .To<ScenarioService>()
+            .AsSingle();
+
 
 
         // Tests
@@ -104,7 +112,7 @@ public class ServicesInstaller : MonoInstaller
         registry.Register(new UserAccountExcelDefinition(new UserAccountExcelMapper()));
         registry.Register(new UserGroupExcelDefinition(new UserGroupExcelMapper()));
         registry.Register(new UserProfileExcelDefinition(new UserProfileExcelMapper()));
-
+        
         return registry;
     }
 
@@ -124,6 +132,7 @@ public class ServicesInstaller : MonoInstaller
                 new TestSessionResultExcelMapper()));
 
         registry.Register(new ViewedModelsExcelDefinition(new ViewedModelExcelMapper()));
+        registry.Register(new ScenarioCompletionsExcelDefinition(new ScenarioCompletionExcelMapper()));
 
         return registry;
     }

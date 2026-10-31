@@ -40,14 +40,18 @@ public class GetAvailableTestsHandler : IRequestHandler<GetAvailableTestsRequest
             var sessions = await _sessionService.GetByUserProfileIdAsync(request.UserId);
 
             var tests = sessions
-            .Where(session => session.Test != null && session.CompletedAt == null)
-            .Select(session => new TestListItemDTO
-            {
-                Id = session.Test.Id,
-                Title = session.Test.Title,
-                QuestionCount = session.Test.TestQuestions.Count
-            })
-            .ToList();
+                .Where(session => session.Test != null && session.CompletedAt == null)
+                .GroupBy(session => session.Test.Id)
+                .Select(group => group
+                    .OrderByDescending(session => session.StartedAt)
+                    .First())
+                .Select(session => new TestListItemDTO
+                {
+                    Id = session.Test.Id,
+                    Title = session.Test.Title,
+                    QuestionCount = session.Test.TestQuestions.Count
+                })
+                .ToList();
 
 
             return new GetAvailableTestsResponse

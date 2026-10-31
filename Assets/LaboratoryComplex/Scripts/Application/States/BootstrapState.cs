@@ -9,16 +9,21 @@ public class BootstrapState : BaseApplicationState
     private readonly IThreeDModelService _modelService;
     private readonly ModulesList _modulesList;
     private readonly GuardantLicenseService _licenseService;
+    private readonly IScenarioService _scenarioService;
+    private readonly ScenarioList _scenarioList;
 
     public BootstrapState(
         IApplication application,
-        JsonTestImportService testImportService, IThreeDModelService modelService, ModulesList modulesList, GuardantLicenseService licenseService)
+        JsonTestImportService testImportService, IThreeDModelService modelService, ModulesList modulesList, GuardantLicenseService licenseService, IScenarioService scenarioService,
+        ScenarioList scenarioList)
         : base(application)
     {
         _testImportService = testImportService;
         _modelService = modelService;
         _modulesList = modulesList;
         _licenseService = licenseService;
+        _scenarioService = scenarioService;
+        _scenarioList = scenarioList;
     }
 
     public override async Task EnterAsync()
@@ -34,6 +39,7 @@ public class BootstrapState : BaseApplicationState
 
         await LoadTestFromConfig();
         await InitModels();
+        await InitScenarios();
 
         await _application.ChangeStateAsync<TeacherAuthorizationState>();
     }
@@ -79,5 +85,11 @@ public class BootstrapState : BaseApplicationState
     {
         await _modelService.InitializeCatalogAsync(_modulesList.Modules);
         Debug.Log("База данных и каталог 3D-моделей готовы.");
+    }
+
+    private async Task InitScenarios()
+    {
+        await _scenarioService.InitializeCatalogAsync(_scenarioList.Scenarios);
+        Debug.Log("Каталог сценариев готов.");
     }
 }

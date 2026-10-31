@@ -67,8 +67,8 @@ public class TestResultService
                 QuestionType.Matching =>
                     IsMatchingCorrect(question.MatchingPairs, answer),
 
-                // Свободный текст пока не проверяем автоматически.
-                QuestionType.OpenAnswer => false,
+                QuestionType.OpenAnswer =>
+    IsOpenAnswerCorrect(question.CorrectAnswers, answer),
 
                 _ => false
             };
@@ -173,5 +173,29 @@ public class TestResultService
         }
 
         return expectedIds.SetEquals(actualIds);
+    }
+
+    private static bool IsOpenAnswerCorrect(
+    IEnumerable<CorrectAnswer> correctAnswers,
+    UserBaseAnswerDTO answer)
+    {
+        if (answer is not UserOpenAnswerDTO open)
+            return false;
+
+        if (string.IsNullOrWhiteSpace(open.Text))
+            return false;
+
+        string expected = correctAnswers
+            .Select(correct => correct.Text)
+            .FirstOrDefault(text =>
+                !string.IsNullOrWhiteSpace(text));
+
+        if (expected == null)
+            return false;
+
+        return string.Equals(
+            open.Text.Trim(),
+            expected.Trim(),
+            StringComparison.OrdinalIgnoreCase);
     }
 }

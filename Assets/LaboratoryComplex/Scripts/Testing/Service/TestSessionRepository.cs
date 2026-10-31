@@ -30,8 +30,8 @@ public class TestSessionRepository
     }
 
     public async Task<TestSession> AssignToStudentAsync(
-    Guid testId,
-    Guid studentProfileId)
+        Guid testId,
+        Guid studentProfileId)
     {
         bool testExists = await _context.Tests
             .AnyAsync(x => x.Id == testId);
@@ -46,15 +46,6 @@ public class TestSessionRepository
         if (!studentExists)
             throw new InvalidOperationException(
                 $"Student {studentProfileId} was not found.");
-
-        bool alreadyAssigned = await _context.TestSessions
-            .AnyAsync(x =>
-                x.TestId == testId &&
-                x.UserProfileId == studentProfileId);
-
-        if (alreadyAssigned)
-            throw new InvalidOperationException(
-                "Этот тест уже назначен данному студенту.");
 
         var session = new TestSession
         {
@@ -76,14 +67,16 @@ public class TestSessionRepository
         if (!testExists)
             throw new InvalidOperationException($"Test {testId} was not found.");
 
-        var assignedProfileIds = await _context.TestSessions
-            .Where(x => x.TestId == testId)
+        var activeProfileIds = await _context.TestSessions
+            .Where(x =>
+                x.TestId == testId &&
+                x.CompletedAt == null)
             .Select(x => x.UserProfileId)
             .Distinct()
             .ToListAsync();
 
         var students = await _context.UserProfiles
-            .Where(x => !assignedProfileIds.Contains(x.Id))
+            .Where(x => !activeProfileIds.Contains(x.Id))
             .ToListAsync();
 
         var sessions = students.Select(student => new TestSession
@@ -148,8 +141,13 @@ public class TestSessionRepository
             .Include(x => x.Test)
             .Include(x => x.UserProfile)
             .Include(x => x.Answers)
-            .FirstOrDefaultAsync(x =>
+                .ThenInclude(answer => answer.Options)
+            .Include(x => x.Answers)
+                .ThenInclude(answer => answer.MatchingPairs)
+            .Where(x =>
                 x.TestId == testId &&
-                x.UserProfileId == userProfileId);
+                x.UserProfileId == userProfileId)
+            .OrderByDescending(x => x.StartedAt)
+            .FirstOrDefaultAsync();
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,6 +10,8 @@ public class ScenarioState : BaseApplicationState
 
     private readonly CameraSwitcher _cameraSwitcher;
     private readonly Canvas _mainCanvas;
+    private readonly TcpClientProvider _clientProvider;
+    private readonly UserSession _userSession;
 
     private ScenarioSceneRoot _scenarioRoot;
     private Scene _scenarioScene;
@@ -17,10 +20,14 @@ public class ScenarioState : BaseApplicationState
     public ScenarioState(
         IApplication application,
         CameraSwitcher cameraSwitcher,
+        UserSession userSession,
+        TcpClientProvider clientProvider,
         [Zenject.Inject(Id = "MainCanvas")] Canvas mainCanvas)
         : base(application)
     {
         _cameraSwitcher = cameraSwitcher;
+        _userSession = userSession;
+        _clientProvider = clientProvider;
         _mainCanvas = mainCanvas;
     }
 
@@ -44,6 +51,7 @@ public class ScenarioState : BaseApplicationState
                 "В ScenarioScene не найден ScenarioSceneRoot.");
 
         _scenarioRoot.ExitRequested += OnExitRequested;
+        _scenarioRoot.ScenarioCompleted += OnScenarioCompleted;
 
         _cameraSwitcher.Activate(_scenarioRoot.PlayerCamera);
     }
@@ -60,6 +68,38 @@ public class ScenarioState : BaseApplicationState
         }
 
         return null;
+    }
+
+    private async void OnScenarioCompleted(string scenarioName)
+    {
+        try
+        {
+            var client = _clientProvider.Instance;
+
+            if (client == null)
+            {
+                Debug.LogWarning("[SCENARIO] Нет соединения с сервером — прохождение не сохранено.");
+                return;
+            }
+
+            var response = await client
+                .SendRequestAsync<RegisterScenarioCompletionResponse>(
+                    new RegisterScenarioCompletionRequest
+                    {
+                        UserProfileId = _userSession.ProfileId,
+                        ScenarioName = scenarioName
+                    },
+                    CancellationToken.None);
+
+            if (!response.Success)
+                Debug.LogError($"Не удалось сохранить прохождение сценария: {response.Error}");
+            else
+                Debug.Log($"Прохождение сценария '{scenarioName}' сохранено.");
+        }
+        catch (Exception exception)
+        {
+            Debug.LogError($"Не удалось зарегистрировать прохождение сценария: {exception}");
+        }
     }
 
     private async void OnExitRequested()
@@ -84,7 +124,10 @@ public class ScenarioState : BaseApplicationState
     public override async Task ExitAsync()
     {
         if (_scenarioRoot != null)
+        {
             _scenarioRoot.ExitRequested -= OnExitRequested;
+            _scenarioRoot.ScenarioCompleted -= OnScenarioCompleted;
+        }
 
         Scene mainScene = SceneManager.GetSceneByName("MainScene");
         Cursor.lockState = CursorLockMode.None;

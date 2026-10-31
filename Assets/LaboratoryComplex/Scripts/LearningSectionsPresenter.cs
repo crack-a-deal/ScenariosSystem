@@ -72,20 +72,32 @@ public class TeacherLearningSectionsPresenter : LearningSectionsPresenter
     private readonly TestSessionService _sessionService;
     private readonly IExcelExportService _exportService;
     private readonly IThreeDModelService _threeDModelService;
+    private readonly IScenarioService _scenarioService;
     private readonly AdminTestSessionPresenter _sessionPresenter;
     private UserProfileDto _currentUser;
 
-    public TeacherLearningSectionsPresenter([Inject(Id = "Admin")] LearningSectionsView view, AdminTestModulesTablePresenter testsTablePresenter,TestSessionService sessionService ,IExcelExportService exportService,IThreeDModelService threeDModel) : base(view)
+    public TeacherLearningSectionsPresenter(
+        [Inject(Id = "Admin")] LearningSectionsView view,
+        AdminTestModulesTablePresenter testsTablePresenter,
+        TestSessionService sessionService,
+        IExcelExportService exportService,
+        IThreeDModelService threeDModel,
+        IScenarioService scenarioService) : base(view)
     {
         _testsTablePresenter = testsTablePresenter;
         _sessionService = sessionService;
         _exportService = exportService;
         _threeDModelService = threeDModel;
+        _scenarioService = scenarioService;
+
         _view.TestingSectionClicked += OnTestingSectionClicked;
         _view.InspectionSectionClicked += InspectionSectionClicked;
         _view.BackClicked += BackClicked;
+
         _testsTablePresenter.TestSelected += OnTestSelected;
         _testsTablePresenter.BackClicked += _testsTablePresenter_BackClicked;
+
+        VirtuaSectionClicked += OnVirtualSectionClicked;
     }
 
     private async void InspectionSectionClicked()
@@ -101,6 +113,20 @@ public class TeacherLearningSectionsPresenter : LearningSectionsPresenter
         Debug.Log($"path {_exportService.GetExportPath()}");
         _view.ShowPopup($"Результаты сохранены в\n {_exportService.GetExportPath()}");
         Debug.Log($"Результаты моделей экспортированы.");
+    }
+
+    private async void OnVirtualSectionClicked()
+    {
+        var completions = await _scenarioService.GetAllCompletionsAsync();
+
+        var exportData = new ScenarioCompletionsExportDTO
+        {
+            Completions = completions
+        };
+
+        await _exportService.ExportMultiSheetAsync(exportData);
+        _view.ShowPopup($"Результаты сохранены в\n {_exportService.GetExportPath()}");
+        Debug.Log($"Прохождения сценариев экспортированы.");
     }
 
     private void _testsTablePresenter_BackClicked()
@@ -133,17 +159,20 @@ public class TeacherLearningSectionsPresenter : LearningSectionsPresenter
                 return;
             }
 
-            var sessionDTO =TestSessionTestDataFactory.Create(test);
+            // ФИКС: раньше здесь вызывался TestSessionTestDataFactory.Create(test),
+            // и в Excel попадали сфабрикованные ответы. Теперь — реальные ответы
+            // студента, сохранённые при сдаче теста.
+            var sessionDto =
+                UserAnswerExportMapper.ToSessionDto(session, test);
 
             var exportData =
                 new TestSessionExportDTO
                 {
                     Test = test,
-                    Session = sessionDTO
+                    Session = sessionDto
                 };
 
             await _exportService.ExportMultiSheetAsync(exportData);
-
 
             Debug.Log($"Результаты теста {test.Title} экспортированы.");
         }

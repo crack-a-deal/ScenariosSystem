@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 public class TestSessionService
@@ -17,20 +18,17 @@ public class TestSessionService
     public async Task<TestSession> StartAsync(Guid testId, Guid userProfileId)
     {
         var session = await _context.TestSessions
-            .FirstOrDefaultAsync(s =>
+            .Where(s =>
                 s.TestId == testId &&
-                s.UserProfileId == userProfileId);
+                s.UserProfileId == userProfileId &&
+                s.CompletedAt == null)
+            .OrderByDescending(s => s.StartedAt)
+            .FirstOrDefaultAsync();
 
         if (session == null)
         {
             throw new InvalidOperationException(
                 "Для пользователя не назначена сессия этого теста.");
-        }
-
-        if (session.CompletedAt != null)
-        {
-            throw new InvalidOperationException(
-                "Эта сессия теста уже завершена.");
         }
 
         if (session.StartedAt == null)

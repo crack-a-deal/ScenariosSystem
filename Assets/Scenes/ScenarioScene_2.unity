@@ -2309,7 +2309,8 @@ GameObject:
   - component: {fileID: 137438236}
   - component: {fileID: 137438237}
   m_Layer: 0
-  m_Name: "\u0421\u0446\u0435\u043D\u0430\u0440\u0438\u0439 \u042D\u043B\u0435\u043A\u0442\u0440\u043E\u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0430"
+  m_Name: "\u0420\u0435\u043C\u043E\u043D\u0442 \u0438 \u0441\u0431\u043E\u0440\u043A\u0430
+    \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2348,7 +2349,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scenario
   _id: 
-  _title: "\u0421\u0446\u0435\u043D\u0430\u0440\u0438\u0439 \u042D\u043B\u0435\u043A\u0442\u0440\u043E\u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0430"
+  _title: "\u0420\u0435\u043C\u043E\u043D\u0442 \u0438 \u0441\u0431\u043E\u0440\u043A\u0430
+    \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
   _steps:
   - {fileID: 6524008937432759934}
   - {fileID: 6653437767588692046}
@@ -32106,6 +32108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioSceneRoot
   _playerCamera: {fileID: 330585545}
+  _scenarioRunner: {fileID: 1332404672}
 --- !u!1 &1768209619
 GameObject:
   m_ObjectHideFlags: 0

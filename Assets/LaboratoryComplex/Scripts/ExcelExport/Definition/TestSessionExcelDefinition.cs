@@ -41,6 +41,20 @@ public class TestSessionExcelDefinition
                 })
                 .ToList();
 
+        int total = results.Count;
+        int correct = results.Count(
+            result => result.Result == "Верно");
+
+        results.Add(new TestSessionResultExcelDto
+        {
+            QuestionNumber = total,
+            QuestionText = "ИТОГО",
+            QuestionType = string.Empty,
+            UserAnswer = string.Empty,
+            CorrectAnswer = string.Empty,
+            Result = $"Верно: {correct} из {total}"
+        });
+
         workbook.Sheets.Add(
             "Результаты",
             results);
