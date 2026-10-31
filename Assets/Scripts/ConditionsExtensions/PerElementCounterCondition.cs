@@ -85,15 +85,20 @@ public class CounterElement
     [SerializeField]
     private ScenarioStateProvider _object;
 
-    [LabelText("Копия (включится)")]
-    [Tooltip("Объект, который включится при выполнении элемента — например, болт на столе")]
-    [SerializeField]
-    private GameObject _enabledOnComplete;
-
     [LabelText("Выключить сам объект")]
-    [Tooltip("Выключить GameObject элемента при выполнении — болт «снят» с двигателя")]
+    [Tooltip("Выключить GameObject самого элемента при выполнении — болт «снят» с двигателя")]
     [SerializeField]
     private bool _disableSelfOnComplete = true;
+
+    [LabelText("Выключить вместе с элементом")]
+    [Tooltip("Гайка, шайба и другие объекты, которые должны исчезнуть вместе с элементом")]
+    [SerializeField]
+    private List<GameObject> _disableOnComplete = new();
+
+    [LabelText("Включить при выполнении (копии)")]
+    [Tooltip("Копии на столе — болт, гайка и т.д. — включатся при выполнении элемента")]
+    [SerializeField]
+    private List<GameObject> _enableOnComplete = new();
 
     [FoldoutGroup("Доп действия")]
     [SerializeReference, SubclassSelector]
@@ -106,8 +111,17 @@ public class CounterElement
         if (_disableSelfOnComplete && _object != null)
             _object.gameObject.SetActive(false);
 
-        if (_enabledOnComplete != null)
-            _enabledOnComplete.SetActive(true);
+        foreach (GameObject target in _disableOnComplete)
+        {
+            if (target != null)
+                target.SetActive(false);
+        }
+
+        foreach (GameObject target in _enableOnComplete)
+        {
+            if (target != null)
+                target.SetActive(true);
+        }
 
         foreach (var action in _onComplete)
             action?.Execute(context);
