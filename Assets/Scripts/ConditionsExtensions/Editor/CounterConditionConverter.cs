@@ -50,6 +50,15 @@ public class CounterConditionConverterWindow : EditorWindow
     private Vector2 _scroll;
     private string _suffixes = "_table, _copy";
 
+    // ---- цель конвертации: текущее выделение или объект, закреплённый вручную ----
+
+    private GameObject _pinned;
+    private GameObject _lastScanned;
+    private bool _includeChildren;
+
+    /// <summary>Объект, на котором ищем условия: закреплённое поле, иначе текущее выделение.</summary>
+    private GameObject Target => _pinned != null ? _pinned : Selection.activeGameObject;
+
     [MenuItem("Tools/Сценарии/Конвертер CounterCondition → PerElement")]
     public static void Open()
     {
@@ -70,17 +79,28 @@ public class CounterConditionConverterWindow : EditorWindow
 
         if (missing != null)
             Debug.LogError($"[Конвертер] Не найдено поле {missing.Name}. Проверьте, что PerElementCounterCondition и CounterCondition соответствуют ожидаемым именам полей.");
+
+        Selection.selectionChanged += Repaint;
+    }
+
+    private void OnDisable()
+    {
+        Selection.selectionChanged -= Repaint;
     }
 
     // ================== СКАНИРОВАНИЕ ==================
 
-    private void ScanStage()
+    private void ScanObject(GameObject target)
     {
         _found.Clear();
+        _lastScanned = target;
 
-        // Текущая сцена ИЛИ открытый Prefab Mode
-        StageHandle stage = StageUtility.GetCurrentStageHandle();
-        MonoBehaviour[] components = stage.FindComponentsOfType<MonoBehaviour>();
+        if (target == null)
+            return;
+
+        MonoBehaviour[] components = _includeChildren
+            ? target.GetComponentsInChildren<MonoBehaviour>(true)
+            : target.GetComponents<MonoBehaviour>();
 
         foreach (MonoBehaviour component in components)
         {
@@ -226,25 +246,51 @@ public class CounterConditionConverterWindow : EditorWindow
 
     private void OnGUI()
     {
+        // Автоскан при смене цели: выделили другой объект — сразу видим его условия
+        if (Target != _lastScanned)
+            ScanObject(Target);
+
         EditorGUILayout.Space(4);
+
         EditorGUILayout.BeginHorizontal();
 
-        _suffixes = EditorGUILayout.TextField("Суффиксы копий", _suffixes);
+        GameObject newTarget = (GameObject)EditorGUILayout.ObjectField(
+            "Объект с условием", Target, typeof(GameObject), true);
 
-        if (GUILayout.Button("Сканировать сцену", GUILayout.Width(160)))
-            ScanStage();
+        if (newTarget != null && newTarget != Target)
+            _pinned = newTarget; // перетащили вручную — закрепляем за объектом
+
+        if (GUILayout.Button("Из выделения", GUILayout.Width(110)))
+        {
+            _pinned = null; // снова следовать за выделением
+            ScanObject(Target);
+        }
+
+        EditorGUILayout.EndHorizontal();
+
+        EditorGUILayout.BeginHorizontal();
+
+        _includeChildren = EditorGUILayout.ToggleLeft("Искать и в детях", _includeChildren, GUILayout.Width(130));
+        _suffixes = EditorGUILayout.TextField("Суффиксы копий", _suffixes);
 
         EditorGUILayout.EndHorizontal();
 
         EditorGUILayout.HelpBox(
-            "Находит все CounterCondition в открытой сцене (или Prefab Mode) и готовит из их объектов элементы PerElementCounterCondition. " +
+            "Выберите объект с CounterCondition (или перетащите его в поле) — окно покажет условия именно этого объекта. " +
             "Копии подбираются по имени: Bolt_01 → Bolt_01_table (суффиксы выше, через запятую). " +
-            "Гайки и другие объекты для совместного выключения добавьте кнопкой «+ выключить вместе» — поле «Выключить вместе с элементом».",
+            "Гайки и другие объекты для совместного выключения добавьте кнопкой «+ выключить вместе». " +
+            "«Конвертировать» заменяет условие на PerElementCounterCondition на том же месте.",
             MessageType.Info);
+
+        if (Target == null)
+        {
+            EditorGUILayout.HelpBox("Выделите объект с CounterCondition — окно следует за выделением.", MessageType.None);
+            return;
+        }
 
         if (_found.Count == 0)
         {
-            EditorGUILayout.HelpBox("Пока ничего не найдено — откройте сцену со шагами и нажмите «Сканировать сцену».", MessageType.None);
+            EditorGUILayout.HelpBox($"На «{Target.name}» CounterCondition не найдено.", MessageType.None);
             return;
         }
 
@@ -263,7 +309,7 @@ public class CounterConditionConverterWindow : EditorWindow
             foreach (FoundCondition found in _found.Where(found => found.Convert).ToList())
                 Apply(found);
 
-            ScanStage(); // старых CounterCondition больше нет — список опустеет
+            ScanObject(Target); // на объекте вместо CounterCondition теперь PerElement
         }
     }
 
@@ -280,6 +326,8 @@ public class CounterConditionConverterWindow : EditorWindow
             $"Состояние: {found.RequiredState} · Нужно: {found.RequiredCount} · Элементов: {found.Drafts.Count}",
             EditorStyles.miniLabel);
 
+        EditorGUILayout.BeginHorizontal();
+
         if (GUILayout.Button("Переподобрать копии", GUILayout.Width(190)))
         {
             foreach (ElementDraft draft in found.Drafts)
@@ -287,6 +335,14 @@ public class CounterConditionConverterWindow : EditorWindow
 
             AutoMatchCopies();
         }
+
+        if (GUILayout.Button("Конвертировать это", GUILayout.Width(160)))
+        {
+            Apply(found);
+            ScanObject(Target);
+        }
+
+        EditorGUILayout.EndHorizontal();
 
         foreach (ElementDraft draft in found.Drafts)
             DrawDraft(draft);

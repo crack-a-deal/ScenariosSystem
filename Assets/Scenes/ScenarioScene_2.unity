@@ -212,22 +212,26 @@ MonoBehaviour:
         - _object: {fileID: 1271419925}
           _disableSelfOnComplete: 1
           _disableOnComplete: []
-          _enableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 3152925276198010013}
           _onComplete: []
         - _object: {fileID: 1343274483}
           _disableSelfOnComplete: 1
           _disableOnComplete: []
-          _enableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 116434781321463730}
           _onComplete: []
         - _object: {fileID: 1379075890}
           _disableSelfOnComplete: 1
           _disableOnComplete: []
-          _enableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 6154491472316077257}
           _onComplete: []
         - _object: {fileID: 2135260174}
           _disableSelfOnComplete: 1
           _disableOnComplete: []
-          _enableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 6207416015229525301}
           _onComplete: []
         _requiredState: 3
         _requiredCount: 4
@@ -610,12 +614,12 @@ GameObject:
   - component: {fileID: 43320972}
   - component: {fileID: 43320971}
   m_Layer: 0
-  m_Name: Bolt17
+  m_Name: Bolt17_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &43320970
 Transform:
   m_ObjectHideFlags: 0
@@ -772,12 +776,12 @@ GameObject:
   - component: {fileID: 46602520}
   - component: {fileID: 46602519}
   m_Layer: 0
-  m_Name: Kreplenie12
+  m_Name: Kreplenie12_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &46602518
 Transform:
   m_ObjectHideFlags: 0
@@ -787,7 +791,7 @@ Transform:
   m_GameObject: {fileID: 46602517}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.2850001, y: 0.00000015111281, z: 0.29840016}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1174,12 +1178,12 @@ GameObject:
   - component: {fileID: 60394411}
   - component: {fileID: 60394410}
   m_Layer: 0
-  m_Name: Bolt.004
+  m_Name: Bolt.004_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &60394409
 Transform:
   m_ObjectHideFlags: 0
@@ -1418,12 +1422,12 @@ GameObject:
   - component: {fileID: 76436043}
   - component: {fileID: 76436042}
   m_Layer: 0
-  m_Name: Bolt7
+  m_Name: Bolt7_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &76436041
 Transform:
   m_ObjectHideFlags: 0
@@ -1818,12 +1822,12 @@ GameObject:
   - component: {fileID: 117371390}
   - component: {fileID: 117371389}
   m_Layer: 0
-  m_Name: Kreplenie8
+  m_Name: Kreplenie8_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &117371388
 Transform:
   m_ObjectHideFlags: 0
@@ -2148,12 +2152,12 @@ GameObject:
   - component: {fileID: 137252300}
   - component: {fileID: 137252299}
   m_Layer: 0
-  m_Name: Bolt.003
+  m_Name: Bolt.003_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &137252298
 Transform:
   m_ObjectHideFlags: 0
@@ -2362,7 +2366,6 @@ MonoBehaviour:
   - {fileID: 8993562071202419698}
   - {fileID: 1729654482637590044}
   - {fileID: 955007427}
-  - {fileID: 1173293703}
   - {fileID: 230490947}
   - {fileID: 1957234980}
   - {fileID: 719598618}
@@ -2412,10 +2415,10 @@ MonoBehaviour:
   - {fileID: 505687314}
   - {fileID: 1651135948}
   - {fileID: 660888246}
-  - {fileID: 5474935}
   - {fileID: 452000914}
-  - {fileID: 1181226186}
+  - {fileID: 5474935}
   - {fileID: 653060652}
+  - {fileID: 1181226186}
   - {fileID: 1902867957}
   - {fileID: 1428241571}
   - {fileID: 1825674915}
@@ -2776,22 +2779,26 @@ MonoBehaviour:
         - _object: {fileID: 7049284985211156340}
           _disableSelfOnComplete: 1
           _disableOnComplete: []
-          _enableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1271419921}
           _onComplete: []
         - _object: {fileID: 8992496846529390597}
           _disableSelfOnComplete: 1
           _disableOnComplete: []
-          _enableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1343274479}
           _onComplete: []
         - _object: {fileID: 2908753475280250161}
           _disableSelfOnComplete: 1
           _disableOnComplete: []
-          _enableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1379075886}
           _onComplete: []
         - _object: {fileID: 8425924380073795430}
           _disableSelfOnComplete: 1
           _disableOnComplete: []
-          _enableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 2135260170}
           _onComplete: []
         _requiredState: 1
         _requiredCount: 4
@@ -3248,7 +3255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &200244935
 Transform:
   m_ObjectHideFlags: 0
@@ -3271,7 +3278,6 @@ Transform:
   - {fileID: 201175771}
   - {fileID: 76436041}
   - {fileID: 1031165936}
-  - {fileID: 1490907835}
   - {fileID: 1280861344}
   - {fileID: 1163891659}
   - {fileID: 961253551}
@@ -3282,6 +3288,7 @@ Transform:
   - {fileID: 1073138621}
   - {fileID: 43320970}
   - {fileID: 1776921318}
+  - {fileID: 1490907835}
   m_Father: {fileID: 629560093}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &201175770
@@ -3300,12 +3307,12 @@ GameObject:
   - component: {fileID: 201175773}
   - component: {fileID: 201175772}
   m_Layer: 0
-  m_Name: Bolt6
+  m_Name: Bolt6_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &201175771
 Transform:
   m_ObjectHideFlags: 0
@@ -3579,12 +3586,12 @@ GameObject:
   - component: {fileID: 219512364}
   - component: {fileID: 219512363}
   m_Layer: 0
-  m_Name: Bolt20.003
+  m_Name: Bolt20.003_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &219512362
 Transform:
   m_ObjectHideFlags: 0
@@ -4067,12 +4074,12 @@ GameObject:
   - component: {fileID: 252270678}
   - component: {fileID: 252270677}
   m_Layer: 0
-  m_Name: Bolt.001
+  m_Name: Bolt.001_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &252270676
 Transform:
   m_ObjectHideFlags: 0
@@ -5103,12 +5110,12 @@ GameObject:
   - component: {fileID: 295222806}
   - component: {fileID: 295222805}
   m_Layer: 0
-  m_Name: Kreplenie6
+  m_Name: Kreplenie6_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &295222804
 Transform:
   m_ObjectHideFlags: 0
@@ -5787,12 +5794,12 @@ GameObject:
   - component: {fileID: 332260516}
   - component: {fileID: 332260515}
   m_Layer: 0
-  m_Name: Bolt14
+  m_Name: Bolt14_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &332260514
 Transform:
   m_ObjectHideFlags: 0
@@ -6174,12 +6181,12 @@ GameObject:
   - component: {fileID: 361261347}
   - component: {fileID: 361261346}
   m_Layer: 0
-  m_Name: Kreplenie3
+  m_Name: Kreplenie3_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &361261345
 Transform:
   m_ObjectHideFlags: 0
@@ -6603,12 +6610,12 @@ GameObject:
   - component: {fileID: 387358849}
   - component: {fileID: 387358848}
   m_Layer: 0
-  m_Name: Kreplenie19
+  m_Name: Kreplenie19_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &387358847
 Transform:
   m_ObjectHideFlags: 0
@@ -6618,7 +6625,7 @@ Transform:
   m_GameObject: {fileID: 387358846}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.72200036, y: 0.00000013189116, z: -0.032999914}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6766,12 +6773,12 @@ GameObject:
   - component: {fileID: 391821803}
   - component: {fileID: 391821802}
   m_Layer: 0
-  m_Name: Kreplenie4
+  m_Name: Kreplenie4_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &391821801
 Transform:
   m_ObjectHideFlags: 0
@@ -7067,12 +7074,12 @@ GameObject:
   - component: {fileID: 395958486}
   - component: {fileID: 395958485}
   m_Layer: 0
-  m_Name: Kreplenie16
+  m_Name: Kreplenie16_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &395958484
 Transform:
   m_ObjectHideFlags: 0
@@ -7082,7 +7089,7 @@ Transform:
   m_GameObject: {fileID: 395958483}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.7220005, y: 0.000000086139345, z: 0.29900026}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8603,12 +8610,12 @@ GameObject:
   - component: {fileID: 485727843}
   - component: {fileID: 485727842}
   m_Layer: 0
-  m_Name: Kreplenie5
+  m_Name: Kreplenie5_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &485727841
 Transform:
   m_ObjectHideFlags: 0
@@ -8997,7 +9004,7 @@ MonoBehaviour:
   Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
     \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
   _completionCondition:
-    rid: 1332834693188419852
+    rid: 1332835293313368236
   _onEnter: []
   _onEnterEvent:
     m_PersistentCalls:
@@ -9084,14 +9091,34 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 1332834693188419852
-      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+    - rid: 1332835293313368236
+      type: {class: PerElementCounterCondition, ns: , asm: Assembly-CSharp}
       data:
-        _objects:
-        - {fileID: 776798441}
-        - {fileID: 295222807}
-        - {fileID: 1948570423}
-        - {fileID: 117371391}
+        _elements:
+        - _object: {fileID: 776798441}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 375789330812241527}
+          _onComplete: []
+        - _object: {fileID: 295222807}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 4445338129213844223}
+          _onComplete: []
+        - _object: {fileID: 1948570423}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1647394860973014184}
+          _onComplete: []
+        - _object: {fileID: 117371391}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 655133473594359115}
+          _onComplete: []
         _requiredState: 3
         _requiredCount: 4
 --- !u!1 &505849768
@@ -9895,8 +9922,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523879502}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 4.829}
+  m_LocalRotation: {x: -0.000000037748947, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.13, y: -0.0006, z: -4.521}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9904,7 +9931,7 @@ Transform:
   - {fileID: 1343274480}
   - {fileID: 1379075887}
   - {fileID: 2135260171}
-  m_Father: {fileID: 3269176060583464439}
+  m_Father: {fileID: 543450651651892155}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &526930532
 GameObject:
@@ -9921,7 +9948,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &526930533
 Transform:
   m_ObjectHideFlags: 0
@@ -9930,8 +9957,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526930532}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.399, y: -0.368, z: -0}
+  m_LocalRotation: {x: -0.000000037748947, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.3773532, y: 0.9552, z: -3.738416}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9943,7 +9970,7 @@ Transform:
   - {fileID: 1284633608}
   - {fileID: 2114222932}
   - {fileID: 976249836}
-  m_Father: {fileID: 8474330251716222378}
+  m_Father: {fileID: 543450651651892155}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &528590453
 GameObject:
@@ -10125,12 +10152,12 @@ GameObject:
   - component: {fileID: 534219054}
   - component: {fileID: 534219053}
   m_Layer: 0
-  m_Name: Bolt
+  m_Name: Bolt_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &534219052
 Transform:
   m_ObjectHideFlags: 0
@@ -10283,12 +10310,12 @@ GameObject:
   - component: {fileID: 543699712}
   - component: {fileID: 543699711}
   m_Layer: 0
-  m_Name: Soedinitelnaya_spica.001
+  m_Name: Soedinitelnaya_spica.001_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &543699710
 Transform:
   m_ObjectHideFlags: 0
@@ -12290,12 +12317,12 @@ GameObject:
   - component: {fileID: 662193846}
   - component: {fileID: 662193845}
   m_Layer: 0
-  m_Name: Soedinitelnaya_spica
+  m_Name: Soedinitelnaya_spica_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &662193844
 Transform:
   m_ObjectHideFlags: 0
@@ -12384,12 +12411,12 @@ GameObject:
   - component: {fileID: 665297237}
   - component: {fileID: 665297236}
   m_Layer: 0
-  m_Name: Bolt2
+  m_Name: Bolt2_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &665297235
 Transform:
   m_ObjectHideFlags: 0
@@ -12842,12 +12869,12 @@ GameObject:
   - component: {fileID: 685420183}
   - component: {fileID: 685420182}
   m_Layer: 0
-  m_Name: Kreplenie18
+  m_Name: Kreplenie18_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &685420181
 Transform:
   m_ObjectHideFlags: 0
@@ -12857,7 +12884,7 @@ Transform:
   m_GameObject: {fileID: 685420180}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.859, y: 0, z: 0.299}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14177,12 +14204,12 @@ GameObject:
   - component: {fileID: 770101165}
   - component: {fileID: 770101164}
   m_Layer: 0
-  m_Name: Bolt1
+  m_Name: Bolt1_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &770101163
 Transform:
   m_ObjectHideFlags: 0
@@ -14417,12 +14444,12 @@ GameObject:
   - component: {fileID: 776798440}
   - component: {fileID: 776798439}
   m_Layer: 0
-  m_Name: Kreplenie
+  m_Name: Kreplenie_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &776798438
 Transform:
   m_ObjectHideFlags: 0
@@ -15091,12 +15118,12 @@ GameObject:
   - component: {fileID: 820289203}
   - component: {fileID: 820289202}
   m_Layer: 0
-  m_Name: Bolt12
+  m_Name: Bolt12_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &820289201
 Transform:
   m_ObjectHideFlags: 0
@@ -15335,12 +15362,12 @@ GameObject:
   - component: {fileID: 834171408}
   - component: {fileID: 834171407}
   m_Layer: 0
-  m_Name: Kreplenie.001
+  m_Name: Kreplenie.001_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &834171406
 Transform:
   m_ObjectHideFlags: 0
@@ -15350,7 +15377,7 @@ Transform:
   m_GameObject: {fileID: 834171405}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.13299976, y: -0.0000000021140991, z: 0.2940003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16098,12 +16125,12 @@ GameObject:
   - component: {fileID: 900636433}
   - component: {fileID: 900636432}
   m_Layer: 0
-  m_Name: Kreplenie15
+  m_Name: Kreplenie15_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &900636431
 Transform:
   m_ObjectHideFlags: 0
@@ -16113,7 +16140,7 @@ Transform:
   m_GameObject: {fileID: 900636430}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.28499994, y: 0.00000019648712, z: -0.014599973}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16520,12 +16547,12 @@ GameObject:
   - component: {fileID: 926984320}
   - component: {fileID: 926984319}
   m_Layer: 0
-  m_Name: Bolt4
+  m_Name: Bolt4_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &926984318
 Transform:
   m_ObjectHideFlags: 0
@@ -16716,12 +16743,12 @@ GameObject:
   - component: {fileID: 935868393}
   - component: {fileID: 935868392}
   m_Layer: 0
-  m_Name: Bolt.002
+  m_Name: Bolt.002_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &935868391
 Transform:
   m_ObjectHideFlags: 0
@@ -16878,12 +16905,12 @@ GameObject:
   - component: {fileID: 936894015}
   - component: {fileID: 936894014}
   m_Layer: 0
-  m_Name: Bolt15
+  m_Name: Bolt15_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &936894013
 Transform:
   m_ObjectHideFlags: 0
@@ -17186,12 +17213,12 @@ GameObject:
   - component: {fileID: 939940288}
   - component: {fileID: 939940287}
   m_Layer: 0
-  m_Name: Bolt5
+  m_Name: Bolt5_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &939940286
 Transform:
   m_ObjectHideFlags: 0
@@ -17770,12 +17797,12 @@ GameObject:
   - component: {fileID: 961253553}
   - component: {fileID: 961253552}
   m_Layer: 0
-  m_Name: Bolt11
+  m_Name: Bolt11_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &961253551
 Transform:
   m_ObjectHideFlags: 0
@@ -17932,12 +17959,12 @@ GameObject:
   - component: {fileID: 969283874}
   - component: {fileID: 969283873}
   m_Layer: 0
-  m_Name: Bolt13
+  m_Name: Bolt13_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &969283872
 Transform:
   m_ObjectHideFlags: 0
@@ -18807,12 +18834,12 @@ GameObject:
   - component: {fileID: 1031165938}
   - component: {fileID: 1031165937}
   m_Layer: 0
-  m_Name: Bolt8
+  m_Name: Bolt8_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1031165936
 Transform:
   m_ObjectHideFlags: 0
@@ -19368,12 +19395,12 @@ GameObject:
   - component: {fileID: 1073138623}
   - component: {fileID: 1073138622}
   m_Layer: 0
-  m_Name: Bolt16
+  m_Name: Bolt16_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1073138621
 Transform:
   m_ObjectHideFlags: 0
@@ -19630,12 +19657,12 @@ GameObject:
   - component: {fileID: 1093312722}
   - component: {fileID: 1093312721}
   m_Layer: 0
-  m_Name: Bolt3
+  m_Name: Bolt3_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1093312720
 Transform:
   m_ObjectHideFlags: 0
@@ -20437,7 +20464,7 @@ MonoBehaviour:
   Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
     \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
   _completionCondition:
-    rid: 1332834693188419852
+    rid: 1332835293313368235
   _onEnter: []
   _onEnterEvent:
     m_PersistentCalls:
@@ -20524,14 +20551,34 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 1332834693188419852
-      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+    - rid: 1332835293313368235
+      type: {class: PerElementCounterCondition, ns: , asm: Assembly-CSharp}
       data:
-        _objects:
-        - {fileID: 1146594053}
-        - {fileID: 361261348}
-        - {fileID: 391821804}
-        - {fileID: 485727844}
+        _elements:
+        - _object: {fileID: 1146594053}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 3960516163844354971}
+          _onComplete: []
+        - _object: {fileID: 361261348}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 54070420876732825}
+          _onComplete: []
+        - _object: {fileID: 391821804}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1546410961811068509}
+          _onComplete: []
+        - _object: {fileID: 485727844}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1970989762101984094}
+          _onComplete: []
         _requiredState: 3
         _requiredCount: 4
 --- !u!114 &1127058071
@@ -20682,12 +20729,12 @@ GameObject:
   - component: {fileID: 1137750191}
   - component: {fileID: 1137750190}
   m_Layer: 0
-  m_Name: Kreplenie11
+  m_Name: Kreplenie11_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1137750189
 Transform:
   m_ObjectHideFlags: 0
@@ -20697,7 +20744,7 @@ Transform:
   m_GameObject: {fileID: 1137750188}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.133, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21053,12 +21100,12 @@ GameObject:
   - component: {fileID: 1146594052}
   - component: {fileID: 1146594051}
   m_Layer: 0
-  m_Name: Kreplenie.002
+  m_Name: Kreplenie.002_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1146594050
 Transform:
   m_ObjectHideFlags: 0
@@ -21267,7 +21314,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1154950518
 Transform:
   m_ObjectHideFlags: 0
@@ -21276,8 +21323,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154950517}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.49998975, y: -0.49999112, z: -0.50000894, w: 0.5000102}
-  m_LocalPosition: {x: 6.111, y: -0.662, z: 0.033}
+  m_LocalRotation: {x: -0.7071059, y: 0.000012435019, z: -0.0000145584345, w: 0.7071078}
+  m_LocalPosition: {x: -2.724, y: 0.66271114, z: -3.372}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21285,8 +21332,8 @@ Transform:
   - {fileID: 361261345}
   - {fileID: 391821801}
   - {fileID: 485727841}
-  m_Father: {fileID: 8474330251716222378}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
+  m_Father: {fileID: 543450651651892155}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -0.002}
 --- !u!1 &1163891658
 GameObject:
   m_ObjectHideFlags: 0
@@ -21303,12 +21350,12 @@ GameObject:
   - component: {fileID: 1163891661}
   - component: {fileID: 1163891660}
   m_Layer: 0
-  m_Name: Bolt10
+  m_Name: Bolt10_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1163891659
 Transform:
   m_ObjectHideFlags: 0
@@ -21557,7 +21604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1173293702
 Transform:
   m_ObjectHideFlags: 0
@@ -21941,7 +21988,7 @@ MonoBehaviour:
   Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
     \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
   _completionCondition:
-    rid: 1332834693188419852
+    rid: 1332835293313368219
   _onEnter: []
   _onEnterEvent:
     m_PersistentCalls:
@@ -21973,60 +22020,136 @@ MonoBehaviour:
   _onComplete: []
   _onCompleteEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3463872450571612880}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 200244934}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _hint: "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0435 \u043A\u0440\u0435\u043F\u0435\u0436"
   _errors: []
   references:
     version: 2
     RefIds:
-    - rid: 1332834693188419852
-      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+    - rid: 1332835293313368219
+      type: {class: PerElementCounterCondition, ns: , asm: Assembly-CSharp}
       data:
-        _objects:
-        - {fileID: 534219056}
-        - {fileID: 770101167}
-        - {fileID: 665297239}
-        - {fileID: 1093312724}
-        - {fileID: 926984322}
-        - {fileID: 939940290}
-        - {fileID: 201175775}
-        - {fileID: 76436045}
-        - {fileID: 1031165940}
-        - {fileID: 1490907839}
-        - {fileID: 1280861348}
-        - {fileID: 1163891663}
-        - {fileID: 961253555}
-        - {fileID: 820289205}
-        - {fileID: 969283876}
-        - {fileID: 332260518}
-        - {fileID: 936894017}
-        - {fileID: 1073138625}
-        - {fileID: 43320974}
-        - {fileID: 1776921322}
+        _elements:
+        - _object: {fileID: 534219056}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1200855061024530073}
+          _onComplete: []
+        - _object: {fileID: 770101167}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 8211709578172951305}
+          _onComplete: []
+        - _object: {fileID: 665297239}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 7458607905118157255}
+          _onComplete: []
+        - _object: {fileID: 1093312724}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1845713354946037761}
+          _onComplete: []
+        - _object: {fileID: 926984322}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 4635657390083467711}
+          _onComplete: []
+        - _object: {fileID: 939940290}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 8246064252860983431}
+          _onComplete: []
+        - _object: {fileID: 201175775}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 2860839800201540805}
+          _onComplete: []
+        - _object: {fileID: 76436045}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 4886907449037398911}
+          _onComplete: []
+        - _object: {fileID: 1031165940}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 2583074730195265387}
+          _onComplete: []
+        - _object: {fileID: 1490907839}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 8992825187397880851}
+          _onComplete: []
+        - _object: {fileID: 1280861348}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 4341717233185152354}
+          _onComplete: []
+        - _object: {fileID: 1163891663}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 6780447916101816156}
+          _onComplete: []
+        - _object: {fileID: 961253555}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 424662047085617237}
+          _onComplete: []
+        - _object: {fileID: 820289205}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1221251168094757327}
+          _onComplete: []
+        - _object: {fileID: 969283876}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 7571190004783834592}
+          _onComplete: []
+        - _object: {fileID: 332260518}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 7178697105629863992}
+          _onComplete: []
+        - _object: {fileID: 936894017}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 928677565380970050}
+          _onComplete: []
+        - _object: {fileID: 1073138625}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1931145287444426859}
+          _onComplete: []
+        - _object: {fileID: 43320974}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 8507532371226526840}
+          _onComplete: []
+        - _object: {fileID: 1776921322}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 9194294649274368044}
+          _onComplete: []
         _requiredState: 3
         _requiredCount: 20
 --- !u!1 &1183144342
@@ -22254,7 +22377,7 @@ MonoBehaviour:
   Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
     \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
   _completionCondition:
-    rid: 1332834693188419852
+    rid: 1332835293313368234
   _onEnter: []
   _onEnterEvent:
     m_PersistentCalls:
@@ -22317,18 +22440,66 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 1332834693188419852
-      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+    - rid: 1332835293313368234
+      type: {class: PerElementCounterCondition, ns: , asm: Assembly-CSharp}
       data:
-        _objects:
-        - {fileID: 252270679}
-        - {fileID: 2030581655}
-        - {fileID: 935868394}
-        - {fileID: 1299344264}
-        - {fileID: 137252301}
-        - {fileID: 1193626194}
-        - {fileID: 60394412}
-        - {fileID: 219512365}
+        _elements:
+        - _object: {fileID: 252270679}
+          _disableSelfOnComplete: 1
+          _disableOnComplete:
+          - {fileID: 662193843}
+          _enableOnComplete:
+          - {fileID: 9186990845487804558}
+          - {fileID: 4288532316933766214}
+          _onComplete: []
+        - _object: {fileID: 2030581655}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 7263430674641750651}
+          _onComplete: []
+        - _object: {fileID: 935868394}
+          _disableSelfOnComplete: 1
+          _disableOnComplete:
+          - {fileID: 543699709}
+          _enableOnComplete:
+          - {fileID: 8180777765532949201}
+          - {fileID: 8465238258219420681}
+          _onComplete: []
+        - _object: {fileID: 1299344264}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 4843827634171410975}
+          _onComplete: []
+        - _object: {fileID: 137252301}
+          _disableSelfOnComplete: 1
+          _disableOnComplete:
+          - {fileID: 1642566765}
+          _enableOnComplete:
+          - {fileID: 8298582364453969315}
+          - {fileID: 1303230737913393588}
+          _onComplete: []
+        - _object: {fileID: 1193626194}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 4868878794885870434}
+          _onComplete: []
+        - _object: {fileID: 60394412}
+          _disableSelfOnComplete: 1
+          _disableOnComplete:
+          - {fileID: 1230909056}
+          _enableOnComplete:
+          - {fileID: 507676167009645500}
+          - {fileID: 2483211355339286479}
+          _onComplete: []
+        - _object: {fileID: 219512365}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 4768586512717942165}
+          _onComplete: []
         _requiredState: 3
         _requiredCount: 8
 --- !u!1 &1186768135
@@ -22618,12 +22789,12 @@ GameObject:
   - component: {fileID: 1193626193}
   - component: {fileID: 1193626192}
   m_Layer: 0
-  m_Name: Bolt20.002
+  m_Name: Bolt20.002_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1193626191
 Transform:
   m_ObjectHideFlags: 0
@@ -23118,12 +23289,12 @@ GameObject:
   - component: {fileID: 1216166180}
   - component: {fileID: 1216166179}
   m_Layer: 0
-  m_Name: Kreplenie14
+  m_Name: Kreplenie14_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1216166178
 Transform:
   m_ObjectHideFlags: 0
@@ -23133,7 +23304,7 @@ Transform:
   m_GameObject: {fileID: 1216166177}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.429, y: 0.00000017474376, z: 0.29839993}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23531,12 +23702,12 @@ GameObject:
   - component: {fileID: 1230909059}
   - component: {fileID: 1230909058}
   m_Layer: 0
-  m_Name: Soedinitelnaya_spica.003
+  m_Name: Soedinitelnaya_spica.003_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1230909057
 Transform:
   m_ObjectHideFlags: 0
@@ -24300,7 +24471,7 @@ GameObject:
   - component: {fileID: 1271419924}
   - component: {fileID: 1271419923}
   m_Layer: 0
-  m_Name: Bolt158 (1)
+  m_Name: Bolt158_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24569,12 +24740,12 @@ GameObject:
   - component: {fileID: 1280861346}
   - component: {fileID: 1280861345}
   m_Layer: 0
-  m_Name: Bolt9
+  m_Name: Bolt9_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1280861344
 Transform:
   m_ObjectHideFlags: 0
@@ -24764,7 +24935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1293835908
 Transform:
   m_ObjectHideFlags: 0
@@ -24773,15 +24944,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293835907}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000053385016, y: -0.7071058, z: -1.9539924e-14, w: 0.70710784}
-  m_LocalPosition: {x: 5.246, y: 0.413, z: 2.256}
+  m_LocalRotation: {x: -0.0000000754979, y: -1, z: -0.000000037748865, w: 0.0000029504295}
+  m_LocalPosition: {x: -1.682, y: 1.79, z: -3.375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 185453215}
   - {fileID: 788213233}
-  m_Father: {fileID: 8474330251716222378}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_Father: {fileID: 543450651651892155}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &1299344260
 GameObject:
   m_ObjectHideFlags: 0
@@ -24798,12 +24969,12 @@ GameObject:
   - component: {fileID: 1299344263}
   - component: {fileID: 1299344262}
   m_Layer: 0
-  m_Name: Bolt20.001
+  m_Name: Bolt20.001_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1299344261
 Transform:
   m_ObjectHideFlags: 0
@@ -25739,7 +25910,7 @@ GameObject:
   - component: {fileID: 1343274482}
   - component: {fileID: 1343274481}
   m_Layer: 0
-  m_Name: Bolt161 (1)
+  m_Name: Bolt161_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26522,7 +26693,7 @@ GameObject:
   - component: {fileID: 1379075889}
   - component: {fileID: 1379075888}
   m_Layer: 0
-  m_Name: Bolt161 (2)
+  m_Name: Bolt163_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28142,12 +28313,12 @@ GameObject:
   - component: {fileID: 1490907837}
   - component: {fileID: 1490907836}
   m_Layer: 0
-  m_Name: Bolt19
+  m_Name: Bolt19_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1490907835
 Transform:
   m_ObjectHideFlags: 0
@@ -29133,12 +29304,12 @@ GameObject:
   - component: {fileID: 1530990065}
   - component: {fileID: 1530990064}
   m_Layer: 0
-  m_Name: Kreplenie13
+  m_Name: Kreplenie13_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1530990063
 Transform:
   m_ObjectHideFlags: 0
@@ -29679,12 +29850,12 @@ GameObject:
   - component: {fileID: 1597604565}
   - component: {fileID: 1597604564}
   m_Layer: 0
-  m_Name: Kreplenie17
+  m_Name: Kreplenie17_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1597604563
 Transform:
   m_ObjectHideFlags: 0
@@ -29694,7 +29865,7 @@ Transform:
   m_GameObject: {fileID: 1597604562}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.429, y: 0.00000017474376, z: -0.014600063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29877,7 +30048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1598901759
 Transform:
   m_ObjectHideFlags: 0
@@ -29886,8 +30057,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1598901758}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.817, y: -0.741, z: 0.173}
+  m_LocalRotation: {x: -1.0880184e-13, y: -0.000000037748958, z: 1, w: 0.0000029504295}
+  m_LocalPosition: {x: -3.011, y: 0.92, z: -3.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29895,8 +30066,8 @@ Transform:
   - {fileID: 295222804}
   - {fileID: 1948570420}
   - {fileID: 117371388}
-  m_Father: {fileID: 8474330251716222378}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 543450651651892155}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &1604817527
 GameObject:
   m_ObjectHideFlags: 0
@@ -30272,12 +30443,12 @@ GameObject:
   - component: {fileID: 1642566768}
   - component: {fileID: 1642566767}
   m_Layer: 0
-  m_Name: Soedinitelnaya_spica.002
+  m_Name: Soedinitelnaya_spica.002_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1642566766
 Transform:
   m_ObjectHideFlags: 0
@@ -30543,6 +30714,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3195813204171423893}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   _hint: "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0435 \u043A\u0440\u0435\u043F\u0435\u0436\u043D\u044B\u0435
     \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u044B"
   _errors: []
@@ -30657,12 +30840,12 @@ GameObject:
   - component: {fileID: 1657089481}
   - component: {fileID: 1657089480}
   m_Layer: 0
-  m_Name: Kreplenie10
+  m_Name: Kreplenie10_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1657089479
 Transform:
   m_ObjectHideFlags: 0
@@ -30672,7 +30855,7 @@ Transform:
   m_GameObject: {fileID: 1657089478}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: -0, z: 0.294}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32226,12 +32409,12 @@ GameObject:
   - component: {fileID: 1776921320}
   - component: {fileID: 1776921319}
   m_Layer: 0
-  m_Name: Bolt18
+  m_Name: Bolt18_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1776921318
 Transform:
   m_ObjectHideFlags: 0
@@ -34827,12 +35010,12 @@ GameObject:
   - component: {fileID: 1948570422}
   - component: {fileID: 1948570421}
   m_Layer: 0
-  m_Name: Kreplenie7
+  m_Name: Kreplenie7_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1948570420
 Transform:
   m_ObjectHideFlags: 0
@@ -35538,7 +35721,7 @@ MonoBehaviour:
   Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
     \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
   _completionCondition:
-    rid: 1332834693188419852
+    rid: 1332835293313368232
   _onEnter: []
   _onEnterEvent:
     m_PersistentCalls:
@@ -35571,7 +35754,7 @@ MonoBehaviour:
   _onCompleteEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8899503952493717207}
+      - m_Target: {fileID: 15185292}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -35655,40 +35838,88 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1293835907}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   _hint: "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0435 \u043F\u0440\u0435\u0441\u0441\u0443\u044E\u0449\u0438\u0435
     \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u044B"
   _errors: []
   references:
     version: 2
     RefIds:
-    - rid: 1332834693188419852
-      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+    - rid: 1332835293313368232
+      type: {class: PerElementCounterCondition, ns: , asm: Assembly-CSharp}
       data:
-        _objects:
-        - {fileID: 834171409}
-        - {fileID: 1657089482}
-        - {fileID: 1137750192}
-        - {fileID: 46602521}
-        - {fileID: 1530990066}
-        - {fileID: 1216166181}
-        - {fileID: 900636434}
-        - {fileID: 395958487}
-        - {fileID: 1597604566}
-        - {fileID: 685420184}
-        - {fileID: 387358850}
-        - {fileID: 2061914579}
+        _elements:
+        - _object: {fileID: 834171409}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 9078519277828174514}
+          _onComplete: []
+        - _object: {fileID: 1657089482}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 6053604782578207877}
+          _onComplete: []
+        - _object: {fileID: 1137750192}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 663700753853869729}
+          _onComplete: []
+        - _object: {fileID: 46602521}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 5602690404891078792}
+          _onComplete: []
+        - _object: {fileID: 1530990066}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 864399079929711952}
+          _onComplete: []
+        - _object: {fileID: 1216166181}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 7557286411545603981}
+          _onComplete: []
+        - _object: {fileID: 900636434}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 5990950846699895642}
+          _onComplete: []
+        - _object: {fileID: 395958487}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 7374939595178608771}
+          _onComplete: []
+        - _object: {fileID: 1597604566}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1599740060881773212}
+          _onComplete: []
+        - _object: {fileID: 685420184}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 6539625135519693665}
+          _onComplete: []
+        - _object: {fileID: 387358850}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 6448309858349299213}
+          _onComplete: []
+        - _object: {fileID: 2061914579}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 6543451167248394197}
+          _onComplete: []
         _requiredState: 3
         _requiredCount: 12
 --- !u!1 &1997101193
@@ -35913,12 +36144,12 @@ GameObject:
   - component: {fileID: 2030581654}
   - component: {fileID: 2030581653}
   m_Layer: 0
-  m_Name: Bolt20
+  m_Name: Bolt20_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2030581652
 Transform:
   m_ObjectHideFlags: 0
@@ -36665,12 +36896,12 @@ GameObject:
   - component: {fileID: 2061914578}
   - component: {fileID: 2061914577}
   m_Layer: 0
-  m_Name: Kreplenie20
+  m_Name: Kreplenie20_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2061914576
 Transform:
   m_ObjectHideFlags: 0
@@ -36680,7 +36911,7 @@ Transform:
   m_GameObject: {fileID: 2061914575}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.85900044, y: 0.000000111204756, z: -0.03300002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37290,7 +37521,7 @@ GameObject:
   - component: {fileID: 2135260173}
   - component: {fileID: 2135260172}
   m_Layer: 0
-  m_Name: Bolt162 (1)
+  m_Name: Bolt162_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37855,7 +38086,7 @@ GameObject:
   - component: {fileID: 6509016917281491811}
   - component: {fileID: 6509016917281491814}
   m_Layer: 0
-  m_Name: Kreplenie3
+  m_Name: Kreplenie3_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38651,7 +38882,7 @@ GameObject:
   - component: {fileID: 2908753475280250160}
   - component: {fileID: 2908753475280250159}
   m_Layer: 0
-  m_Name: Bolt159
+  m_Name: Bolt159_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41232,7 +41463,7 @@ GameObject:
   - component: {fileID: 8683988120544034734}
   - component: {fileID: 8683988120544034737}
   m_Layer: 0
-  m_Name: Kreplenie
+  m_Name: Kreplenie_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43113,7 +43344,7 @@ GameObject:
   - component: {fileID: 7424301205823235438}
   - component: {fileID: 7424301205823235441}
   m_Layer: 0
-  m_Name: Bolt.004
+  m_Name: Bolt.004_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43594,6 +43825,11 @@ Transform:
   - {fileID: 5917925043520759976}
   - {fileID: 6833910808371893766}
   - {fileID: 405216735}
+  - {fileID: 526930533}
+  - {fileID: 1154950518}
+  - {fileID: 1598901759}
+  - {fileID: 1293835908}
+  - {fileID: 523879503}
   - {fileID: 5176891958048201399}
   - {fileID: 4388499576117128484}
   - {fileID: 1403651126}
@@ -44998,7 +45234,7 @@ GameObject:
   - component: {fileID: 6477132959947577497}
   - component: {fileID: 6477132959947577500}
   m_Layer: 0
-  m_Name: Kreplenie8
+  m_Name: Kreplenie8_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45197,7 +45433,7 @@ GameObject:
   - component: {fileID: 2625416131536064528}
   - component: {fileID: 2625416131536064531}
   m_Layer: 0
-  m_Name: Kreplenie11
+  m_Name: Kreplenie11_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47198,7 +47434,7 @@ GameObject:
   - component: {fileID: 7155544601189693519}
   - component: {fileID: 7155544601189693522}
   m_Layer: 0
-  m_Name: Kreplenie13
+  m_Name: Kreplenie13_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48149,24 +48385,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5564743830136332456}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &963908538338995381
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1529542891093923546}
-  - component: {fileID: 4181399247256648768}
-  - component: {fileID: 1358353026162063462}
-  m_Layer: 0
-  m_Name: Estacada
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
 --- !u!1 &963908538469892008
 GameObject:
   m_ObjectHideFlags: 0
@@ -48508,7 +48726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &992170546508291683
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50042,7 +50260,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3510026124612312229}
-  m_LocalEulerAnglesHint: {x: 0, y: -25.799713, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1081260393769876521
 GameObject:
   m_ObjectHideFlags: 0
@@ -53008,55 +53226,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5564743830136332456}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1358353026162063462
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963908538338995381}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d92fddf2af5eeae45b47e4868aefa728, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!23 &1358353026282728315
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54231,21 +54400,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 9060136305207511927}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1529542891093923546
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963908538338995381}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 4.2449436, z: -0.379541}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5267180470729622276}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1529542891234346439
 Transform:
   m_ObjectHideFlags: 0
@@ -54643,7 +54797,7 @@ GameObject:
   - component: {fileID: 8397277185704897902}
   - component: {fileID: 8397277185704897905}
   m_Layer: 0
-  m_Name: Kreplenie4
+  m_Name: Kreplenie4_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55311,7 +55465,7 @@ GameObject:
   - component: {fileID: 6132780072879238285}
   - component: {fileID: 6132780072879238288}
   m_Layer: 0
-  m_Name: Kreplenie17
+  m_Name: Kreplenie17_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55870,7 +56024,7 @@ GameObject:
   - component: {fileID: 7617656958997635386}
   - component: {fileID: 7617656958997635389}
   m_Layer: 0
-  m_Name: Kreplenie7
+  m_Name: Kreplenie7_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58262,7 +58416,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1871862353271410861
 Transform:
   m_ObjectHideFlags: 0
@@ -59890,7 +60044,7 @@ GameObject:
   - component: {fileID: 9109056779903798854}
   - component: {fileID: 9109056779903798857}
   m_Layer: 0
-  m_Name: Kreplenie5
+  m_Name: Kreplenie5_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73424,7 +73578,7 @@ GameObject:
   - component: {fileID: 7049284985211156339}
   - component: {fileID: 7049284985211156338}
   m_Layer: 0
-  m_Name: Bolt158
+  m_Name: Bolt158_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73591,6 +73745,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1208129339803017003}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3195813204171423893}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -74554,7 +74720,6 @@ Transform:
   - {fileID: 8036247774387606396}
   - {fileID: 1243799784709061912}
   - {fileID: 8474330251716222378}
-  - {fileID: 523879503}
   m_Father: {fileID: 543450651651892155}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3269176060722683626
@@ -81008,7 +81173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &3816791677451521362
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -83010,7 +83175,7 @@ GameObject:
   - component: {fileID: 7717360791172598543}
   - component: {fileID: 7717360791172598546}
   m_Layer: 0
-  m_Name: Kreplenie.002
+  m_Name: Kreplenie.002_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86019,14 +86184,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963908538469892008}
   m_Mesh: {fileID: -1954557349907733655, guid: 67b25c10074bf8a408a4ea2396a46955, type: 3}
---- !u!33 &4181399247256648768
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963908538338995381}
-  m_Mesh: {fileID: -1954557349907733655, guid: dd10c1ebe8d90f141a491f43b7b5667c, type: 3}
 --- !u!23 &4182088356280876978
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -87399,7 +87556,7 @@ MonoBehaviour:
   Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
     \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
   _completionCondition:
-    rid: 1332834693188419852
+    rid: 1332835293313368208
   _onEnter: []
   _onEnterEvent:
     m_PersistentCalls:
@@ -87431,60 +87588,136 @@ MonoBehaviour:
   _onComplete: []
   _onCompleteEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3463872450571612880}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 200244934}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   _hint: "\u0421\u043D\u0438\u043C\u0438\u0442\u0435 \u043A\u0440\u0435\u043F\u0451\u0436."
   _errors: []
   references:
     version: 2
     RefIds:
-    - rid: 1332834693188419852
-      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+    - rid: 1332835293313368208
+      type: {class: PerElementCounterCondition, ns: , asm: Assembly-CSharp}
       data:
-        _objects:
-        - {fileID: 1072934478}
-        - {fileID: 1891841251}
-        - {fileID: 2046483396}
-        - {fileID: 889624264}
-        - {fileID: 1839487865}
-        - {fileID: 145760275}
-        - {fileID: 581817276}
-        - {fileID: 602895038}
-        - {fileID: 887763820}
-        - {fileID: 1060286657}
-        - {fileID: 1069014666}
-        - {fileID: 1690199451}
-        - {fileID: 1273497455}
-        - {fileID: 119596216}
-        - {fileID: 817720806}
-        - {fileID: 1127058072}
-        - {fileID: 423274447}
-        - {fileID: 436577765}
-        - {fileID: 1833161760}
-        - {fileID: 1981123362}
+        _elements:
+        - _object: {fileID: 1072934478}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 534219051}
+          _onComplete: []
+        - _object: {fileID: 1891841251}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 770101162}
+          _onComplete: []
+        - _object: {fileID: 2046483396}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 665297234}
+          _onComplete: []
+        - _object: {fileID: 889624264}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1093312719}
+          _onComplete: []
+        - _object: {fileID: 1839487865}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 926984317}
+          _onComplete: []
+        - _object: {fileID: 145760275}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 939940285}
+          _onComplete: []
+        - _object: {fileID: 581817276}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 201175770}
+          _onComplete: []
+        - _object: {fileID: 602895038}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 76436040}
+          _onComplete: []
+        - _object: {fileID: 887763820}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1031165935}
+          _onComplete: []
+        - _object: {fileID: 1060286657}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1280861343}
+          _onComplete: []
+        - _object: {fileID: 1069014666}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1163891658}
+          _onComplete: []
+        - _object: {fileID: 1690199451}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 961253550}
+          _onComplete: []
+        - _object: {fileID: 1273497455}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 820289200}
+          _onComplete: []
+        - _object: {fileID: 119596216}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 969283871}
+          _onComplete: []
+        - _object: {fileID: 817720806}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 332260513}
+          _onComplete: []
+        - _object: {fileID: 1127058072}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 936894012}
+          _onComplete: []
+        - _object: {fileID: 423274447}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1073138620}
+          _onComplete: []
+        - _object: {fileID: 436577765}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 43320969}
+          _onComplete: []
+        - _object: {fileID: 1833161760}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1776921317}
+          _onComplete: []
+        - _object: {fileID: 1981123362}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1490907834}
+          _onComplete: []
         _requiredState: 1
         _requiredCount: 20
 --- !u!1 &4283631623119708048
@@ -89216,7 +89449,7 @@ GameObject:
   - component: {fileID: 7139521708141655459}
   - component: {fileID: 7139521708141655462}
   m_Layer: 0
-  m_Name: Kreplenie6
+  m_Name: Kreplenie6_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92538,7 +92771,7 @@ GameObject:
   - component: {fileID: 5524561617155007519}
   - component: {fileID: 5524561617155007522}
   m_Layer: 0
-  m_Name: Bolt20.003
+  m_Name: Bolt20.003_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93709,7 +93942,7 @@ GameObject:
   - component: {fileID: 6401113698103831323}
   - component: {fileID: 6401113698103831326}
   m_Layer: 0
-  m_Name: Bolt20.001
+  m_Name: Bolt20.001_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93886,7 +94119,7 @@ GameObject:
   - component: {fileID: 8879019720817589392}
   - component: {fileID: 8879019720817589395}
   m_Layer: 0
-  m_Name: Bolt20.002
+  m_Name: Bolt20.002_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99071,7 +99304,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1529542891093923546}
   - {fileID: 1973086610495253167}
   - {fileID: 924743609757826831}
   m_Father: {fileID: 543450651651892155}
@@ -103781,7 +104013,7 @@ GameObject:
   - component: {fileID: 7437488046938027322}
   - component: {fileID: 7437488046938027325}
   m_Layer: 0
-  m_Name: Kreplenie12
+  m_Name: Kreplenie12_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108106,7 +108338,7 @@ MonoBehaviour:
   Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
     \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
   _completionCondition:
-    rid: 1332834693188419852
+    rid: 1332835293313368222
   _onEnter: []
   _onEnterEvent:
     m_PersistentCalls:
@@ -108172,18 +108404,66 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 1332834693188419852
-      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+    - rid: 1332835293313368222
+      type: {class: PerElementCounterCondition, ns: , asm: Assembly-CSharp}
       data:
-        _objects:
-        - {fileID: 9186990845487804560}
-        - {fileID: 7263430674641750653}
-        - {fileID: 8180777765532949203}
-        - {fileID: 6401113698103831324}
-        - {fileID: 8298582364453969317}
-        - {fileID: 8879019720817589393}
-        - {fileID: 7424301205823235439}
-        - {fileID: 5524561617155007520}
+        _elements:
+        - _object: {fileID: 9186990845487804560}
+          _disableSelfOnComplete: 1
+          _disableOnComplete:
+          - {fileID: 4288532316933766214}
+          _enableOnComplete:
+          - {fileID: 252270675}
+          - {fileID: 662193843}
+          _onComplete: []
+        - _object: {fileID: 7263430674641750653}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 2030581651}
+          _onComplete: []
+        - _object: {fileID: 8180777765532949203}
+          _disableSelfOnComplete: 1
+          _disableOnComplete:
+          - {fileID: 8465238258219420681}
+          _enableOnComplete:
+          - {fileID: 935868390}
+          - {fileID: 543699709}
+          _onComplete: []
+        - _object: {fileID: 6401113698103831324}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1299344260}
+          _onComplete: []
+        - _object: {fileID: 8298582364453969317}
+          _disableSelfOnComplete: 1
+          _disableOnComplete:
+          - {fileID: 1303230737913393588}
+          _enableOnComplete:
+          - {fileID: 137252297}
+          - {fileID: 1642566765}
+          _onComplete: []
+        - _object: {fileID: 8879019720817589393}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1193626190}
+          _onComplete: []
+        - _object: {fileID: 7424301205823235439}
+          _disableSelfOnComplete: 1
+          _disableOnComplete:
+          - {fileID: 2483211355339286479}
+          _enableOnComplete:
+          - {fileID: 60394408}
+          - {fileID: 1230909056}
+          _onComplete: []
+        - _object: {fileID: 5524561617155007520}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 219512361}
+          _onComplete: []
         _requiredState: 4
         _requiredCount: 8
 --- !u!23 &5925137573734441439
@@ -108877,7 +109157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &5987099525692804183
 GameObject:
   m_ObjectHideFlags: 0
@@ -108979,7 +109259,7 @@ GameObject:
   - component: {fileID: 7497517510462806534}
   - component: {fileID: 7497517510462806537}
   m_Layer: 0
-  m_Name: Kreplenie15
+  m_Name: Kreplenie15_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110066,7 +110346,7 @@ GameObject:
   - component: {fileID: 6053604782578207878}
   - component: {fileID: 6053604782578207881}
   m_Layer: 0
-  m_Name: Kreplenie10
+  m_Name: Kreplenie10_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111364,7 +111644,7 @@ GameObject:
   - component: {fileID: 8992496846529390596}
   - component: {fileID: 8992496846529390595}
   m_Layer: 0
-  m_Name: Bolt161
+  m_Name: Bolt161_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111747,7 +112027,7 @@ GameObject:
   - component: {fileID: 8425924380073795429}
   - component: {fileID: 8425924380073795428}
   m_Layer: 0
-  m_Name: Bolt162
+  m_Name: Bolt162_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112182,7 +112462,7 @@ Transform:
   m_Children:
   - {fileID: 528590454}
   m_Father: {fileID: 3510026124612312229}
-  m_LocalEulerAnglesHint: {x: 0, y: -25.799713, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &6234889542111222391
 GameObject:
   m_ObjectHideFlags: 0
@@ -113596,7 +113876,7 @@ MonoBehaviour:
   Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
     \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
   _completionCondition:
-    rid: 1332834693188419852
+    rid: 1332835293313368221
   _onEnter: []
   _onEnterEvent:
     m_PersistentCalls:
@@ -113629,18 +113909,6 @@ MonoBehaviour:
   _onCompleteEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5513573257643529108}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 7059808208339161429}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -113665,18 +113933,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1154950517}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
   _hint: "\u041F\u043E\u0441\u043B\u0435 \u043F\u043E\u043B\u043D\u043E\u0433\u043E
     \u043E\u0442\u0432\u043E\u0440\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F
     \u0441\u043D\u0438\u043C\u0438\u0442\u0435 \u043A\u0440\u0435\u043F\u0451\u0436
@@ -113686,14 +113942,34 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 1332834693188419852
-      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+    - rid: 1332835293313368221
+      type: {class: PerElementCounterCondition, ns: , asm: Assembly-CSharp}
       data:
-        _objects:
-        - {fileID: 7717360791172598544}
-        - {fileID: 6509016917281491812}
-        - {fileID: 8397277185704897903}
-        - {fileID: 9109056779903798855}
+        _elements:
+        - _object: {fileID: 7717360791172598544}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1146594049}
+          _onComplete: []
+        - _object: {fileID: 6509016917281491812}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 361261344}
+          _onComplete: []
+        - _object: {fileID: 8397277185704897903}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 391821800}
+          _onComplete: []
+        - _object: {fileID: 9109056779903798855}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 485727840}
+          _onComplete: []
         _requiredState: 4
         _requiredCount: 4
 --- !u!4 &6406598465633670953
@@ -114091,7 +114367,7 @@ GameObject:
   - component: {fileID: 6448309858349299214}
   - component: {fileID: 6448309858349299217}
   m_Layer: 0
-  m_Name: Kreplenie19
+  m_Name: Kreplenie19_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115574,7 +115850,7 @@ GameObject:
   - component: {fileID: 8478227281226488807}
   - component: {fileID: 8478227281226488810}
   m_Layer: 0
-  m_Name: Kreplenie18
+  m_Name: Kreplenie18_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115647,7 +115923,7 @@ GameObject:
   - component: {fileID: 9179881888694424799}
   - component: {fileID: 9179881888694424802}
   m_Layer: 0
-  m_Name: Kreplenie20
+  m_Name: Kreplenie20_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119382,7 +119658,7 @@ Transform:
   - {fileID: 7528015514024042699}
   - {fileID: 860287220907916718}
   m_Father: {fileID: 3269176060583464439}
-  m_LocalEulerAnglesHint: {x: 0, y: -25.799713, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &6872018392889299351
 Transform:
   m_ObjectHideFlags: 0
@@ -124784,7 +125060,7 @@ GameObject:
   - component: {fileID: 7263430674641750652}
   - component: {fileID: 7263430674641750655}
   m_Layer: 0
-  m_Name: Bolt20
+  m_Name: Bolt20_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126324,7 +126600,7 @@ GameObject:
   - component: {fileID: 8359879340861494563}
   - component: {fileID: 8359879340861494566}
   m_Layer: 0
-  m_Name: Kreplenie16
+  m_Name: Kreplenie16_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129067,7 +129343,7 @@ GameObject:
   - component: {fileID: 7822625101919661483}
   - component: {fileID: 7822625101919661486}
   m_Layer: 0
-  m_Name: Kreplenie14
+  m_Name: Kreplenie14_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130277,7 +130553,7 @@ MonoBehaviour:
   Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
     \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
   _completionCondition:
-    rid: 1332834693188419852
+    rid: 1332835293313368223
   _onEnter: []
   _onEnterEvent:
     m_PersistentCalls:
@@ -130310,7 +130586,7 @@ MonoBehaviour:
   _onCompleteEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8899503952493717207}
+      - m_Target: {fileID: 15185292}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -130394,18 +130670,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1293835907}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
   _hint: "\u041F\u043E\u0441\u043B\u0435 \u043F\u043E\u043B\u043D\u043E\u0433\u043E
     \u043E\u0442\u0432\u043E\u0440\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F
     \u0441\u043D\u0438\u043C\u0438\u0442\u0435 \u043A\u0440\u0435\u043F\u0451\u0436
@@ -130415,22 +130679,82 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 1332834693188419852
-      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+    - rid: 1332835293313368223
+      type: {class: PerElementCounterCondition, ns: , asm: Assembly-CSharp}
       data:
-        _objects:
-        - {fileID: 9078519277828174516}
-        - {fileID: 6053604782578207879}
-        - {fileID: 2625416131536064529}
-        - {fileID: 7437488046938027323}
-        - {fileID: 7155544601189693520}
-        - {fileID: 7822625101919661484}
-        - {fileID: 7497517510462806535}
-        - {fileID: 8359879340861494564}
-        - {fileID: 6132780072879238286}
-        - {fileID: 8478227281226488808}
-        - {fileID: 6448309858349299215}
-        - {fileID: 9179881888694424800}
+        _elements:
+        - _object: {fileID: 9078519277828174516}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 834171405}
+          _onComplete: []
+        - _object: {fileID: 6053604782578207879}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1657089478}
+          _onComplete: []
+        - _object: {fileID: 2625416131536064529}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1137750188}
+          _onComplete: []
+        - _object: {fileID: 7437488046938027323}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 46602517}
+          _onComplete: []
+        - _object: {fileID: 7155544601189693520}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1530990062}
+          _onComplete: []
+        - _object: {fileID: 7822625101919661484}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1216166177}
+          _onComplete: []
+        - _object: {fileID: 7497517510462806535}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 900636430}
+          _onComplete: []
+        - _object: {fileID: 8359879340861494564}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 395958483}
+          _onComplete: []
+        - _object: {fileID: 6132780072879238286}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1597604562}
+          _onComplete: []
+        - _object: {fileID: 8478227281226488808}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 685420180}
+          _onComplete: []
+        - _object: {fileID: 6448309858349299215}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 387358846}
+          _onComplete: []
+        - _object: {fileID: 9179881888694424800}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 2061914575}
+          _onComplete: []
         _requiredState: 4
         _requiredCount: 12
 --- !u!1 &7664060146794161819
@@ -137869,7 +138193,7 @@ GameObject:
   - component: {fileID: 8180777765532949202}
   - component: {fileID: 8180777765532949205}
   m_Layer: 0
-  m_Name: Bolt.002
+  m_Name: Bolt.002_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138500,7 +138824,7 @@ MonoBehaviour:
   Title: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F
     \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u0430"
   _completionCondition:
-    rid: 1332834693188419852
+    rid: 1332835293313368220
   _onEnter: []
   _onEnterEvent:
     m_PersistentCalls:
@@ -138533,18 +138857,6 @@ MonoBehaviour:
   _onCompleteEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7547585441549846679}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2675910974962666688}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -138569,18 +138881,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1598901758}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
   _hint: "\u041F\u043E\u0441\u043B\u0435 \u043F\u043E\u043B\u043D\u043E\u0433\u043E
     \u043E\u0442\u0432\u043E\u0440\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F
     \u0441\u043D\u0438\u043C\u0438\u0442\u0435 \u043A\u0440\u0435\u043F\u0451\u0436
@@ -138590,14 +138890,34 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 1332834693188419852
-      type: {class: CounterCondition, ns: , asm: Assembly-CSharp}
+    - rid: 1332835293313368220
+      type: {class: PerElementCounterCondition, ns: , asm: Assembly-CSharp}
       data:
-        _objects:
-        - {fileID: 8683988120544034735}
-        - {fileID: 7139521708141655460}
-        - {fileID: 7617656958997635387}
-        - {fileID: 6477132959947577498}
+        _elements:
+        - _object: {fileID: 8683988120544034735}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 776798437}
+          _onComplete: []
+        - _object: {fileID: 7139521708141655460}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 295222803}
+          _onComplete: []
+        - _object: {fileID: 7617656958997635387}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 1948570419}
+          _onComplete: []
+        - _object: {fileID: 6477132959947577498}
+          _disableSelfOnComplete: 1
+          _disableOnComplete: []
+          _enableOnComplete:
+          - {fileID: 117371387}
+          _onComplete: []
         _requiredState: 4
         _requiredCount: 4
 --- !u!1 &8211709578172951305
@@ -139455,7 +139775,7 @@ GameObject:
   - component: {fileID: 8298582364453969316}
   - component: {fileID: 8298582364453969319}
   m_Layer: 0
-  m_Name: Bolt.003
+  m_Name: Bolt.003_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142469,7 +142789,6 @@ Transform:
   m_Children:
   - {fileID: 8972372263830885356}
   - {fileID: 3225437597212290370}
-  - {fileID: 526930533}
   - {fileID: 5564743830136332456}
   - {fileID: 7317824575275526704}
   - {fileID: 5564504098918117031}
@@ -142480,13 +142799,10 @@ Transform:
   - {fileID: 1066942700}
   - {fileID: 3773628903684853478}
   - {fileID: 4611809045115883682}
-  - {fileID: 1154950518}
   - {fileID: 8910930840605401431}
   - {fileID: 851211863}
   - {fileID: 3122289212425162430}
-  - {fileID: 1598901759}
   - {fileID: 9028234559248657612}
-  - {fileID: 1293835908}
   - {fileID: 3159797585792737171}
   - {fileID: 5016294413217931237}
   - {fileID: 1892149334509411910}
@@ -142497,7 +142813,7 @@ Transform:
   - {fileID: 3913156279182538002}
   - {fileID: 289488989}
   m_Father: {fileID: 3269176060583464439}
-  m_LocalEulerAnglesHint: {x: 0, y: -25.799713, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!33 &8475987748890041812
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -145379,7 +145695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &8718719836824263295
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -150628,7 +150944,7 @@ GameObject:
   - component: {fileID: 9078519277828174515}
   - component: {fileID: 9078519277828174518}
   m_Layer: 0
-  m_Name: Kreplenie.001
+  m_Name: Kreplenie.001_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152182,7 +152498,7 @@ GameObject:
   - component: {fileID: 9186990845487804559}
   - component: {fileID: 9186990845487804562}
   m_Layer: 0
-  m_Name: Bolt.001
+  m_Name: Bolt.001_init
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
