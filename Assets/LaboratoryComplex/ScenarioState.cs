@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ScenarioState : BaseApplicationState
 {
-    private const string ScenarioSceneName = "ScenarioScene 1";
+    private const string ScenarioSceneName = "ScenarioScene_2";
 
     private readonly CameraSwitcher _cameraSwitcher;
     private readonly Canvas _mainCanvas;

@@ -22,6 +22,7 @@ public class OpenQuestionView : MonoBehaviour
     public void SetQuestionText(string text)
     {
         questionText.text = text;
+        inputField.text = string.Empty;
     }
 
     private void OnEndEdit(string input)

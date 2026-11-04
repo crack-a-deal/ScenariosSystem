@@ -1,5 +1,4 @@
-﻿using Networking.Diagnostics;
-using Networking.Request;
+﻿using Networking.Request;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -42,22 +41,15 @@ namespace Networking
                     $"No handler registered for {contract}");
             }
 
-            var stopwatch = Stopwatch.StartNew();
             try
             {
-                // ХУК ТЕЛЕМЕТРИИ: queueMs — сколько ждали семафор (гонку за DbContext видно глазами)
-                NetworkTelemetry.OnHandlerStarted(contract, stopwatch.Elapsed.TotalMilliseconds);
-
-                stopwatch.Restart();
 
                 DispatchedResponse result = await handler(payload).ConfigureAwait(false);
 
-                NetworkTelemetry.OnHandlerCompleted(contract, stopwatch.Elapsed.TotalMilliseconds, null);
                 return result;
             }
             catch (Exception exception)
             {
-                NetworkTelemetry.OnHandlerCompleted(contract, stopwatch.Elapsed.TotalMilliseconds, exception);
                 throw;
             }
             //finally

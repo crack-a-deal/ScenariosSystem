@@ -93,7 +93,7 @@ public class ServicesInstaller : MonoInstaller
             .AsSingle();
 
         Container.Bind<IExportPathProvider>()
-            .To<WindowsExportPathProvider>()
+            .To<LinuxExportPathProvider>()
             .AsSingle();
 
         Container.Bind<ExcelExportRegistry>()

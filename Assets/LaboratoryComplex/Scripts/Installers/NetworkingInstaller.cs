@@ -28,11 +28,5 @@ public class NetworkingInstaller : MonoInstaller
 
         Container.Bind<TcpServerProvider>().AsSingle();
         Container.Bind<TcpClientProvider>().AsSingle();
-
-        Container.Bind<NetworkDebugOverlay>()
-    .FromNewComponentOnNewGameObject()
-    .WithGameObjectName("NetworkDebugOverlay")
-    .AsSingle()
-    .NonLazy();
     }
 }

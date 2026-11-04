@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 public class UserAnswerSaveService
@@ -25,12 +28,46 @@ public class UserAnswerSaveService
         UserBaseAnswerDTO dto,
         Guid sessionId)
     {
+        var sessionTestId = await _context.TestSessions
+            .Where(s => s.Id == sessionId)
+            .Select(s => s.TestId)
+            .FirstOrDefaultAsync();
+
+        if (sessionTestId == Guid.Empty)
+            throw new InvalidOperationException(
+                $"Test session {sessionId} was not found.");
+
+        bool questionInTest = await _context.TestQuestions
+            .AnyAsync(tq =>
+                tq.TestId == sessionTestId &&
+                tq.QuestionId == dto.QuestionId);
+
+        if (!questionInTest)
+            throw new InvalidOperationException(
+                $"Question {dto.QuestionId} does not belong to the test of session {sessionId}.");
+
+        var existing = await _context.UserAnswers
+            .Include(a => a.Options)
+            .Include(a => a.MatchingPairs)
+            .FirstOrDefaultAsync(a =>
+                a.TestSessionId == sessionId &&
+                a.QuestionId == dto.QuestionId);
+
+        if (existing != null)
+        {
+            _context.UserAnswerOptions.RemoveRange(existing.Options);
+            _context.UserMatchingPairAnswers.RemoveRange(existing.MatchingPairs);
+            _context.UserAnswers.Remove(existing);
+
+            await _context.SaveChangesAsync();
+        }
+
         var userAnswer = await _userAnswerService.CreateAsync(
-        sessionId,
-        dto.QuestionId,
-        dto is UserOpenAnswerDTO openAnswerDto
-        ? openAnswerDto.Text
-        : null);
+            sessionId,
+            dto.QuestionId,
+            dto is UserOpenAnswerDTO openAnswerDto
+                ? openAnswerDto.Text
+                : null);
 
         switch (dto)
         {
@@ -74,6 +111,23 @@ public class UserAnswerSaveService
         }
 
         await _context.SaveChangesAsync();
+    }
+
+    public async Task SaveAllAsync(
+    IEnumerable<UserBaseAnswerDTO> answers,
+    Guid sessionId)
+    {
+        var list = answers?.ToList() ?? new List<UserBaseAnswerDTO>();
+
+        await using var transaction =
+            await _context.Database.BeginTransactionAsync();
+
+        foreach (var answer in list)
+        {
+            await SaveAsync(answer, sessionId);
+        }
+
+        await transaction.CommitAsync();
     }
 
     private async Task SaveSingleChoiceAsync(

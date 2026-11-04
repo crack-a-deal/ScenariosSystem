@@ -38,9 +38,10 @@ public class ChoiceOptionView : MonoBehaviour
 
     private void OnToggleValueChanged(bool isOn)
     {
-        //if (isOn)
-        //{
-        //    ValueChanged?.Invoke(this, isOn);
-        //}
+        Debug.Log($"{isOn} is {gameObject.name}", gameObject);
+        if (isOn)
+        {
+            ValueChanged?.Invoke(this, isOn);
+        }
     }
 }

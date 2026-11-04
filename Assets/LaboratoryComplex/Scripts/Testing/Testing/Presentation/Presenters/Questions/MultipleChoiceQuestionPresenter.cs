@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class MultipleChoiceQuestionPresenter : IQuestionPresenter
 {
@@ -23,6 +24,11 @@ public class MultipleChoiceQuestionPresenter : IQuestionPresenter
         _view.OptionValueChanged += View_OnOptionSelected;
     }
 
+    public void Hide()
+    {
+        _view.OptionValueChanged -= View_OnOptionSelected;
+    }
+
     private void View_OnOptionSelected(Guid optionId, bool value)
     {
         if (value)
@@ -37,6 +43,12 @@ public class MultipleChoiceQuestionPresenter : IQuestionPresenter
 
     public UserBaseAnswerDTO GetAnswer()
     {
+        Debug.Log($"MultipleChoiceQuestionPresenter {_question.Id}");
+        foreach (var item in _selectedOptionIds)
+        {
+            Debug.Log($"[{item}]");
+        }
+
         return new UserMultipleChoiceAnswerDTO
         {
             QuestionId = _question.Id,

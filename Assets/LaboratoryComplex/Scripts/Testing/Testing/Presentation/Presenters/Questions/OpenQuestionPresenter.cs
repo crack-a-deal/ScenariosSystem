@@ -20,6 +20,11 @@ public class OpenQuestionPresenter : IQuestionPresenter
         _view.EndEdit += View_OnEndEdit;
     }
 
+    public void Hide()
+    {
+        _view.EndEdit -= View_OnEndEdit;
+    }
+
     private void View_OnEndEdit(string input)
     {
         _inputAnswer = input;

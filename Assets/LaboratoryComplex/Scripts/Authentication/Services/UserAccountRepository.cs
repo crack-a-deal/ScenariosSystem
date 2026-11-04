@@ -43,11 +43,10 @@ public class UserAccountRepository : IUserAccountRepository
         await _context.SaveChangesAsync();
     }
 
-    public async Task Update(UserAccount account)
+    public async Task UpdateAsync(UserAccount account)
     {
         _context.UserAccounts.Update(account);
         await _context.SaveChangesAsync();
-
     }
 
     public async Task<bool> DeleteAsync(Guid id)

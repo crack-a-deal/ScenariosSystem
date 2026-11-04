@@ -99,6 +99,7 @@ public class TestSessionRepository
         return await _context.TestSessions
             .Where(x => x.UserProfileId == userProfileId)
             .Include(x => x.Test)
+                .ThenInclude(t => t.TestQuestions)
             .OrderByDescending(x => x.StartedAt)
             .ToListAsync();
     }

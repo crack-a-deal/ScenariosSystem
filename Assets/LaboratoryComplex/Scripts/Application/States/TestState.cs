@@ -34,10 +34,10 @@ public class TestState : BaseApplicationState
         _tablePresenter.Show();
     }
 
-    private void OnTestSelected(TestDTO test)
+    private async void OnTestSelected(TestDTO test)
     {
         _tablePresenter.Hide();
-        _testSessionPresenter.StartAsync(test);
+        await _testSessionPresenter.StartAsync(test);
     }
 
     private void OnTestCompleted(SubmitTestResponse response)

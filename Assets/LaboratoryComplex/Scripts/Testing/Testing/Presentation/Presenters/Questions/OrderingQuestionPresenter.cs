@@ -33,6 +33,13 @@ public class OrderingQuestionPresenter : IQuestionPresenter
         _listPresenter.OrderChanged += OnOrderChanged;
     }
 
+    public void Hide()
+    {
+        _listPresenter?.Dispose();
+        _listPresenter = null;
+    }
+
+
     private void OnOrderChanged(IReadOnlyList<Guid> order)
     {
         _selectedOrder = order.ToList();

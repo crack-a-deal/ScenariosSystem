@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class StudentTestSessionPresenter
@@ -45,11 +46,14 @@ public class StudentTestSessionPresenter
         if (_isSubmitting)
             return;
 
+        _currentQuestionPresenter?.Hide();
+        _currentQuestionPresenter = null;
+
         _view.gameObject.SetActive(false);
         ExitRequested?.Invoke();
     }
 
-    public async void StartAsync(TestDTO test)
+    public async Task StartAsync(TestDTO test)
     {
         _currentTest = test;
         _currentQuestionIndex = 0;
@@ -69,6 +73,7 @@ public class StudentTestSessionPresenter
             if (!response.Success || response.SessionId == Guid.Empty)
             {
                 Debug.LogError("Не удалось получить сессию теста.");
+                ExitRequested?.Invoke(); // возврат к списку вместо пустого экрана
                 return;
             }
 
@@ -84,6 +89,7 @@ public class StudentTestSessionPresenter
         catch (Exception exception)
         {
             Debug.LogError($"Не удалось начать тест: {exception}");
+            ExitRequested?.Invoke(); // и при исключении — тоже к списку
         }
     }
 
@@ -108,6 +114,7 @@ public class StudentTestSessionPresenter
 
         _view.SetQuestionTypeText(questionType);
 
+        _currentQuestionPresenter?.Hide();
         _currentQuestionPresenter = _factory.Create(question);
         _currentQuestionPresenter.Show();
     }

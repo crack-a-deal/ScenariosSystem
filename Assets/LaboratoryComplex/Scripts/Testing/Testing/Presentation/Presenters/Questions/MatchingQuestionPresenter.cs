@@ -38,9 +38,6 @@ public class MatchingQuestionPresenter : IQuestionPresenter
         ShuffleOptions(leftItems);
         ShuffleOptions(rightItems);
 
-        Debug.Log($"Left: {string.Join(", ", leftItems.Select(x => x.Text))}");
-        Debug.Log($"Right: {string.Join(", ", rightItems.Select(x => x.Text))}");
-
         _leftOrder = leftItems.Select(x => x.Id).ToList();
         _rightOrder = rightItems.Select(x => x.Id).ToList();
 
@@ -54,6 +51,14 @@ public class MatchingQuestionPresenter : IQuestionPresenter
 
         _leftPresenter.OrderChanged += OnLeftOrderChanged;
         _rightPresenter.OrderChanged += OnRightOrderChanged;
+    }
+
+    public void Hide()
+    {
+        _leftPresenter?.Dispose();
+        _rightPresenter?.Dispose();
+        _leftPresenter = null;
+        _rightPresenter = null;
     }
 
     private void OnLeftOrderChanged(IReadOnlyList<Guid> order)

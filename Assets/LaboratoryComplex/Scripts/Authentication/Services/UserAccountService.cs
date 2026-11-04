@@ -94,7 +94,7 @@ public class UserAccountService : IUserAccountService
                 _passwordHasher.Hash(dto.Password);
         }
 
-        _repository.Update(account);
+        await _repository.UpdateAsync(account);
 
     }
 

@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 public class TrueFalseQuestionPresenter : IQuestionPresenter
 {
@@ -23,6 +24,11 @@ public class TrueFalseQuestionPresenter : IQuestionPresenter
         _view.OptionValueChanged += View_OnOptionSelected;
     }
 
+    public void Hide()
+    {
+        _view.OptionValueChanged -= View_OnOptionSelected;
+    }
+
     private void View_OnOptionSelected(Guid optionId, bool value)
     {
         if (!value)
@@ -33,6 +39,8 @@ public class TrueFalseQuestionPresenter : IQuestionPresenter
 
     public UserBaseAnswerDTO GetAnswer()
     {
+        Debug.Log($"TrueFalseQuestionPresenter {_question.Id} selectedId:[{_selectedOptionId}]");
+
         return new UserTrueFalseAnswerDTO
         {
             QuestionId = _question.Id,

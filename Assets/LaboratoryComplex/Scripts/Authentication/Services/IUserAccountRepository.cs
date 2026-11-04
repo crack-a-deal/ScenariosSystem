@@ -13,7 +13,7 @@ public interface IUserAccountRepository
 
     Task AddAsync(UserAccount account);
 
-    Task Update(UserAccount account);
+    Task UpdateAsync(UserAccount account);
 
     Task<bool> DeleteAsync(Guid id);
 }

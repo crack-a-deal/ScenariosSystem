@@ -46,7 +46,8 @@ public class QuestionViewContainer : MonoBehaviour
                 _currentView = ordering.gameObject;
                 break;
             default:
-                break;
+                Debug.LogError($"QuestionViewContainer: неизвестный тип вопроса {type}.");
+                return;
         }
 
         _currentView.SetActive(true);

@@ -173,7 +173,8 @@ public class TeacherLearningSectionsPresenter : LearningSectionsPresenter
                 };
 
             await _exportService.ExportMultiSheetAsync(exportData);
-
+            Debug.Log($"path {_exportService.GetExportPath()}");
+            _view.ShowPopup($"Результаты сохранены в\n {_exportService.GetExportPath()}");
             Debug.Log($"Результаты теста {test.Title} экспортированы.");
         }
         catch (Exception exception)

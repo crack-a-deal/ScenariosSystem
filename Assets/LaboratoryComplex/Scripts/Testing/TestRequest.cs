@@ -96,7 +96,9 @@ public class GetTestHandler : IRequestHandler<GetTestRequest, GetTestResponse>
         try
         {
             test = await _testService.GetTestByIdAsync(request.TestId);
-            Debug.Log($"try return test {test.Id} {test.Title}");
+
+            StripCorrectAnswers(test);
+
             return new GetTestResponse
             {
                 Test = test
@@ -111,6 +113,31 @@ public class GetTestHandler : IRequestHandler<GetTestRequest, GetTestResponse>
         {
             Test = null
         };
+    }
+
+    private static void StripCorrectAnswers(TestDTO test)
+    {
+        if (test?.Questions == null)
+            return;
+
+        foreach (var question in test.Questions)
+        {
+            switch (question)
+            {
+                case SingleChoiceQuestionDTO single:
+                    single.CorrectOptionId = null;
+                    break;
+                case MultipleChoiceQuestionDTO multiple:
+                    multiple.CorrectOptionIds.Clear();
+                    break;
+                case TrueFalseQuestionDTO trueFalse:
+                    trueFalse.CorrectOptionId = null;
+                    break;
+                case OpenAnswerQuestionDTO open:
+                    open.CorrectAnswer = string.Empty;
+                    break;
+            }
+        }
     }
 }
 
@@ -199,16 +226,38 @@ public class SubmitTestRequestHandler : IRequestHandler<SubmitTestRequest, Submi
     {
         try
         {
+            var session = await _testSessionService.GetByIdAsync(request.SessionId);
+
+            if (session == null)
+            {
+                return new SubmitTestResponse
+                {
+                    Success = false,
+                    ErrorMessage = "Сессия теста не найдена."
+                };
+            }
+
+            if (session.CompletedAt != null)
+            {
+                var previous = await _testResultService.CalculateAsync(
+                    request.SessionId,
+                    request.Answers);
+
+                return new SubmitTestResponse
+                {
+                    Success = true,
+                    CorrectAnswers = previous.CorrectAnswers,
+                    TotalQuestions = previous.TotalQuestions
+                };
+            }
+
             var result = await _testResultService.CalculateAsync(
                 request.SessionId,
                 request.Answers);
 
-            foreach (UserBaseAnswerDTO answer in request.Answers)
-            {
-                await _userAnswerSaveService.SaveAsync(
-                    answer,
-                    request.SessionId);
-            }
+            await _userAnswerSaveService.SaveAllAsync(
+                request.Answers,
+                request.SessionId);
 
             await _testSessionService.CompleteAsync(request.SessionId);
 

@@ -31,6 +31,7 @@ public class ChoiceQuestionView : MonoBehaviour
 
     private void Item_ValueChanged(ChoiceOptionView option, bool value)
     {
+        Debug.Log($"{option.OptionId} is {value}",option.gameObject);
         OptionValueChanged?.Invoke(option.OptionId, value);
 
         //for (int i = 0; i < optionViews.Count; i++)
@@ -53,7 +54,23 @@ public class ChoiceQuestionView : MonoBehaviour
         for (int i = 0; i < optionViews.Count; i++)
         {
             ChoiceOptionView item = optionViews[i];
-            item.SetOption(options[i].Id, options[i].Text);
+
+            if (i < options.Count)
+            {
+                item.gameObject.SetActive(true);
+                item.SetOption(options[i].Id, options[i].Text);
+            }
+            else
+            {
+                item.gameObject.SetActive(false);
+            }
+        }
+
+        if (options.Count > optionViews.Count)
+        {
+            Debug.LogError(
+                $"ChoiceQuestionView: у вопроса {options.Count} вариантов, " +
+                $"в сцене {optionViews.Count} слотов — лишние варианты не показаны.");
         }
     }
 

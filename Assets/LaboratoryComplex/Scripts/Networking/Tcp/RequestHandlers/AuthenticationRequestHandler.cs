@@ -16,11 +16,28 @@ public class AuthenticationRequestHandler : IRequestHandler<AuthenticationReques
     public async Task<AuthenticationResponse> HandleAsync(AuthenticationRequest request)
     {
         var validateData = await _validateService.ValidateUserAsync(request.Login, request.Password);
+
+        if (validateData.Item1 == false)
+        {
+            Debug.Log("NOT CORRECT PASSWORD");
+            return new AuthenticationResponse
+            {
+                Success = false,
+                ErrorMessage = "Неверный логин или пароль"
+            };
+
+        }
+
         var profile = await _userProfileService.GetUserProfileIdByAccountid(validateData.Item2);
 
         if(profile == null)
         {
             Debug.Log("NOT FOUND");
+            return new AuthenticationResponse
+            {
+                Success = false,
+                ErrorMessage = "Профиль пользователя не найден."
+            };
         }
 
         return new AuthenticationResponse
