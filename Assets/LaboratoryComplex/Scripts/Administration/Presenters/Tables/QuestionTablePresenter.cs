@@ -14,8 +14,11 @@ public class QuestionTablePresenter
     private List<BaseQuestionDTO> _questionsList = new List<BaseQuestionDTO>();
     public IReadOnlyList<BaseQuestionDTO> Questions => _questionsList;
 
-    private List<BaseQuestionDTO> _availableQuestions =
-    new List<BaseQuestionDTO>();
+    private List<BaseQuestionDTO> _availableQuestions = new List<BaseQuestionDTO>();
+
+    private Guid _currentTestId;
+    private Guid _originalQuestionId;
+    private Guid _cloneQuestionId;
 
     private readonly Dictionary<QuestionRowView, BaseQuestionDTO> _rows = new();
 
@@ -31,14 +34,14 @@ public class QuestionTablePresenter
 
     private void OnCanceled()
     {
-        Debug.Log("SHOW0");
         _editorPresenter.Hide();
         Show();
     }
 
-    public void SetQuestions(List<BaseQuestionDTO> questionDTOs)
+    public void SetQuestions(List<BaseQuestionDTO> questionDTOs, Guid testId)
     {
         _questionsList = questionDTOs ?? new List<BaseQuestionDTO>();
+        _currentTestId = testId;
     }
 
 
@@ -137,14 +140,50 @@ public class QuestionTablePresenter
         }
     }
 
-    private void Edit(BaseQuestionDTO question)
+    private async void Edit(BaseQuestionDTO question)
     {
-        Debug.Log($"Edit question: {question.Id}, {question.Text}");
+        BaseQuestionDTO editable = await PrepareEditableQuestionAsync(question);
 
         Hide();
 
         _editorPresenter.Show();
-        _editorPresenter.ShowCurrentQuestion(question);
+        _editorPresenter.ShowCurrentQuestion(editable);
+    }
+
+    private async Task<BaseQuestionDTO> PrepareEditableQuestionAsync(BaseQuestionDTO question)
+    {
+        ResetCloneState();
+
+        bool usedByOtherTests = false;
+
+        try
+        {
+            usedByOtherTests = await _testService
+                .IsQuestionUsedByOtherTestsAsync(question.Id, _currentTestId);
+        }
+        catch (Exception exception)
+        {
+
+            Debug.LogException(exception);
+            usedByOtherTests = true;
+        }
+
+        if (!usedByOtherTests)
+            return question;
+
+        BaseQuestionDTO clone = QuestionDtoFactory.Clone(question);
+        clone.Order = question.Order;
+
+        _originalQuestionId = question.Id;
+        _cloneQuestionId = clone.Id;
+
+        return clone;
+    }
+
+    private void ResetCloneState()
+    {
+        _originalQuestionId = Guid.Empty;
+        _cloneQuestionId = Guid.Empty;
     }
 
     private void Delete(BaseQuestionDTO question)
@@ -200,6 +239,18 @@ public class QuestionTablePresenter
 
     private void OnQuestionSaved(BaseQuestionDTO question)
     {
+        if (question.Id == _cloneQuestionId && _originalQuestionId != Guid.Empty)
+        {
+            int originalIndex = _questionsList.FindIndex(q => q.Id == _originalQuestionId);
+
+            if (originalIndex >= 0)
+                _questionsList[originalIndex] = question;
+            else
+                _questionsList.Add(question);
+        }
+
+        ResetCloneState();
+
         int index = _questionsList.FindIndex(q => q.Id == question.Id);
 
         if (index >= 0)

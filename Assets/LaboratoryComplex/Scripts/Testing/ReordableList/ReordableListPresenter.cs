@@ -6,6 +6,7 @@ public class ReordableListPresenter : IDisposable
 {
     public event Action<IReadOnlyList<Guid>> OrderChanged;
     public event Action<Guid, string> ItemTextChanged;
+    public event Action<Guid> ItemRemoved;
 
     private readonly ReordableListView _view;
     private readonly List<ReordableItemModel> _items = new();
@@ -17,6 +18,7 @@ public class ReordableListPresenter : IDisposable
         _view.UpClicked += OnUpClicked;
         _view.DownClicked += OnDownClicked;
         _view.ItemTextChanged += OnItemTextChanged;
+        _view.RemoveClicked += OnRemoveClicked;
 
         SetItems(items);
     }
@@ -29,6 +31,19 @@ public class ReordableListPresenter : IDisposable
             _items.AddRange(items);
 
         _view.SetItems(_items);
+    }
+
+    private void OnRemoveClicked(int index)
+    {
+        if (index < 0 || index >= _items.Count)
+            return;
+
+        Guid id = _items[index].Id;
+
+        _items.RemoveAt(index);
+        _view.SetItems(_items);
+
+        ItemRemoved?.Invoke(id);
     }
 
     private void OnUpClicked(int index)
@@ -72,6 +87,8 @@ public class ReordableListPresenter : IDisposable
         _view.UpClicked -= OnUpClicked;
         _view.DownClicked -= OnDownClicked;
         _view.ItemTextChanged -= OnItemTextChanged;
+        _view.RemoveClicked -= OnRemoveClicked;
+        ItemRemoved = null;
 
         _view.Clear();
 

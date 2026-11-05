@@ -6,6 +6,7 @@ public class ReordableListView : MonoBehaviour
 {
     public event Action<int> UpClicked;
     public event Action<int> DownClicked;
+    public event Action<int> RemoveClicked;
     public event Action<int, string> ItemTextChanged;
 
     [SerializeField] private Transform itemsContainer;
@@ -66,6 +67,9 @@ public class ReordableListView : MonoBehaviour
         item.UpClicked += OnUpClicked;
         item.DownClicked += OnDownClicked;
         item.TextChanged += OnTextChanged;
+
+        item.RemoveClicked -= OnRemoveClicked;
+        item.RemoveClicked += OnRemoveClicked;
     }
 
     private void Unsubscribe(ReorableItemView item)
@@ -73,6 +77,15 @@ public class ReordableListView : MonoBehaviour
         item.UpClicked -= OnUpClicked;
         item.DownClicked -= OnDownClicked;
         item.TextChanged -= OnTextChanged;
+        item.RemoveClicked -= OnRemoveClicked;
+    }
+
+    private void OnRemoveClicked(ReorableItemView item)
+    {
+        int index = _items.IndexOf(item);
+
+        if (index >= 0)
+            RemoveClicked?.Invoke(index);
     }
 
     private void OnUpClicked(ReorableItemView item)

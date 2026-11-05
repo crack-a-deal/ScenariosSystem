@@ -6,9 +6,14 @@ using System.Linq;
 
 public class ViewedModelExcelDto
 {
+    [ExcelColumnName("№")]
     public int Number { get; set; }
+
+    [ExcelColumnName("Название модели")]
     public string ModelName { get; set; } = string.Empty;
-    public DateTime ViewedAt { get; set; }
+
+    [ExcelColumnName("Дата и время просмотра")]
+    public string ViewedAt { get; set; } = string.Empty;
 }
 
 public class ViewedModelsExportDTO
@@ -25,7 +30,7 @@ public class ScenarioCompletionExcelDto
     public string ScenarioName { get; set; } = string.Empty;
 
     [ExcelColumnName("Дата прохождения")]
-    public DateTime CompletedAt { get; set; }
+    public string CompletedAt { get; set; } = string.Empty;
 }
 
 public class ScenarioCompletionsExportDTO
@@ -43,7 +48,7 @@ public class ScenarioCompletionExcelMapper
             {
                 Number = index + 1,
                 ScenarioName = completion.ScenarioName,
-                CompletedAt = completion.CompletedAt
+                CompletedAt = completion.CompletedAt.ToString("dd.MM.yyyy HH:mm:ss")
             })
             .ToList();
     }

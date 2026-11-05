@@ -39,7 +39,7 @@ public class TestEditorPanelPresenter : IDisposable
         _currentTest.Questions ??= new System.Collections.Generic.List<BaseQuestionDTO>();
 
         _view.SetTestName(_currentTest.Title);
-        _questionTable.SetQuestions(_currentTest.Questions);
+        _questionTable.SetQuestions(_currentTest.Questions, _currentTest.Id);
     }
 
     public void Show()
@@ -51,7 +51,7 @@ public class TestEditorPanelPresenter : IDisposable
         }
 
         _view.gameObject.SetActive(true);
-        _questionTable.SetQuestions(_currentTest.Questions);
+        _questionTable.SetQuestions(_currentTest.Questions, _currentTest.Id);
         _questionTable.Show();
     }
 

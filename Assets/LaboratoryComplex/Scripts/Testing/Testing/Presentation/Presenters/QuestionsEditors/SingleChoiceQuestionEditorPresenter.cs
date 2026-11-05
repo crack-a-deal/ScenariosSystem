@@ -59,8 +59,12 @@ public class SingleChoiceQuestionEditorPresenter : IQuestionEditorPresenter
         _view.SetQuestionText(_questionText);
         _view.ClearOptions();
         _view.SetSelectionMode(true);
+        _view.ClearError();
+
         foreach (QuestionOptionModel option in _options)
             _view.AddOption(option.Id, option.Text, option.Id == _correctOptionId);
+
+        _view.SetAddOptionInteractable(_options.Count < 4);
     }
 
     public void Hide()
@@ -77,8 +81,10 @@ public class SingleChoiceQuestionEditorPresenter : IQuestionEditorPresenter
     {
         if (_options.Count >= 4)
         {
+            _view.ShowError("Максимум 4 варианта ответа.");
             return;
         }
+
         _options.Add(new QuestionOptionModel(Guid.NewGuid(), string.Empty));
         Show();
     }
@@ -116,29 +122,7 @@ public class SingleChoiceQuestionEditorPresenter : IQuestionEditorPresenter
 
     public bool Validate()
     {
-        if (string.IsNullOrWhiteSpace(_questionText))
-        {
-            Debug.Log("_questionText");
-            return false;
-        }
-
-        if (_options.Count < 2)
-        {
-            Debug.Log("LESS 2");
-            return false;
-        }
-
-        if (_options.Any(x => string.IsNullOrWhiteSpace(x.Text)))
-        {
-            Debug.Log("OPTIONS");
-            return false;
-        }
-        Debug.Log("RETURN");
-        Debug.Log(_correctOptionId.HasValue &&
-               _options.Any(x => x.Id == _correctOptionId.Value));
-
-        return _correctOptionId.HasValue &&
-               _options.Any(x => x.Id == _correctOptionId.Value);
+        return string.IsNullOrWhiteSpace(GetValidationError());
     }
 
     public BaseQuestionDTO GetQuestion()
@@ -166,16 +150,32 @@ public class SingleChoiceQuestionEditorPresenter : IQuestionEditorPresenter
 
     private void OnSaveClicked()
     {
-        Debug.Log("SingleChoiceQuestionEditorPresenter OnSaveClicked");
         if (Validate())
         {
-            Debug.Log("SAVED QUESTIOn");
+            _view.ClearError();
             Saved?.Invoke(GetQuestion());
         }
         else
         {
-            Debug.Log("CANT VALIFATE");
+            _view.ShowError(GetValidationError());
         }
+    }
+
+    private string GetValidationError()
+    {
+        if (string.IsNullOrWhiteSpace(_questionText))
+            return "Введите текст вопроса.";
+
+        if (_options.Count < 2)
+            return "Добавьте минимум два варианта ответа.";
+
+        if (_options.Any(x => string.IsNullOrWhiteSpace(x.Text)))
+            return "Заполните текст всех вариантов ответа.";
+
+        if (!_correctOptionId.HasValue || _options.All(x => x.Id != _correctOptionId.Value))
+            return "Отметьте правильный вариант ответа.";
+
+        return string.Empty;
     }
 
     private void OnCancelClicked()

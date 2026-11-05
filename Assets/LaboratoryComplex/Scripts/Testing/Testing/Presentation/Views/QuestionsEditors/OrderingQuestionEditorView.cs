@@ -18,6 +18,7 @@ public class OrderingQuestionEditorView : MonoBehaviour
     [SerializeField] private Button addOptionButton;
     [SerializeField] private Button saveButton;
     [SerializeField] private Button cancelButton;
+    [SerializeField] private TMP_Text errorText;
 
     public ReordableListView OptionList => optionList;
 
@@ -32,6 +33,24 @@ public class OrderingQuestionEditorView : MonoBehaviour
     public void SetQuestionText(string text)
     {
         questionInput.SetTextWithoutNotify(text);
+    }
+
+    public void ShowError(string message)
+    {
+        if (errorText == null)
+            return;
+
+        errorText.text = message;
+        errorText.gameObject.SetActive(true);
+    }
+
+    public void ClearError()
+    {
+        if (errorText == null)
+            return;
+
+        errorText.text = string.Empty;
+        errorText.gameObject.SetActive(false);
     }
 
     private void OnQuestionTextChanged(string value)

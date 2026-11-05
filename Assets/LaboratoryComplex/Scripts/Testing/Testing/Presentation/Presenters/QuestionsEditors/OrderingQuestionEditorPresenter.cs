@@ -49,12 +49,14 @@ public class OrderingQuestionEditorPresenter : IQuestionEditorPresenter
     public void Show()
     {
         _view.SetQuestionText(_questionText);
+        _view.ClearError();
 
         if (_listPresenter == null)
         {
             _listPresenter = new ReordableListPresenter(_view.OptionList, GetItems());
             _listPresenter.OrderChanged += OnOrderChanged;
             _listPresenter.ItemTextChanged += OnOptionTextChanged;
+            _listPresenter.ItemRemoved += OnOptionRemoved;
         }
         else
         {
@@ -65,6 +67,14 @@ public class OrderingQuestionEditorPresenter : IQuestionEditorPresenter
     public void Hide()
     {
         _view.gameObject.SetActive(false);
+    }
+
+    private void OnOptionRemoved(Guid optionId)
+    {
+        QuestionOptionModel option = _options.FirstOrDefault(x => x.Id == optionId);
+
+        if (option != null)
+            _options.Remove(option);
     }
 
     private List<ReordableItemModel> GetItems()
@@ -117,9 +127,7 @@ public class OrderingQuestionEditorPresenter : IQuestionEditorPresenter
 
     public bool Validate()
     {
-        return !string.IsNullOrWhiteSpace(_questionText) &&
-               _options.Count >= 2 &&
-               _options.All(x => !string.IsNullOrWhiteSpace(x.Text));
+        return string.IsNullOrWhiteSpace(GetValidationError());
     }
 
     public BaseQuestionDTO GetQuestion()
@@ -142,7 +150,28 @@ public class OrderingQuestionEditorPresenter : IQuestionEditorPresenter
     private void OnSaveClicked()
     {
         if (Validate())
+        {
+            _view.ClearError();
             Saved?.Invoke(GetQuestion());
+        }
+        else
+        {
+            _view.ShowError(GetValidationError());
+        }
+    }
+
+    private string GetValidationError()
+    {
+        if (string.IsNullOrWhiteSpace(_questionText))
+            return "Введите текст вопроса.";
+
+        if (_options.Count < 2)
+            return "Добавьте минимум два варианта.";
+
+        if (_options.Any(x => string.IsNullOrWhiteSpace(x.Text)))
+            return "Заполните текст всех вариантов.";
+
+        return string.Empty;
     }
 
     private void OnCancelClicked()
@@ -162,6 +191,8 @@ public class OrderingQuestionEditorPresenter : IQuestionEditorPresenter
 
         _listPresenter.OrderChanged -= OnOrderChanged;
         _listPresenter.ItemTextChanged -= OnOptionTextChanged;
+        _listPresenter.ItemRemoved -= OnOptionRemoved;
+
         _listPresenter.Dispose();
         _listPresenter = null;
     }

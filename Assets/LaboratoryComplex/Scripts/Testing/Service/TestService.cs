@@ -28,6 +28,11 @@ public class TestService : ITestService
         return test == null ? null : TestMapper.ToDto(test);
     }
 
+    public async Task<bool> IsQuestionUsedByOtherTestsAsync(Guid questionId, Guid excludingTestId)
+    {
+        return await _testRepository.CountOtherTestUsagesAsync(questionId, excludingTestId) > 0;
+    }
+
     public async Task<List<TestDTO>> GetAllTestsAsync()
     {
         var tests = await _testRepository.GetAllAsync();

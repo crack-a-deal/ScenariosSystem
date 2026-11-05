@@ -35,7 +35,13 @@ public class TestRepository
             .FirstOrDefaultAsync();
     }
 
-
+    public async Task<int> CountOtherTestUsagesAsync(Guid questionId, Guid excludingTestId)
+    {
+        return await _context.TestQuestions
+            .CountAsync(tq =>
+                tq.QuestionId == questionId &&
+                tq.TestId != excludingTestId);
+    }
 
     public async Task<Test?> GetByIdWithQuestionsAsync(Guid testId)
     {

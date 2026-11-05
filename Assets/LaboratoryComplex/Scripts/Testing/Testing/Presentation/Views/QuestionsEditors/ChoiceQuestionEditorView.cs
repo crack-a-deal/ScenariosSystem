@@ -21,6 +21,7 @@ public class ChoiceQuestionEditorView : MonoBehaviour
     [SerializeField] private Button addOptionButton;
     [SerializeField] private Button saveButton;
     [SerializeField] private Button cancelButton;
+    [SerializeField] private TMP_Text errorText;
 
     private readonly List<ChoiceOptionEditorView> _optionViews = new();
     private readonly Dictionary<ChoiceOptionEditorView, Guid> _optionIds = new();
@@ -38,6 +39,30 @@ public class ChoiceQuestionEditorView : MonoBehaviour
     public void SetSelectionMode(bool singleSelection)
     {
         _singleSelection = singleSelection;
+    }
+
+    public void ShowError(string message)
+    {
+        if (errorText == null)
+            return;
+
+        errorText.text = message;
+        errorText.gameObject.SetActive(true);
+    }
+
+    public void ClearError()
+    {
+        if (errorText == null)
+            return;
+
+        errorText.text = string.Empty;
+        errorText.gameObject.SetActive(false);
+    }
+
+    public void SetAddOptionInteractable(bool interactable)
+    {
+        if (addOptionButton != null)
+            addOptionButton.interactable = interactable;
     }
 
     private void OnQuestionTextChanged(string value)

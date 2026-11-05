@@ -65,9 +65,12 @@ public class MultipleChoiceQuestionEditorPresenter : IQuestionEditorPresenter
         _view.SetQuestionText(_questionText);
         _view.ClearOptions();
         _view.SetSelectionMode(false);
+        _view.ClearError();
 
         foreach (QuestionOptionModel option in _options)
             _view.AddOption(option.Id, option.Text, _correctOptionIds.Contains(option.Id));
+
+        _view.SetAddOptionInteractable(_options.Count < 4);
     }
 
     public void Hide()
@@ -83,6 +86,7 @@ public class MultipleChoiceQuestionEditorPresenter : IQuestionEditorPresenter
     {
         if (_options.Count >= 4)
         {
+            _view.ShowError("Максимум 4 варианта ответа.");
             return;
         }
 
@@ -124,17 +128,7 @@ public class MultipleChoiceQuestionEditorPresenter : IQuestionEditorPresenter
 
     public bool Validate()
     {
-        if (string.IsNullOrWhiteSpace(_questionText))
-            return false;
-
-        if (_options.Count < 2)
-            return false;
-
-        if (_options.Any(x => string.IsNullOrWhiteSpace(x.Text)))
-            return false;
-
-        return _correctOptionIds.Count > 0 &&
-               _correctOptionIds.All(id => _options.Any(x => x.Id == id));
+        return string.IsNullOrWhiteSpace(GetValidationError());
     }
 
     public BaseQuestionDTO GetQuestion()
@@ -163,7 +157,32 @@ public class MultipleChoiceQuestionEditorPresenter : IQuestionEditorPresenter
     private void OnSaveClicked()
     {
         if (Validate())
+        {
+            _view.ClearError();
             Saved?.Invoke(GetQuestion());
+        }
+        else
+        {
+            _view.ShowError(GetValidationError());
+        }
+    }
+
+    private string GetValidationError()
+    {
+        if (string.IsNullOrWhiteSpace(_questionText))
+            return "Введите текст вопроса.";
+
+        if (_options.Count < 2)
+            return "Добавьте минимум два варианта ответа.";
+
+        if (_options.Any(x => string.IsNullOrWhiteSpace(x.Text)))
+            return "Заполните текст всех вариантов ответа.";
+
+        if (_correctOptionIds.Count == 0 ||
+            !_correctOptionIds.All(id => _options.Any(x => x.Id == id)))
+            return "Отметьте хотя бы один правильный вариант ответа.";
+
+        return string.Empty;
     }
 
     private void OnCancelClicked()

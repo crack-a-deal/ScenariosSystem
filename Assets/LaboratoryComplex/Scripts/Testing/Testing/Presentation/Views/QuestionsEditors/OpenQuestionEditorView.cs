@@ -16,6 +16,7 @@ public class OpenQuestionEditorView : MonoBehaviour
 
     [SerializeField] private Button saveButton;
     [SerializeField] private Button cancelButton;
+    [SerializeField] private TMP_Text errorText;
 
     private void Awake()
     {
@@ -33,6 +34,26 @@ public class OpenQuestionEditorView : MonoBehaviour
         questionInput.SetTextWithoutNotify(text);
     }
 
+
+
+
+    public void ShowError(string message)
+    {
+        if (errorText == null)
+            return;
+
+        errorText.text = message;
+        errorText.gameObject.SetActive(true);
+    }
+
+    public void ClearError()
+    {
+        if (errorText == null)
+            return;
+
+        errorText.text = string.Empty;
+        errorText.gameObject.SetActive(false);
+    }
     public void SetCorrectAnswer(string text)
     {
         correctAnswerInput.SetTextWithoutNotify(text);

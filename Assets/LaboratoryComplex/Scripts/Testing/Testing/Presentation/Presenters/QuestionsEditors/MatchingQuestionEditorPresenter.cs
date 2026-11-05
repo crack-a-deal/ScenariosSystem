@@ -62,6 +62,7 @@ public class MatchingQuestionEditorPresenter : IQuestionEditorPresenter
     public void Show()
     {
         _view.SetQuestionText(_questionText);
+        _view.ClearError();
 
         if (_leftListPresenter == null || _rightListPresenter == null)
         {
@@ -73,6 +74,9 @@ public class MatchingQuestionEditorPresenter : IQuestionEditorPresenter
 
             _leftListPresenter.ItemTextChanged += OnLeftTextChanged;
             _rightListPresenter.ItemTextChanged += OnRightTextChanged;
+
+            _leftListPresenter.ItemRemoved += OnPairRemoved;
+            _rightListPresenter.ItemRemoved += OnPairRemoved;
         }
         else
         {
@@ -83,6 +87,19 @@ public class MatchingQuestionEditorPresenter : IQuestionEditorPresenter
     public void Hide()
     {
         _view.gameObject.SetActive(false);
+    }
+
+    private void OnPairRemoved(Guid pairId)
+    {
+        MatchingOptionModel pair = _pairs.FirstOrDefault(x => x.Id == pairId);
+
+        if (pair != null)
+            _pairs.Remove(pair);
+
+        _leftOrder.Remove(pairId);
+        _rightOrder.Remove(pairId);
+
+        RefreshLists();
     }
 
     private List<ReordableItemModel> GetLeftItems()
@@ -160,11 +177,7 @@ public class MatchingQuestionEditorPresenter : IQuestionEditorPresenter
 
     public bool Validate()
     {
-        return !string.IsNullOrWhiteSpace(_questionText) &&
-               _pairs.Count >= 2 &&
-               _pairs.All(x =>
-                   !string.IsNullOrWhiteSpace(x.LeftText) &&
-                   !string.IsNullOrWhiteSpace(x.RightText));
+        return string.IsNullOrWhiteSpace(GetValidationError());
     }
 
     public BaseQuestionDTO GetQuestion()
@@ -187,7 +200,29 @@ public class MatchingQuestionEditorPresenter : IQuestionEditorPresenter
     private void OnSaveClicked()
     {
         if (Validate())
+        {
+            _view.ClearError();
             Saved?.Invoke(GetQuestion());
+        }
+        else
+        {
+            _view.ShowError(GetValidationError());
+        }
+    }
+
+    private string GetValidationError()
+    {
+        if (string.IsNullOrWhiteSpace(_questionText))
+            return "Введите текст вопроса.";
+
+        if (_pairs.Count < 2)
+            return "Добавьте минимум две пары.";
+
+        if (_pairs.Any(x => string.IsNullOrWhiteSpace(x.LeftText) ||
+                            string.IsNullOrWhiteSpace(x.RightText)))
+            return "Заполните обе части каждой пары.";
+
+        return string.Empty;
     }
 
     private void OnCancelClicked()
@@ -204,16 +239,18 @@ public class MatchingQuestionEditorPresenter : IQuestionEditorPresenter
 
         if (_leftListPresenter != null)
         {
-            _leftListPresenter.OrderChanged += OnLeftOrderChanged;
+            _leftListPresenter.OrderChanged -= OnLeftOrderChanged;
             _leftListPresenter.ItemTextChanged -= OnLeftTextChanged;
+            _leftListPresenter.ItemRemoved -= OnPairRemoved;
             _leftListPresenter.Dispose();
             _leftListPresenter = null;
         }
 
         if (_rightListPresenter != null)
         {
-            _rightListPresenter.OrderChanged += OnRightOrderChanged;
+            _rightListPresenter.OrderChanged -= OnRightOrderChanged;
             _rightListPresenter.ItemTextChanged -= OnRightTextChanged;
+            _rightListPresenter.ItemRemoved -= OnPairRemoved;
             _rightListPresenter.Dispose();
             _rightListPresenter = null;
         }

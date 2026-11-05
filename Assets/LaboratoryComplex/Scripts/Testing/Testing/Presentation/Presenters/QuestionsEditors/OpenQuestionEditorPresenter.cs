@@ -42,6 +42,7 @@ public class OpenQuestionEditorPresenter : IQuestionEditorPresenter
     {
         _view.SetQuestionText(_questionText);
         _view.SetCorrectAnswer(_correctAnswer);
+        _view.ClearError();
     }
 
     public void Hide()
@@ -60,8 +61,7 @@ public class OpenQuestionEditorPresenter : IQuestionEditorPresenter
 
     public bool Validate()
     {
-        return !string.IsNullOrWhiteSpace(_questionText) &&
-               !string.IsNullOrWhiteSpace(_correctAnswer);
+        return string.IsNullOrWhiteSpace(GetValidationError());
     }
 
     public BaseQuestionDTO GetQuestion()
@@ -79,7 +79,25 @@ public class OpenQuestionEditorPresenter : IQuestionEditorPresenter
     private void OnSaveClicked()
     {
         if (Validate())
+        {
+            _view.ClearError();
             Saved?.Invoke(GetQuestion());
+        }
+        else
+        {
+            _view.ShowError(GetValidationError());
+        }
+    }
+
+    private string GetValidationError()
+    {
+        if (string.IsNullOrWhiteSpace(_questionText))
+            return "Введите текст вопроса.";
+
+        if (string.IsNullOrWhiteSpace(_correctAnswer))
+            return "Укажите правильный ответ.";
+
+        return string.Empty;
     }
 
     private void OnCancelClicked()

@@ -15,4 +15,5 @@ public interface ITestService
     Task<List<TestListItemDTO>> GetAvailableTestsAsync();
     Task SaveAsync(TestDTO test);
     Task<List<BaseQuestionDTO>> GetAvailableQuestionsAsync();
+    Task<bool> IsQuestionUsedByOtherTestsAsync(Guid questionId, Guid excludingTestId);
 }

@@ -11,7 +11,7 @@ public class ViewedModelExcelMapper
             {
                 Number = index + 1,
                 ModelName = view.ModelName,
-                ViewedAt = view.ViewedAt
+                ViewedAt = view.ViewedAt.ToString("dd.MM.yyyy HH:mm:ss")
             })
             .ToList();
     }

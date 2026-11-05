@@ -31,7 +31,7 @@ public class TestSessionService
                 "Для пользователя не назначена сессия этого теста.");
         }
 
-        if (session.StartedAt == null)
+        if (session.StartedAt == DateTime.MinValue)
         {
             session.StartedAt = DateTime.UtcNow;
             await _context.SaveChangesAsync();

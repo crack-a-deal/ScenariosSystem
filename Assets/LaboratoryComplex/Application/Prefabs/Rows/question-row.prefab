@@ -100,6 +100,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 373.14502
       objectReference: {fileID: 0}
+    - target: {fileID: 7970807673954048276, guid: 76607118d902e4d42b5b7fa293d8a0ac, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -245
+      objectReference: {fileID: 0}
     - target: {fileID: 9201583026591474324, guid: 76607118d902e4d42b5b7fa293d8a0ac, type: 3}
       propertyPath: m_Name
       value: question-row

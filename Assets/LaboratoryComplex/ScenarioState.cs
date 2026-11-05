@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ScenarioState : BaseApplicationState
 {
-    private const string ScenarioSceneName = "ScenarioScene_2";
+    private const string ScenarioSceneName = "ScenarioScene 1";
 
     private readonly CameraSwitcher _cameraSwitcher;
     private readonly Canvas _mainCanvas;
@@ -72,16 +72,18 @@ public class ScenarioState : BaseApplicationState
 
     private async void OnScenarioCompleted(string scenarioName)
     {
+        Debug.Log("OnScenarioCompleted");
         try
         {
             var client = _clientProvider.Instance;
-
+            Debug.Log("CLIENT");
             if (client == null)
             {
                 Debug.LogWarning("[SCENARIO] Нет соединения с сервером — прохождение не сохранено.");
                 return;
             }
 
+            Debug.Log("SEND");
             var response = await client
                 .SendRequestAsync<RegisterScenarioCompletionResponse>(
                     new RegisterScenarioCompletionRequest
@@ -95,6 +97,8 @@ public class ScenarioState : BaseApplicationState
                 Debug.LogError($"Не удалось сохранить прохождение сценария: {response.Error}");
             else
                 Debug.Log($"Прохождение сценария '{scenarioName}' сохранено.");
+
+            Debug.Log(response.Success);
         }
         catch (Exception exception)
         {

@@ -7,18 +7,23 @@ public class ReorableItemView : MonoBehaviour
 {
     public event Action<ReorableItemView> UpClicked;
     public event Action<ReorableItemView> DownClicked;
+    public event Action<ReorableItemView> RemoveClicked;
+
     public event Action<ReorableItemView, string> TextChanged;
 
     [SerializeField] private TMP_Text indexLabel;
     [SerializeField] private TMP_InputField inputField;
     [SerializeField] private Button upButton;
     [SerializeField] private Button downButton;
+    [SerializeField] private Button removeButton;
 
     private void OnEnable()
     {
         upButton.onClick.AddListener(OnUpClicked);
         downButton.onClick.AddListener(OnDownClicked);
         inputField.onValueChanged.AddListener(OnTextChanged);
+        if (removeButton != null)
+            removeButton.onClick.AddListener(OnRemoveClicked);
     }
 
     private void OnDisable()
@@ -26,6 +31,8 @@ public class ReorableItemView : MonoBehaviour
         upButton.onClick.RemoveListener(OnUpClicked);
         downButton.onClick.RemoveListener(OnDownClicked);
         inputField.onValueChanged.RemoveListener(OnTextChanged);
+        if (removeButton != null)
+            removeButton.onClick.RemoveListener(OnRemoveClicked);
     }
 
     public void SetIndexText(string value)
@@ -51,5 +58,10 @@ public class ReorableItemView : MonoBehaviour
     private void OnTextChanged(string value)
     {
         TextChanged?.Invoke(this, value);
+    }
+
+    private void OnRemoveClicked()
+    {
+        RemoveClicked?.Invoke(this);
     }
 }

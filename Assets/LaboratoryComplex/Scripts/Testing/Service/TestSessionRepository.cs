@@ -148,7 +148,8 @@ public class TestSessionRepository
             .Where(x =>
                 x.TestId == testId &&
                 x.UserProfileId == userProfileId)
-            .OrderByDescending(x => x.StartedAt)
+            .OrderByDescending(x => x.CompletedAt)
+            .ThenByDescending(x => x.StartedAt)
             .FirstOrDefaultAsync();
     }
 }

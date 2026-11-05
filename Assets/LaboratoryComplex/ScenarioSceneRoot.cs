@@ -48,6 +48,7 @@ public class ScenarioSceneRoot : MonoBehaviour
 
     private void OnScenarioCompleted()
     {
+        Debug.Log($"OnScenarioCompleted {_scenarioRunner.ScenarioTitle}");
         ScenarioCompleted?.Invoke(_scenarioRunner.ScenarioTitle);
     }
 }

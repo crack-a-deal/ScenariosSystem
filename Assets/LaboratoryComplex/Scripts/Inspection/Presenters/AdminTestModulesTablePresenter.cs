@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
@@ -73,10 +74,18 @@ public class AdminTestModulesTablePresenter : IDisposable
                 return;
             }
 
-            for (int i = 0; i < sessions.Count; i++)
+            var tests = sessions
+                .Where(session => session.Test != null)
+                .GroupBy(session => session.Test.Id)
+                .Select(group => group
+                    .OrderByDescending(session => session.CompletedAt)
+                    .ThenByDescending(session => session.StartedAt)
+                    .First())
+                .ToList();
+
+            for (int i = 0; i < tests.Count; i++)
             {
-                var session = sessions[i];
-                var test = session.Test;
+                var test = tests[i].Test;
 
                 var item = new TestListItemDTO
                 {

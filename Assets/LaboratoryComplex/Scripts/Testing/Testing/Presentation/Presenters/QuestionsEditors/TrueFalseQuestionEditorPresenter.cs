@@ -70,6 +70,7 @@ public class TrueFalseQuestionEditorPresenter : IQuestionEditorPresenter
         _view.SetSelectionMode(true);
         _view.AddOption(_trueOptionId, "Верно", _correctOptionId == _trueOptionId);
         _view.AddOption(_falseOptionId, "Неверно", _correctOptionId == _falseOptionId);
+        _view.ClearError();
     }
 
     public void Hide()
@@ -93,21 +94,9 @@ public class TrueFalseQuestionEditorPresenter : IQuestionEditorPresenter
         _correctOptionId = optionId;
     }
 
-    private bool Validate()
+    public bool Validate()
     {
-        if (string.IsNullOrWhiteSpace(_questionText))
-        {
-            Debug.LogWarning("Текст вопроса не может быть пустым.");
-            return false;
-        }
-
-        if (_correctOptionId != _trueOptionId && _correctOptionId != _falseOptionId)
-        {
-            Debug.LogWarning("Выберите правильный ответ: «Верно» или «Неверно».");
-            return false;
-        }
-
-        return true;
+        return string.IsNullOrWhiteSpace(GetValidationError());
     }
 
     public BaseQuestionDTO GetQuestion()
@@ -140,7 +129,25 @@ public class TrueFalseQuestionEditorPresenter : IQuestionEditorPresenter
     private void OnSaveClicked()
     {
         if (Validate())
+        {
+            _view.ClearError();
             Saved?.Invoke(GetQuestion());
+        }
+        else
+        {
+            _view.ShowError(GetValidationError());
+        }
+    }
+
+    private string GetValidationError()
+    {
+        if (string.IsNullOrWhiteSpace(_questionText))
+            return "Введите текст вопроса.";
+
+        if (_correctOptionId != _trueOptionId && _correctOptionId != _falseOptionId)
+            return "Выберите правильный ответ: «Верно» или «Неверно».";
+
+        return string.Empty;
     }
 
     private void OnCancelClicked()
