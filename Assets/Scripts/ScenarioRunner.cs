@@ -22,7 +22,7 @@ public class ScenarioRunner : MonoBehaviour
     public ScenarioMode Mode => _mode;
 
     public double ElapsedSeconds =>
-        _stopwatch != null && _stopwatch.IsRunning
+        _stopwatch != null
             ? _stopwatch.Elapsed.TotalSeconds
             : 0d;
 

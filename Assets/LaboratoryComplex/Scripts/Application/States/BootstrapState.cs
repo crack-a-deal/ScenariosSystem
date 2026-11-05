@@ -28,13 +28,13 @@ public class BootstrapState : BaseApplicationState
 
     public override async Task EnterAsync()
     {
-        //_licenseService.CheckNow();
+        _licenseService.CheckNow();
 
-        //if (_licenseService.State != GuardantLicenseState.Licensed)
-        //{
-        //    await _application.ChangeStateAsync<StudentWaitingState>();
-        //    return;
-        //}
+        if (_licenseService.State != GuardantLicenseState.Licensed)
+        {
+            await _application.ChangeStateAsync<StudentWaitingState>();
+            return;
+        }
 
 
         await LoadTestFromConfig();

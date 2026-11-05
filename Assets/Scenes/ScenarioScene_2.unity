@@ -509,6 +509,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1332404672}
+        m_TargetAssemblyTypeName: ScenarioRunner, Assembly-CSharp
+        m_MethodName: SetTrainingMode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &30674678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2433,6 +2445,7 @@ MonoBehaviour:
   - {fileID: 1087283133}
   - {fileID: 1492680832}
   - {fileID: 1434036977}
+  - {fileID: 1021018147}
   - {fileID: 1021018147}
 --- !u!1 &138520412
 GameObject:
@@ -22641,6 +22654,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1332404672}
+        m_TargetAssemblyTypeName: ScenarioRunner, Assembly-CSharp
+        m_MethodName: SetExamMode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1186768138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25577,6 +25602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioRunner
   _scenario: {fileID: 0}
   _eventBus: {fileID: 625836454}
+  _mode: 0
 --- !u!4 &1332404673
 Transform:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public static class ScenarioModeExtensions
         return mode switch
         {
             ScenarioMode.Training => "Обучение",
-            ScenarioMode.Control => "Контроль",
+            ScenarioMode.Control => "Экзамен",
             _ => mode.ToString()
         };
     }
