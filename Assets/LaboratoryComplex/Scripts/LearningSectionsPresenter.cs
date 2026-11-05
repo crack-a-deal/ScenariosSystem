@@ -119,12 +119,11 @@ public class TeacherLearningSectionsPresenter : LearningSectionsPresenter
     {
         var completions = await _scenarioService.GetAllCompletionsAsync();
 
-        var exportData = new ScenarioCompletionsExportDTO
-        {
-            Completions = completions
-        };
-
-        await _exportService.ExportMultiSheetAsync(exportData);
+        await _exportService.ExportMultiSheetAsync(
+            new ScenarioCompletionsExportDTO
+            {
+                Completions = completions
+            });
         _view.ShowPopup($"Результаты сохранены в\n {_exportService.GetExportPath()}");
         Debug.Log($"Прохождения сценариев экспортированы.");
     }

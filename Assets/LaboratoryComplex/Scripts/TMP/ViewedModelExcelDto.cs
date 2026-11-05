@@ -23,34 +23,50 @@ public class ViewedModelsExportDTO
 
 public class ScenarioCompletionExcelDto
 {
-    [ExcelColumnName("№")]
-    public int Number { get; set; }
+    [ExcelColumnName("Студент")]
+    public string StudentName { get; set; }
 
     [ExcelColumnName("Сценарий")]
-    public string ScenarioName { get; set; } = string.Empty;
+    public string ScenarioName { get; set; }
 
-    [ExcelColumnName("Дата прохождения")]
-    public string CompletedAt { get; set; } = string.Empty;
+    [ExcelColumnName("Режим")]
+    public string Mode { get; set; }
+
+    [ExcelColumnName("Длительность")]
+    public string Duration { get; set; }
+
+    [ExcelColumnName("Дата завершения")]
+    public DateTime CompletedAt { get; set; }
 }
 
 public class ScenarioCompletionsExportDTO
 {
-    public List<UserScenarioCompletionDto> Completions { get; set; } = new();
+    public List<UserScenarioCompletionDto> Completions { get; set; }
+        = new List<UserScenarioCompletionDto>();
 }
 
 public class ScenarioCompletionExcelMapper
 {
-    public List<ScenarioCompletionExcelDto> Map(
-        IEnumerable<UserScenarioCompletionDto> completions)
+    public ScenarioCompletionExcelDto Map(UserScenarioCompletionDto completion)
     {
-        return completions
-            .Select((completion, index) => new ScenarioCompletionExcelDto
-            {
-                Number = index + 1,
-                ScenarioName = completion.ScenarioName,
-                CompletedAt = completion.CompletedAt.ToString("dd.MM.yyyy HH:mm:ss")
-            })
-            .ToList();
+        return new ScenarioCompletionExcelDto
+        {
+            StudentName = completion.StudentName?.Trim(),
+            ScenarioName = completion.ScenarioName,
+            Mode = completion.Mode.ToDisplayString(),
+            Duration = FormatDuration(completion.DurationSeconds),
+            CompletedAt = completion.CompletedAt
+        };
+    }
+
+    private string FormatDuration(double seconds)
+    {
+        if (seconds <= 0)
+            return "—";
+
+        return TimeSpan
+            .FromSeconds(seconds)
+            .ToString(@"hh\:mm\:ss");
     }
 }
 
@@ -79,11 +95,13 @@ public class ScenarioCompletionsExcelDefinition
         var workbook =
             new ExcelWorkbookData();
 
-        var rows = _mapper.Map(
-            exportData.Completions);
+        var rows = exportData.Completions
+            .Select(completion =>
+                _mapper.Map(completion))
+            .ToList();
 
         workbook.Sheets.Add(
-            "Пройденные сценарии",
+            "Прохождение сценариев",
             rows);
 
         return workbook;

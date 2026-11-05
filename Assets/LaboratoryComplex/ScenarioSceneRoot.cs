@@ -2,6 +2,23 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
+public class ScenarioCompletionInfo
+{
+    public string ScenarioName { get; }
+    public ScenarioMode Mode { get; }
+    public double DurationSeconds { get; }
+
+    public ScenarioCompletionInfo(
+        string scenarioName,
+        ScenarioMode mode,
+        double durationSeconds)
+    {
+        ScenarioName = scenarioName;
+        Mode = mode;
+        DurationSeconds = durationSeconds;
+    }
+}
+
 public class ScenarioSceneRoot : MonoBehaviour
 {
     [SerializeField] private Camera _playerCamera;
@@ -10,7 +27,7 @@ public class ScenarioSceneRoot : MonoBehaviour
     public Camera PlayerCamera => _playerCamera;
 
     public event Action ExitRequested;
-    public event Action<string> ScenarioCompleted;
+    public event Action<ScenarioCompletionInfo> ScenarioCompleted;
 
     private void Awake()
     {
@@ -32,6 +49,7 @@ public class ScenarioSceneRoot : MonoBehaviour
         if (_scenarioRunner != null)
             _scenarioRunner.ScenarioCompleted -= OnScenarioCompleted;
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -46,9 +64,24 @@ public class ScenarioSceneRoot : MonoBehaviour
         ExitRequested?.Invoke();
     }
 
+    public void SetMode(ScenarioMode mode)
+    {
+        if (_scenarioRunner != null)
+            _scenarioRunner.SetMode(mode);
+    }
+
     private void OnScenarioCompleted()
     {
-        Debug.Log($"OnScenarioCompleted {_scenarioRunner.ScenarioTitle}");
-        ScenarioCompleted?.Invoke(_scenarioRunner.ScenarioTitle);
+        var completion = new ScenarioCompletionInfo(
+            _scenarioRunner.ScenarioTitle,
+            _scenarioRunner.Mode,
+            _scenarioRunner.ElapsedSeconds);
+
+        Debug.Log(
+            $"OnScenarioCompleted {completion.ScenarioName}, " +
+            $"mode: {completion.Mode}, " +
+            $"duration: {completion.DurationSeconds:F1}s");
+
+        ScenarioCompleted?.Invoke(completion);
     }
 }

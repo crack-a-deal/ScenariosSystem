@@ -4,17 +4,27 @@ using UnityEngine;
 public class ScenarioRunner : MonoBehaviour
 {
     [SerializeField] private Scenario _scenario;
-    private ScenarioContext _context;
     [SerializeField] ScenarioEventBus _eventBus;
+    [SerializeField] private ScenarioMode _mode = ScenarioMode.Training;
 
+    private ScenarioContext _context;
+    private System.Diagnostics.Stopwatch _stopwatch;
     private int _currentStepIndex = -1;
 
     public event Action<Step> StepStarted;
     public event Action<Step> StepCompleted;
     public event Action<ScenarioError> ErrorOccurred;
     public event Action ScenarioCompleted;
+    public event Action<ScenarioMode> ModeChanged;
 
     public string ScenarioTitle => _scenario != null ? _scenario.Title : null;
+
+    public ScenarioMode Mode => _mode;
+
+    public double ElapsedSeconds =>
+        _stopwatch != null && _stopwatch.IsRunning
+            ? _stopwatch.Elapsed.TotalSeconds
+            : 0d;
 
     public Step CurrentStep =>
         _currentStepIndex >= 0 && _currentStepIndex < _scenario.Steps.Count
@@ -37,13 +47,36 @@ public class ScenarioRunner : MonoBehaviour
         _scenario = scenario;
     }
 
+    public void SetMode(ScenarioMode mode)
+    {
+        if (_mode == mode)
+            return;
+
+        _mode = mode;
+        ModeChanged?.Invoke(_mode);
+    }
+
+    public void SetTrainingMode()
+    {
+        _mode = ScenarioMode.Training;
+        ModeChanged?.Invoke(_mode);
+    }
+
+    public void SetExamMode()
+    {
+        _mode = ScenarioMode.Control;
+        ModeChanged?.Invoke(_mode);
+    }
+
     public void StartScenario()
     {
-        Debug.Log($"Starting scenario: {_scenario.Title}");
+        Debug.Log($"Starting scenario: {_scenario.Title} (mode: {_mode})");
         _currentStepIndex = 0;
+        _stopwatch = System.Diagnostics.Stopwatch.StartNew();
 
         if (_scenario.Steps.Count == 0)
         {
+            _stopwatch.Stop();
             ScenarioCompleted?.Invoke();
             return;
         }
@@ -84,6 +117,8 @@ public class ScenarioRunner : MonoBehaviour
         if (_currentStepIndex >= _scenario.Steps.Count)
         {
             Debug.Log($"Scenario completed: {_scenario.Title}");
+            _stopwatch?.Stop();
+            Debug.Log($"TIIIME: {ElapsedSeconds}");
             ScenarioCompleted?.Invoke();
             return;
         }

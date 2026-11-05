@@ -70,7 +70,7 @@ public class ScenarioState : BaseApplicationState
         return null;
     }
 
-    private async void OnScenarioCompleted(string scenarioName)
+    private async void OnScenarioCompleted(ScenarioCompletionInfo completion)
     {
         Debug.Log("OnScenarioCompleted");
         try
@@ -89,14 +89,16 @@ public class ScenarioState : BaseApplicationState
                     new RegisterScenarioCompletionRequest
                     {
                         UserProfileId = _userSession.ProfileId,
-                        ScenarioName = scenarioName
+                        ScenarioName = completion.ScenarioName,
+                        Mode = completion.Mode,
+                        DurationSeconds = completion.DurationSeconds
                     },
                     CancellationToken.None);
 
             if (!response.Success)
                 Debug.LogError($"Не удалось сохранить прохождение сценария: {response.Error}");
             else
-                Debug.Log($"Прохождение сценария '{scenarioName}' сохранено.");
+                Debug.Log($"Прохождение сценария '{completion.ScenarioName}' сохранено.");
 
             Debug.Log(response.Success);
             OnExitRequested();

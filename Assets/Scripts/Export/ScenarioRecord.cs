@@ -37,6 +37,10 @@ public class UserScenarioCompletion
     public ScenarioRecord Scenario { get; set; }
 
     public DateTime CompletedAt { get; set; }
+
+    public double DurationSeconds { get; set; }
+
+    public ScenarioMode Mode { get; set; }
 }
 
 public class ScenarioRecordDto
@@ -60,19 +64,28 @@ public class UserScenarioCompletionDto
     public Guid ScenarioRecordId { get; }
     public string ScenarioName { get; }
     public DateTime CompletedAt { get; }
+    public ScenarioMode Mode { get; }
+    public double DurationSeconds { get; }
+    public string StudentName { get; }
 
     public UserScenarioCompletionDto(
         Guid id,
         Guid userProfileId,
         Guid scenarioRecordId,
         string scenarioName,
-        DateTime completedAt)
+        DateTime completedAt,
+        ScenarioMode mode,
+        double durationSeconds,
+        string studentName)
     {
         Id = id;
         UserProfileId = userProfileId;
         ScenarioRecordId = scenarioRecordId;
         ScenarioName = scenarioName;
         CompletedAt = completedAt;
+        Mode = mode;
+        DurationSeconds = durationSeconds;
+        StudentName = studentName;
     }
 }
 
@@ -142,7 +155,13 @@ public class ScenarioRepository : IScenarioRepository
                 completion.UserProfileId,
                 completion.ScenarioRecordId,
                 completion.Scenario.Name,
-                completion.CompletedAt))
+                completion.CompletedAt,
+                completion.Mode,
+                completion.DurationSeconds,
+                string.Concat(
+                    completion.UserProfile.LastName, " ",
+                    completion.UserProfile.FirstName, " ",
+                    completion.UserProfile.Patronymic ?? string.Empty)))
             .ToListAsync();
     }
 }
@@ -150,7 +169,7 @@ public class ScenarioRepository : IScenarioRepository
 public interface IScenarioService
 {
     Task InitializeCatalogAsync(string[] scenarioNames);
-    Task RegisterCompletionAsync(Guid userProfileId, string scenarioName);
+    Task RegisterCompletionAsync(Guid userProfileId, string scenarioName, ScenarioMode mode, double durationSeconds);
     Task<List<ScenarioRecordDto>> GetAllScenariosAsync();
     Task<List<ScenarioRecordDto>> GetCompletedScenariosByUserProfileIdAsync(Guid userProfileId);
     Task<List<UserScenarioCompletionDto>> GetAllCompletionsAsync();
@@ -185,7 +204,11 @@ public class ScenarioService : IScenarioService
         }
     }
 
-    public async Task RegisterCompletionAsync(Guid userProfileId, string scenarioName)
+    public async Task RegisterCompletionAsync(
+        Guid userProfileId,
+        string scenarioName,
+        ScenarioMode mode,
+        double durationSeconds)
     {
         if (userProfileId == Guid.Empty)
             throw new ArgumentException(
@@ -208,7 +231,9 @@ public class ScenarioService : IScenarioService
             Id = Guid.NewGuid(),
             UserProfileId = userProfileId,
             ScenarioRecordId = scenario.Id,
-            CompletedAt = DateTime.Now
+            CompletedAt = DateTime.Now,
+            Mode = mode,
+            DurationSeconds = durationSeconds > 0 ? durationSeconds : 0
         });
     }
 
@@ -251,13 +276,13 @@ public class ScenarioService : IScenarioService
     }
 }
 
-
-
 public class RegisterScenarioCompletionRequest
     : IRequest<RegisterScenarioCompletionResponse>
 {
     public Guid UserProfileId { get; set; }
     public string ScenarioName { get; set; } = string.Empty;
+    public ScenarioMode Mode { get; set; }
+    public double DurationSeconds { get; set; }
 }
 
 public class RegisterScenarioCompletionResponse : IResponse
@@ -283,7 +308,9 @@ public class RegisterScenarioCompletionHandler
         {
             await _service.RegisterCompletionAsync(
                 request.UserProfileId,
-                request.ScenarioName);
+                request.ScenarioName,
+                request.Mode,
+                request.DurationSeconds);
 
             return new RegisterScenarioCompletionResponse
             {
