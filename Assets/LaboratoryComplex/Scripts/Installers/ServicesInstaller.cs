@@ -93,7 +93,7 @@ public class ServicesInstaller : MonoInstaller
             .AsSingle();
 
         Container.Bind<IExportPathProvider>()
-            .To<LinuxExportPathProvider>()
+            .FromMethod(CreateExportPathProvider)
             .AsSingle();
 
         Container.Bind<ExcelExportRegistry>()
@@ -103,6 +103,15 @@ public class ServicesInstaller : MonoInstaller
         Container.Bind<MultiSheetExcelExportRegistry>()
             .FromMethod(CreateMultiSheetExcelExportRegistry)
             .AsSingle();
+    }
+
+    private IExportPathProvider CreateExportPathProvider()
+    {
+#if UNITY_STANDALONE_LINUX
+    return new LinuxExportPathProvider();
+#else
+        return new WindowsExportPathProvider();
+#endif
     }
 
     private ExcelExportRegistry CreateExcelExportRegistry()

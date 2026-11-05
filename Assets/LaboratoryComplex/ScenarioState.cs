@@ -99,6 +99,7 @@ public class ScenarioState : BaseApplicationState
                 Debug.Log($"Прохождение сценария '{scenarioName}' сохранено.");
 
             Debug.Log(response.Success);
+            OnExitRequested();
         }
         catch (Exception exception)
         {
